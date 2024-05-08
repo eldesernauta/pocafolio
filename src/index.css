@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    @apply bg-purple-400 font-Montserrat;
+    @apply bg-black font-Montserrat;
 }
 
 ::selection {
@@ -57,6 +57,29 @@ h4::selection {
 }
 
 @tailwind components;
+
+#skills {
+    background-image: url('./img/skills-bg.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+#world {
+    background-image: url('./img/world.png');
+    background-position: center 50px;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+#world>.container {
+    background-image: url('./img/world-container.png');
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+
 @tailwind utilities;
 
 .massiveImage {
@@ -66,7 +89,7 @@ h4::selection {
     background-position: center;
 }
 
-.switch{
+.switch {
     position: relative;
 }
 
@@ -85,4 +108,67 @@ h4::selection {
 
 .switch[data-isOn="true"] {
     justify-content: flex-end;
+}
+
+.border-animated-bottom {
+
+    border-image:
+        linear-gradient(to bottom,
+            #FFFFFF50
+            ,
+            rgba(255, 255, 255, 0)) 1 100%;
+
+}
+
+.border-animated-bottom::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    bottom: 0;
+    width: 5px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9304096638655462) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 100%);
+    animation: starBottom 2s linear infinite;
+}
+
+.border-animated-bottom:last-child::after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    bottom: 0;
+    width: 5px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9304096638655462) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 100%);
+    animation: starBottom 2s linear infinite;
+}
+
+@media only screen and (max-width:768px) {
+
+    .border-animated-bottom::before,
+    .border-animated-bottom:last-child::after {
+        display: none;
+    }
+
+    .border-animated-bottom {
+        border-image: none;
+    }
+}
+
+
+@keyframes starBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
 }
