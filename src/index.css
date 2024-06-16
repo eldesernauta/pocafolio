@@ -5,7 +5,17 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    cursor: none;
 }
+
+* {
+    cursor: none !important;
+}
+
+*:hover {
+    cursor: none !important;
+}
+
 
 body {
     @apply bg-black font-Montserrat;
@@ -79,6 +89,37 @@ h4::selection {
     background-repeat: no-repeat
 }
 
+#footer {
+    background-image: url('./img/footer-bg.png');
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+#footer h2 {
+    line-height: 0 !important;
+}
+
+#card1 {
+    background-image: url('./img/card1-bg.png');
+    background-position: 40px 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card2 {
+    background-image: url('./img/card2-bg.png');
+    background-position: 40px 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card3 {
+    background-image: url('./img/card3-bg.png');
+    background-position: 40px 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 @tailwind utilities;
 
@@ -87,6 +128,13 @@ h4::selection {
     width: 400vw;
     background-size: cover;
     background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .massiveImage {
+        height: auto;
+        width: 100vw;
+    }
 }
 
 .switch {
@@ -114,8 +162,7 @@ h4::selection {
 
     border-image:
         linear-gradient(to bottom,
-            #FFFFFF50
-            ,
+            #FFFFFF50,
             rgba(255, 255, 255, 0)) 1 100%;
 
 }
@@ -129,7 +176,7 @@ h4::selection {
     height: 50px;
     border-radius: 50%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.9304096638655462) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 100%);
-    animation: starBottom 2s linear infinite;
+    animation: starBottom 3s linear infinite;
 }
 
 .border-animated-bottom:last-child::after {
@@ -141,7 +188,7 @@ h4::selection {
     height: 50px;
     border-radius: 50%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.9304096638655462) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 100%);
-    animation: starBottom 2s linear infinite;
+    animation: starBottom 3s linear infinite;
 }
 
 @media only screen and (max-width:768px) {
@@ -171,4 +218,29 @@ h4::selection {
         opacity: 0;
         transform: translateY(-250px);
     }
+}
+
+@layer utilities {
+
+    .scrollbar::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+        width: 5px;
+        height: 20px;
+    }
+
+    .scrollbar::-webkit-scrollbar-track,
+    body::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb,
+    body::-webkit-scrollbar-thumb {
+        @apply bg-primary
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb:hover,
+    body::-webkit-scrollbar-thumb:hover {
+        background: #c0a0b9;
+    }
+
 }

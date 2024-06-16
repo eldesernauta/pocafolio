@@ -1,43 +1,43 @@
+import * as React from "react";
+import { Routes, Route } from "react-router-dom";
+import CustomCursor from 'custom-cursor-react';
+import 'custom-cursor-react/dist/index.css';
+import Cursor from "./components/Cursor/cursor";
 
-import HorizontalScroll from "./components/HorizontalScroll/horizontalScroll";
-import SwitchBtn from "./components/SwitchBtn/switchBtn";
-import Hero from "./components/Hero/hero";
-import Herramientas from "./components/Herramientas/herramientas";
-import Skills from "./components/Skills/skills";
-import Colabs from "./components/Colabs/colabs";
-import Productos from "./components/Productos/productos";
+import Layout from "./pages/Layout"; // Optional, but useful
+import Home from "./pages/Home";
+import Trabajo from "./pages/Trabajo";
+import Avianca from "./pages/Avianca";
+import LaCima from "./pages/LaCima";
+import QuienSoy from "./pages/QuienSoy";
+import Contacto from "./pages/Contacto";
 
 function App() {
   return (
     <>
-      <Hero />
-      <section className="bg-black py-8">
-        <Herramientas />
-      </section>
-
-      <section className="bg-black pt-24 relative">
-        <div className="container mx-auto flex flex-col relative">
-          <HorizontalScroll />
-        </div>
-      </section>
-
-      <section id="skills" className="bg-black pt-32 md:pt-0 pb-8 relative">
-        <Skills />
-      </section>
-
-      <section className="bg-black px-4 md:px-2 py-8">
-        <div className="container mx-auto flex flex-col justify-center items-center gap-0">
-          <SwitchBtn />
-        </div>
-      </section>
-
-      <section className="bg-black pt-8 mb-32 w-full h-[50vh] flex flex-col items-center justify-start relative">
-        <Colabs />
-      </section>
-
-      <section id="world" className="bg-black px-4 md:px-0 py-24 w-full flex flex-col items-center justify-start relative">
-        <Productos />
-      </section>
+      <CustomCursor
+        targets={['.link-hover']}
+        customClass='custom-cursor'
+        dimensions={30}
+        fill='#BDFA00'
+        smoothness={{
+          movement: 0.2,
+          scale: 0.1,
+          opacity: 0.2,
+        }}
+        targetOpacity={0.5}
+      />
+      <Cursor />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/trabajo" element={<Trabajo />} />
+          <Route path="/quien-soy" element={<QuienSoy />} />
+          <Route path="/conectemos" element={<Contacto />} />
+          <Route path="/trabajo/avianca" element={<Avianca />} />
+          <Route path="/trabajo/la-cima" element={<LaCima />} />
+        </Route>
+      </Routes>
     </>
   );
 }

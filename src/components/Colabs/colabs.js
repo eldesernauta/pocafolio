@@ -1,97 +1,102 @@
 import Marquee from "react-fast-marquee";
 
-const github = require("../../img/github-logo.png")
+const bancolombia = require("../../img/bancolombia.png")
+const mastercard = require("../../img/mastercard.png")
+const davivienda = require("../../img/davivienda.png")
+const solved = require("../../img/solved.png")
+const avianca = require("../../img/avianca.png")
+const dentsu = require("../../img/dentsu.png")
+const lulo = require("../../img/lulo.png")
+const trainingym = require("../../img/trainingym.png")
 
 const Colabs = () => {
     return (
         <>
-            <h2 className="text-gray-200 text-center text-3xl">Colaboraciones</h2>
-            <hr className="bg-primary h-1 w-24 mx-auto mt-4" />
-            <div className="w-[120vw] md:w-[105vw] bg-primary pb-4 flex justify-between items-center rotate-[20deg] md:rotate-6 absolute top-[200px]">
-                <Marquee className="mt-8">
+            <div className="w-[120vw] md:w-[105vw] h-24 bg-white pb-4 flex justify-between items-center rotate-[20deg] md:rotate-6 absolute top-[200px]">
+                <Marquee className="mt-8" direction="right">
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={bancolombia}
+                        className="self-center h-8 mx-24"
+                        alt='logo bancolombia'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={mastercard}
+                        className="self-center h-8 mx-24"
+                        alt='logo mastercard'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={davivienda}
+                        className="self-center h-8 mx-24"
+                        alt='logo davivienda'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={solved}
+                        className="self-center h-8 mx-24"
+                        alt='logo solved'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={bancolombia}
+                        className="self-center h-8 mx-24"
+                        alt='logo bancolombia'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={mastercard}
+                        className="self-center h-8 mx-24"
+                        alt='logo mastercard'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={davivienda}
+                        className="self-center h-8 mx-24"
+                        alt='logo davivienda'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={solved}
+                        className="self-center h-8 mx-24"
+                        alt='logo solved'
                     />
                 </Marquee>
             </div>
-            <div className="w-[120vw] md:w-[105vw] bg-primary pb-4 flex justify-between items-center -rotate-[20deg] md:-rotate-6 absolute top-[200px]">
+            <div className="w-[120vw] md:w-[105vw] h-24 bg-white pb-4 flex justify-between items-center -rotate-[20deg] md:-rotate-6 absolute top-[200px]">
                 <Marquee className="mt-8">
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={avianca}
+                        className="self-center h-8 mx-24"
+                        alt='logo avianca'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={dentsu}
+                        className="self-center h-8 mx-24"
+                        alt='logo dentsu'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={lulo}
+                        className="self-center h-8 mx-24"
+                        alt='logo lulo'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={trainingym}
+                        className="self-center h-8 mx-24"
+                        alt='logo trainingym'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={avianca}
+                        className="self-center h-8 mx-24"
+                        alt='logo avianca'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={dentsu}
+                        className="self-center h-8 mx-24"
+                        alt='logo dentsu'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={lulo}
+                        className="self-center h-8 mx-24"
+                        alt='logo lulo'
                     />
                     <img
-                        src={github}
-                        className="self-center w-48 mx-12"
-                        alt='separador de textos'
+                        src={trainingym}
+                        className="self-center h-8 mx-24"
+                        alt='logo trainingym'
                     />
                 </Marquee>
             </div>

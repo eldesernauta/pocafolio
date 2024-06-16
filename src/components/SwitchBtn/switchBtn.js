@@ -11,7 +11,7 @@ function SwitchBtn() {
 
     return (
         <>
-            <div className={`switch mx-auto w-[200px] h-[80px] md:h-[120px] flex justify-start rounded-full cursor-pointer p-2.5 z-50 ${isOn ? 'bg-[#77EC30] shadow-[inset_10px_2px_20px_10px_#00000030]' : 'bg-white shadow-[inset_10px_0px_20px_10px_#00000010]'} `} data-isOn={isOn} onClick={toggleSwitch}>
+            <div className={`link-hover  switch mx-auto w-[200px] h-[80px] md:h-[120px] flex justify-start rounded-full p-2.5 z-50 ${isOn ? 'bg-[#77EC30] shadow-[inset_10px_2px_20px_10px_#00000030]' : 'bg-white shadow-[inset_10px_0px_20px_10px_#00000010]'} `} data-isOn={isOn} onClick={toggleSwitch}>
                 <motion.div className={`handle ${isOn ? 'bg-white shadow-[inset_10px_0px_20px_10px_#00000030,-10px_10px_20px_0px_#00000024]' : 'bg-white shadow-[inset_-5px_0px_20px_10px_#00000030,10px_10px_20px_0px_#00000050]'} w-[60px] md:w-[100px] h-[60px] md:h-[100px] rounded-full`} layout transition={spring} />
             </div>
             <img src={isOn ? dashboard : wireframe} alt="ejemplo de wireframe" className="rounded-lg -translate-y-8 md:-translate-y-16 z-0" />

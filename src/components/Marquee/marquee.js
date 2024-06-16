@@ -57,7 +57,7 @@ function CustomMarquee({ children, baseVelocity = 100 }) {
      */
     return (
         <div className="parallax py-8 w-full max-w-full flex items-center justify-center">
-            <motion.div className="font-ClashDisplay font-medium text-8xl text-white flex items-center justify-center whitespace-nowrap flex-nowrap gap-96" style={{ x }}>
+            <motion.div className="font-ClashDisplay font-medium text-8xl md:text-[200px] m-0 text-white flex items-center justify-center whitespace-nowrap flex-nowrap gap-96 select-none" style={{ x }}>
                 <span className="flex gap-48">{children} </span>
                 <span className="flex gap-48">{children} </span>
                 <span className="flex gap-48">{children} </span>
