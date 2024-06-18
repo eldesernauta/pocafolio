@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const iteracion = require("../../img/iteracion.png")
 const boton = require("../../img/boton.png")
 const svg = require("../../img/svg.png")
@@ -12,7 +14,9 @@ const Productos = () => {
                     <h5 className="text-white text-center text-3xl w-11/12 md:w-8/12 mx-auto mt-8">Apasionado por mejorar la usabilidad web
                         para una experiencia óptima del usuario.</h5>
                 </div>
-                <img src={boton} alt="icono de iteracion" />
+                <Link to={'/conectemos'} className="link-hover">
+                    <img src={boton} alt="icono de iteracion" />
+                </Link>
                 <img src={iteracion} alt="icono de iteracion" className="absolute scale-50 md:scale-100 bottom-24 md:bottom-32 left-0 md:left-24" />
                 <img src={cms} alt="icono de iteracion" className="absolute scale-75 md:scale-100 -bottom-28 md:bottom-28 right-0 md:right-32" />
                 <img src={svg} alt="icono de iteracion" className="absolute -top-32 md:top-16 right-3 md:right-12" />

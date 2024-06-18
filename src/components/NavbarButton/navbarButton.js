@@ -5,8 +5,7 @@ const NavbarButton = (props) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const genericHamburgerLine = `h-2 w-16 my-1 rounded-full
-    bg-white transition ease transform duration-300`;
+    const genericHamburgerLine = `${props.color === 'black' ? 'bg-black scale-100 md:scale-[2] place-self-end mr-[5vw]' : 'bg-white'} h-2 w-16 my-1 rounded-full  transition ease transform duration-300`;
 
     const matchClose = props.showMenu
 

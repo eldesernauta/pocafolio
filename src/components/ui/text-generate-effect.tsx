@@ -1,57 +1,53 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cn } from "../../utils/cn";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const TextGenerateEffect = ({
   words,
+  paragraph2,
   className,
+  align,
 }: {
   words: string;
+  paragraph2: string;
   className?: string;
+  align?: string;
 }) => {
-  const [scope, animate] = useAnimate();
-  const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   let wordsArray = words.split(" ");
+  let pArray = paragraph2.split(" ");
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.5 }
-    );
-
     if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
+      const targets = containerRef.current.querySelectorAll("span");
 
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (isVisible) {
-      animate(
-        "span",
+      gsap.fromTo(
+        targets,
+        { opacity: 0 },
         {
           opacity: 1,
-        },
-        {
-          duration: 2,
-          delay: stagger(0.2),
+          duration: 1,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 80%",
+            end: "top 20%",
+            scrub: true,
+          },
         }
       );
     }
-  }, [isVisible, animate]);
+  }, []);
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <motion.div>
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
@@ -62,15 +58,34 @@ export const TextGenerateEffect = ({
             </motion.span>
           );
         })}
+        <br />
+        <br />
+        {pArray.map((p, idx) => {
+          return (
+            <motion.span
+              key={p + idx}
+              className="dark:text-white text-black opacity-0"
+            >
+              {p}{" "}
+            </motion.span>
+          );
+        })}
       </motion.div>
     );
   };
 
   return (
     <div className={cn("font-bold", className)}>
-      <div className="w-9/12 mx-auto" ref={containerRef}>
-        <div className=" dark:text-white text-black font-medium text-2xl md:text-3xl leading-snug tracking-wide">
-          {isVisible && renderWords()}
+      <div
+        className={`${align === "center" ? "w-9/12 mx-auto" : "w-full"}`}
+        ref={containerRef}
+      >
+        <div
+          className={`${
+            align === "center" ? "text-center" : "text-left"
+          } dark:text-white text-black font-medium text-2xl md:text-3xl leading-snug tracking-wide`}
+        >
+          {renderWords()}
         </div>
       </div>
     </div>

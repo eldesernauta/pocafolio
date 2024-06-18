@@ -6,11 +6,13 @@ import Cursor from "./components/Cursor/cursor";
 
 import Layout from "./pages/Layout"; // Optional, but useful
 import Home from "./pages/Home";
+import QuienSoy from "./pages/QuienSoy";
+import Contacto from "./pages/Contacto";
 import Trabajo from "./pages/Trabajo";
 import Avianca from "./pages/Avianca";
 import LaCima from "./pages/LaCima";
-import QuienSoy from "./pages/QuienSoy";
-import Contacto from "./pages/Contacto";
+import Davivienda from "./pages/Davivienda";
+import Extras from "./pages/Extras";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Route path="/conectemos" element={<Contacto />} />
           <Route path="/trabajo/avianca" element={<Avianca />} />
           <Route path="/trabajo/la-cima" element={<LaCima />} />
+          <Route path="/trabajo/davivienda" element={<Davivienda />} />
+          <Route path="/trabajo/extras" element={<Extras />} />
         </Route>
       </Routes>
     </>

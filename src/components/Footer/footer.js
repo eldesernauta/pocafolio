@@ -7,30 +7,30 @@ const Footer = () => {
     return (
         <div className="relative w-full bg-black pt-32 md:pt-48 pb-8 flex flex-col justify-between overflow-hidden">
             <WavyFooter className="w-full h-screen flex flex-col justify-end items-center"></WavyFooter>
-            <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start z-10">
-                <ul className="w-full flex flex-row md:flex-col justify-center gap-8 md:gap-0">
-                    <li className="text-white md:text-black font-semibold mb-4 underline decoration-white md:no-underline">
+            <div className="container mx-auto flex flex-col-reverse md:flex-row justify-center md:justify-between items-center md:items-start z-10">
+                <ul className="w-full flex flex-col text-center md:text-left justify-center gap-0">
+                    <li className="text-black font-semibold mb-2 md:mb-4 underline md:no-underline">
                         <Link to='/' className="link-hover">
                             Inicio
                         </Link>
                     </li>
-                    <li className="text-white md:text-black font-semibold mb-4 underline decoration-white md:no-underline">
+                    <li className="text-black font-semibold mb-2 md:mb-4 underline md:no-underline">
                         <Link to='/trabajo' className="link-hover">
                             Trabajo
                         </Link>
                     </li>
-                    <li className="text-white md:text-black font-semibold mb-4 underline decoration-white md:no-underline">
+                    <li className="text-black font-semibold mb-2 md:mb-4 underline md:no-underline">
                         <Link to='/quien-soy' className="link-hover">
-                            Quién Soy
+                            ¿Quién soy?
                         </Link>
                     </li>
-                    <li className="text-white md:text-black font-semibold mb-4 underline decoration-white md:no-underline">
+                    <li className="text-black font-semibold mb-2 md:mb-4 underline md:no-underline">
                         <Link to='/conectemos' className="link-hover">
                             Contacto
                         </Link>
                     </li>
                 </ul>
-                <div className="flex flex-col gap-4 text-black">
+                <div className="flex flex-col gap-4 text-black mb-6 md:mb-0">
                     <h4 className="font-black text-lg">¿Tienes un proyecto en mente?</h4>
                     <p className="text-lg">Deja tu correo electrónico<br /> y te contactaré pronto</p>
                     <div class="relative h-11 w-full min-w-[200px]">
@@ -49,8 +49,8 @@ const Footer = () => {
                 <p>Copyright © 2024</p>
                 <p><FontAwesomeIcon icon={faGlobe} style={{ fontSize: 15 }} /> Quindío, Colombia</p>
                 <div className="flex gap-4 md:gap-8">
-                    <a className="link-hover no-underline hover:text-primary">Instagram</a>
-                    <a className="link-hover no-underline hover:text-primary">LinkedIn</a>
+                    <Link to={'https://www.instagram.com/incrustes/'} target="_blank" className="link-hover no-underline hover:text-primary">Instagram</Link>
+                    <Link to={'https://www.linkedin.com/in/andres-sanchez-ui/'} target="_blank" className="link-hover no-underline hover:text-primary">LinkedIn</Link>
                 </div>
             </div>
         </div>

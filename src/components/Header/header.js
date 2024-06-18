@@ -1,3 +1,4 @@
+import { useLocation } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -5,11 +6,21 @@ import { faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands
 import { Link } from 'react-router-dom';
 
 import NavbarButton from '../NavbarButton/navbarButton';
-const linkStyles = "text-white text-sm font-Josefin uppercase font-semibold tracking-widest link-hover"
+const linkStyles = "text-black text-4xl md:text-7xl font-Josefin uppercase font-semibold tracking-widest link-hover"
 
 const fotoNavbar = require('../../img/foto-navbar.jpg')
 
-const Header = () => {
+const Header = (props) => {
+    const { pathname } = useLocation();
+
+    let ruta = ""
+
+    if (pathname === "/trabajo/avianca" | pathname === "/trabajo/la-cima" | pathname === "/trabajo/davivienda" | pathname === "/trabajo/extras") {
+        ruta = pathname
+    } else {
+        ruta = ""
+    }
+
     const [showMenu, setShowMenu] = useState(false);
 
     const menuRef = useRef(null);
@@ -30,61 +41,64 @@ const Header = () => {
     }, []);
 
     return (
-        <div className='w-full h-auto absolute top-0 left-0 z-50'>
-            <nav className="container mx-auto py-3 flex justify-between gap-3 md:gap-0 items-center text-white px-2 md:px-5 2xl:px-0">
+        <div id='header' className='w-full h-screen md:h-auto absolute top-0 left-0 z-50'>
+            <nav className="container mx-auto py-3 flex justify-center md:justify-between gap-3 md:gap-0 items-center text-white px-2 md:px-5 2xl:px-0">
 
-                <div className='order-1 md:order-1 w-2/12 md:w-3/12 flex justify-center md:justify-start items-center' >
+                <div className={`${pathname === ruta ? 'hidden' : 'block'} order-1 md:order-1 w-2/12 md:w-3/12 flex justify-center md:justify-start items-center`}>
                     <Link to={'/'}>
-                        <img src={fotoNavbar} alt="foto del header" width={`50`} height={`50`} className='link-hover rounded-full rotate-0 hover:rotate-[360deg] transition-all duration-300' />
+                        <img src={fotoNavbar} alt="foto del header" width={`50`} height={`50`} className={`link-hover rounded-full rotate-0 hover:rotate-[360deg] transition-all duration-300`} />
                     </Link>
                 </div>
                 <div className='order-3 md:order-2 w-2/12 md:w-6/12 flex justify-center items-center' >
-                    <NavbarButton action={handleToggleMenu} showMenu={showMenu} />
+                    <NavbarButton action={handleToggleMenu} showMenu={showMenu} color={'white'} />
                     <div
                         ref={menuRef}
-                        className="fixed inset-y-0 left-0 box-border flex flex-col bg-neutral-900 w-[calc(100%-15px)] md:w-64 p-6 text-white z-[999] justify-between items-start"
+                        className="fixed inset-y-0 left-0 box-border flex flex-col bg-[#EBFF46] w-[calc(100%-15px)] md:w-full p-6 text-white z-[99999] justify-between items-end"
                     >
-                        <button
-                            className="text-white font-bold text-lg mb-4 absolute top-4 right-4 link-hover"
-                            onClick={handleToggleMenu}
-                        >
-                            &#10005;
-                        </button>
-                        <ul className="font-Josefine">
-                            <li className="mb-2">
+                        <NavbarButton action={handleToggleMenu} showMenu={showMenu} color={'black'} />
+                        <ul className="font-ClashDisplay absolute top-[30%] md:top-auto bottom-auto md:bottom-20 left-4 md:left-20">
+                            <li className="mb-2 translate-x-0 hover:translate-x-20 no-underline hover:underline transition-all duration-200 ease-in-out">
                                 <Link to="/" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onClick={handleToggleMenu}>
                                     Inicio
                                 </Link>
                             </li>
-                            <li className="mb-2">
+                            <li className="mb-2 translate-x-0 hover:translate-x-20 no-underline hover:underline transition-all duration-200 ease-in-out">
                                 <Link to="/trabajo" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onClick={handleToggleMenu} >
                                     Trabajo
                                 </Link>
                             </li>
-                            <li className="mb-2">
+                            <li className="mb-2 translate-x-0 hover:translate-x-20 no-underline hover:underline transition-all duration-200 ease-in-out">
                                 <Link to="/quien-soy" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onClick={handleToggleMenu} >
-                                    Quién Soy
+                                    ¿Quién soy?
                                 </Link>
                             </li>
-                            <li className="mb-2">
+                            <li className="mb-2 translate-x-0 hover:translate-x-20 no-underline hover:underline transition-all duration-200 ease-in-out">
                                 <Link to="/conectemos" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onClick={handleToggleMenu} >
                                     Conectemos
                                 </Link>
                             </li>
                         </ul>
-                        <div className='w-full flex flex-col gap-5'>
-                            <img src={fotoNavbar} alt="Foto del header" width={`100`} height={`100`} className='link-hover mx-auto rounded-full rotate-0 hover:rotate-[360deg] transition-all duration-300' />
+                        <div className='flex flex-col gap-5 block md:absolute bottom-20 right-20 place-self-center'>
+                            <img src={fotoNavbar} alt="Foto del header" width={`100`} height={`100`} className='link-hover rounded-full rotate-0 hover:rotate-[360deg] transition-all duration-300' />
                             <ul className='w-full flex justify-center items-center gap-3'>
-                                <li className='mx-2 hover:text-primary transition duration-500  link-hover'><FontAwesomeIcon icon={faFacebookF} style={{ fontSize: 15 }} /></li>
-                                <li className='mx-2 hover:text-primary transition duration-500  link-hover'><FontAwesomeIcon icon={faInstagram} style={{ fontSize: 15 }} /></li>
-                                <li className='mx-2 hover:text-primary transition duration-500  link-hover'><FontAwesomeIcon icon={faLinkedinIn} style={{ fontSize: 15 }} /></li>
+
+                                <li className='mx-2 text-black hover:text-white transition duration-500  link-hover'>
+                                    <Link to={'https://www.instagram.com/incrustes/'} target='_blank'>
+                                        <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 15 }} />
+                                    </Link>
+                                </li>
+                                <li className='mx-2 text-black hover:text-white transition duration-500  link-hover'>
+                                    <Link to={'https://www.linkedin.com/in/andres-sanchez-ui/'} target='_blank'>
+                                        <FontAwesomeIcon icon={faLinkedinIn} style={{ fontSize: 15 }} />
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
 
                     </div>
                 </div>
-                <div className='order-2 md:order-3 w-8/12 md:w-3/12 flex justify-center md:justify-end items-center' >
-                    <Link to="contact" spy={true} smooth={true} className="link-hover bg-slate-800 no-underline group relative shadow-xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
+                <div className={`${pathname === ruta ? 'hidden' : 'block'} order-2 md:order-3 w-8/12 md:w-3/12 flex justify-center md:justify-end items-center`}>
+                    <Link to="https://wa.link/k52s0r" target='_blank' spy={true} smooth={true} className={`link-hover bg-slate-800 no-underline group relative shadow-xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block`}>
                         <span className="absolute inset-0 overflow-hidden rounded-full">
                             <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                         </span>

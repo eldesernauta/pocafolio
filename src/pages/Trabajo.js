@@ -42,34 +42,42 @@ function Trabajo() {
                 </div>
                 <SpinBtn />
                 <div className="rounded-full w-[700px] h-[500px] bg-[#4A1A99] opacity-75 blur-3xl absolute -top-[250px] -right-[350px] z-0 scale-125"></div>
-                <div className="absolute bottom-0 bg-gradient-to-b from-transparent via-[#00000080] to-black w-full h-[500px] z-20"></div>
             </div>
             <section className="container mx-auto gap-0 md:gap-24 px-4 md:px-0 py-12 flex flex-col md:flex-row justify-center items-center overflow-hidden">
                 <div className="w-full md:w-3/6 flex justify-center items-center">
-                    <Card client={'La Cima Ecohotel'} imgSrc={trabajos1} href={"/trabajo/avianca"} />
+                    <Card
+                        client={'Avianca'}
+                        imgSrc={trabajos1}
+                        href={"/trabajo/avianca"}
+                        subtitle={'Aerovías del Continente Americano'} />
                 </div>
-                <div className="w-full md:w-3/6 mt-24">
-                    <Card client={'Avianca'} imgSrc={trabajos2} />
+                <div className="w-full md:w-3/6 mt-16 md:mt-48">
+                    <Card
+                        client={'La Cima Ecohotel'}
+                        imgSrc={trabajos2}
+                        href={"/trabajo/la-cima"}
+                        subtitle={'Glamping en Buenavista, Quindío'} />
                 </div>
             </section>
-            <section className="container mx-auto gap-0 md:gap-24 px-4 md:px-0 py-12 flex flex-col md:flex-row-reverse justify-center items-center overflow-hidden">
+            <section className="container mx-auto gap-0 md:gap-24 px-4 md:px-0 pb-12 flex flex-col md:flex-row justify-center items-center overflow-hidden">
                 <div className="w-full md:w-3/6 flex justify-center items-center">
-                    <Card client={'Avianca'} imgSrc={trabajos1} />
+                    <Card
+                        client={'Davivienda'}
+                        imgSrc={trabajos1}
+                        href={"/trabajo/davivienda"}
+                        subtitle={'Entidad Bancaria'} />
                 </div>
-                <div className="w-full md:w-3/6 mt-24">
-                    <Card client={'La Cima Ecohotel'} imgSrc={trabajos2} />
-                </div>
-            </section>
-            <section className="container mx-auto gap-0 md:gap-24 px-4 md:px-0 py-12 flex flex-col md:flex-row justify-center items-center overflow-hidden">
-                <div className="w-full md:w-3/6 flex justify-center items-center">
-                    <Card client={'La Cima Ecohotel'} imgSrc={trabajos1} />
-                </div>
-                <div className="w-full md:w-3/6 mt-24">
-                    <Card client={'Avianca'} imgSrc={trabajos2} />
+                <div className="w-full md:w-3/6 mt-16 md:mt-48">
+                    <Card
+                        client={'Extras'}
+                        imgSrc={trabajos2}
+                        href={"/trabajo/extras"}
+                        subtitle={'Más colaboraciones'}
+                    />
                 </div>
             </section>
             <section className="w-full flex justify-center items-center  mt-24">
-                <a href="#_" className="link-hover w-[300px] mx-auto relative inline-flex items-center justify-start py-3 pl-4 border-2 border-primary hover:border-black pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded-full  hover:pl-10 hover:pr-6 bg-black group ">
+                <Link to="/conectemos" className="link-hover w-[300px] mx-auto relative inline-flex items-center justify-start py-3 pl-4 border-2 border-primary hover:border-black pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded-full  hover:pl-10 hover:pr-6 bg-black group ">
                     <span className="absolute -bottom-2 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-primary group-hover:h-full group-hover:bottom-0"></span>
                     <span className="absolute right-0 p-2 duration-200 ease-out group-hover:translate-x-12 -translate-x-2 rounded-full border-2 border-primary">
                         <svg className="w-5 h-5 text-primary " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -78,7 +86,7 @@ function Trabajo() {
                         <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </span>
                     <span className="relative w-full text-center transition-colors duration-200 ease-in-out group-hover:text-black">Conectemos y creemos</span>
-                </a>
+                </Link>
             </section>
             <section className="bg-black mb-24 w-full h-[50vh] flex flex-col items-center justify-start relative">
                 <Colabs />
@@ -89,7 +97,7 @@ function Trabajo() {
 
 export default Trabajo;
 
-const Card = ({ client, imgSrc, href }) => {
+const Card = ({ client, imgSrc, href, subtitle }) => {
     return (
         <div className="w-full flex justify-center items-center">
             <div className="flex flex-col w-full items-center justify-start rounded-xl mx-auto overflow-hidden">
@@ -104,7 +112,7 @@ const Card = ({ client, imgSrc, href }) => {
                     <div className='w-full flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center mt-8'>
                         <div className='w-full md:w-8/12 flex flex-col justify-center items-start gap-2'>
                             <h2 className='text-white text-4xl font-bold'>{client}</h2>
-                            <p className='text-white'>Aerovías del Continente Americano</p>
+                            <p className='text-white'>{subtitle}</p>
 
                         </div>
                         <div className='w-full md:w-4/12 flex flex-col items-end'>

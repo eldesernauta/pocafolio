@@ -43,7 +43,7 @@ const ClientesMobile = () => {
                             <div className='w-full flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center mt-8'>
                                 <div className='w-6/6 md:w-5/12 flex flex-col justify-center items-start gap-2'>
                                     <h2 className='text-white text-4xl font-bold'> La Cima Ecohotel </h2>
-                                    <p className='text-white'>Aerovías del Continente Americano</p>
+                                    <p className='text-white'>Glamping en Buenavista, Quindío</p>
                                     <Link to={'#'} className='link-hover btn mt-4 rounded-full border border-1 border-primary text-primary px-12 py-2 hover:bg-primary hover:text-black transition-colors duration-100 ease-in-out'>Ver más</Link>
                                 </div>
                             </div>
@@ -64,8 +64,8 @@ const ClientesMobile = () => {
                             </div>
                             <div className='w-full flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center mt-8'>
                                 <div className='w-6/6 md:w-5/12 flex flex-col justify-center items-start gap-2'>
-                                    <h2 className='text-white text-4xl font-bold'> tustrabajos.co </h2>
-                                    <p className='text-white'>Aerovías del Continente Americano</p>
+                                    <h2 className='text-white text-4xl font-bold'> Davivienda </h2>
+                                    <p className='text-white'>Entidad Bancaria</p>
                                     <Link to={'#'} className='link-hover btn mt-4 rounded-full border border-1 border-primary text-primary px-12 py-2 hover:bg-primary hover:text-black transition-colors duration-100 ease-in-out'>Ver más</Link>
                                 </div>
                             </div>

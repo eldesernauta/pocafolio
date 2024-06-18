@@ -1,20 +1,22 @@
 import StickyBox from "react-sticky-box";
 import Cards from "../components/Cards/cards";
 import Productos from "../components/Productos/productos";
+import BackBtn from "../components/BackBtn/backBtn"
 
 const mockup = require("../img/la-cima-hero.png")
-const LaCima = require("../img/la-cima.png")
+const LaCimaImg = require("../img/la-cima.png")
 
-const Avianca = () => {
+const LaCima = () => {
     return (
         <>
+            <BackBtn />
             <section className="h-screen w-full bg-gradient-to-r from-[#DFBA59] to-[#BC9B44] py-[100px] overflow-hidden">
                 <div className="container mx-auto h-full px-4 md:px-0 flex flex-col md:flex-row justify-center items-stretch">
                     <div className="w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center md:justify-between items-center md:items-start">
-                        <img src={LaCima} alt="la cima hero" className="brightness-150" />
+                        <img src={LaCimaImg} alt="la cima hero" className="brightness-150" />
                         <div className="flex flex-col text-center md:text-left mt-4 md:mt-0">
                             <h4 className="text-white ml-0 md:ml-16">Colaboración</h4>
-                            <h1 className="text-7xl md:text-9xl text-white font-semibold">La Cima</h1>
+                            <h1 className="text-7xl md:text-9xl text-white font-semibold font-ClashDisplay">La Cima</h1>
                         </div>
                     </div>
                     <div className="relative w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center items-center">
@@ -121,4 +123,4 @@ const Avianca = () => {
     );
 }
 
-export default Avianca;
+export default LaCima;

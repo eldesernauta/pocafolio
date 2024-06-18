@@ -16,7 +16,7 @@ function Home() {
                 <Herramientas />
             </section>
 
-            <section className="pt-0 pb-24">
+            <section className="pt-0 pb-24 px-4 md:px-0">
                 <Cards layout='home' />
             </section>
 

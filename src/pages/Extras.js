@@ -1,27 +1,25 @@
 import StickyBox from "react-sticky-box";
 import Cards from "../components/Cards/cards";
 import Productos from "../components/Productos/productos";
-import BackBtn from "../components/BackBtn/backBtn";
+import BackBtn from "../components/BackBtn/backBtn"
 
-const mockup = require("../img/avianca-hero.png")
-const avianca = require("../img/avianca.png")
+const mockup = require("../img/extras-hero.png")
 
-const Avianca = () => {
+const Davivienda = () => {
     return (
         <>
             <BackBtn />
-            <section className="h-screen w-full bg-gradient-to-r from-[#EA0024] to-[#C0006C] py-[100px]">
+            <section className="h-screen w-full bg-gradient-to-r from-[#9900FF] to-[#8401DC] py-[100px] overflow-hidden">
+                <img src={mockup} alt="avianca hero" className="object-fill absolute bottom-0 right-0" />
                 <div className="container mx-auto h-full px-4 md:px-0 flex flex-col md:flex-row justify-center items-stretch">
-                    <div className="w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center md:justify-between items-center md:items-start">
-                        <img src={avianca} alt="avianca hero" className="brightness-150" />
+                    <div className="w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center md:justify-end items-center md:items-start">
                         <div className="flex flex-col text-center md:text-left mt-4 md:mt-0">
-                            <h4 className="text-white ml-0 md:ml-16">Colaboración</h4>
-                            <h1 className="text-7xl md:text-9xl text-white font-semibold font-ClashDisplay">Avianca</h1>
+                            <h4 className="text-white ml-0 md:ml-16">Colaboraciones</h4>
+                            <h1 className="text-7xl md:text-9xl text-white font-ClashDisplay font-semibold">Extras</h1>
                         </div>
                     </div>
                     <div className="relative w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center items-center">
-                        <img src={mockup} alt="avianca hero" className="" />
-                        <h6 className="text-white absolute bottom-0 right-0">2024</h6>
+
                     </div>
                 </div>
             </section>
@@ -123,4 +121,4 @@ const Avianca = () => {
     );
 }
 
-export default Avianca;
+export default Davivienda;

@@ -17,7 +17,7 @@ const HorizontalScroll = () => {
         gsap.set(massiveImage, {
             backgroundColor: 'transparent', // Example background color
             height: 'auto',
-            width: '300vw',
+            width: '200vw',
         });
 
         gsap.to(massiveImage, {
@@ -46,16 +46,29 @@ const HorizontalScroll = () => {
 
     return (
         <div>
-            <div className="massiveImage flex justify-start items-start gap-8 px-2 md:px-0 pt-16 md:pt-32  pb-8">
+            <div className="massiveImage flex justify-start items-start gap-8 px-2 md:px-0 pt-16 md:pt-32  pb-32">
                 <div className='static md:absolute -top-16 left-0 flex md:block flex-col justify-center items-center'>
                     <h4 className="text-lg text-primary font-bold text-center md:text-left translate-x-0 md:translate-x-24"> Todas mis </h4>
                     <h2 className="text-5xl md:text-9xl font-ClashDisplay font-medium text-white">Creaciones</h2>
                 </div>
-                <HorizontalCard client={'Avianca'} imgSrc={clientes1} href={'/trabajo/avianca'} />
-                <HorizontalCard client={'Bancolombia'} imgSrc={clientes2} />
-                <HorizontalCard client={'Avianca'} imgSrc={clientes3} />
-                <HorizontalCard client={'Bancolombia'} imgSrc={clientes2} />
-                <HorizontalCard client={'Bancolombia'} imgSrc={clientes1} />
+                <HorizontalCard
+                    client={'Avianca'}
+                    imgSrc={clientes1}
+                    href={'/trabajo/avianca'}
+                    subtitle={'Aerovías del Continente Americano'}
+                />
+                <HorizontalCard
+                    client={'La Cima Ecohotel'}
+                    imgSrc={clientes2}
+                    href={'/trabajo/la-cima'}
+                    subtitle={'Glamping en Buenavista, Quindío'}
+                />
+                <HorizontalCard
+                    client={'Davivienda'}
+                    imgSrc={clientes3}
+                    href={'/trabajo/davivienda'}
+                    subtitle={'Entidad Bancaria'}
+                />
             </div>
 
         </div>
@@ -65,7 +78,7 @@ const HorizontalScroll = () => {
 export default HorizontalScroll;
 
 
-const HorizontalCard = ({ client, imgSrc, href }) => {
+const HorizontalCard = ({ client, imgSrc, href, subtitle }) => {
     return (
         <div className="w-[100vw] md:w-[55vw] h-auto px-0 hidden md:block">
             <div className="flex flex-col w-full items-center justify-start rounded-xl mx-auto overflow-hidden">
@@ -78,10 +91,10 @@ const HorizontalCard = ({ client, imgSrc, href }) => {
                         />
                     </div>
                     <div className='w-full flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center mt-8'>
-                        <div className='w-6/6 md:w-5/12 flex flex-col justify-center items-start gap-2'>
+                        <div className='w-6/6 md:w-5/12 flex flex-col justify-center items-start gap-1'>
                             <h2 className='text-white text-4xl font-bold'>{client}</h2>
-                            <p className='text-white'>Aerovías del Continente Americano</p>
-                            <Link to={href} className='link-hover btn rounded-full border border-1 border-primary text-primary px-12 py-2 hover:bg-primary hover:text-black transition-colors duration-100 ease-in-out'>Ver más</Link>
+                            <p className='text-white'>{subtitle}</p>
+                            <Link to={href} className='link-hover btn mt-2 rounded-full border border-1 border-primary text-primary px-12 py-2 hover:bg-primary hover:text-black transition-colors duration-100 ease-in-out'>Ver más</Link>
                         </div>
                         <div className='w-full md:w-7/12 flex flex-col'>
                             <p className='text-white text-sm'>

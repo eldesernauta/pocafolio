@@ -1,4 +1,5 @@
 import { TextGenerateEffect } from "../ui/text-generate-effect";
+import { Link } from "react-router-dom";
 
 const skills1 = require("../../img/skills1.png")
 const skills2 = require("../../img/skills2.png")
@@ -67,8 +68,8 @@ const Skills = () => {
                             del cliente de manera flexible.</p>
                     </div>
                 </div>
-                <TextGenerateEffect words={paragraph2} className="scale-100 md:scale-75 text-center mt-12 mb-12 md:mt-4" />
-                <a href="#_" className="link-hover w-[300px] mx-auto relative inline-flex items-center justify-start py-3 pl-4 border-2 border-primary hover:border-black pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded-full  hover:pl-10 hover:pr-6 bg-black group ">
+                <TextGenerateEffect words={paragraph2} paragraph2="" align="center" className="scale-100 md:scale-75 text-center mt-12 mb-12 md:mt-4" />
+                <Link to="/quien-soy" className="link-hover w-[300px] mx-auto relative inline-flex items-center justify-start py-3 pl-4 border-2 border-primary hover:border-black pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded-full  hover:pl-10 hover:pr-6 bg-black group ">
                     <span className="absolute -bottom-2 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-primary group-hover:h-full group-hover:bottom-0"></span>
                     <span className="absolute right-0 p-2 duration-200 ease-out group-hover:translate-x-12 -translate-x-2 rounded-full border-2 border-primary">
                         <svg className="w-5 h-5 text-primary " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -77,7 +78,7 @@ const Skills = () => {
                         <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </span>
                     <span className="relative w-full text-center transition-colors duration-200 ease-in-out group-hover:text-black">Revisar hoja de vida</span>
-                </a>
+                </Link>
             </div>
         </div>
     );
