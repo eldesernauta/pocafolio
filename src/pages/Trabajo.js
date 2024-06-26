@@ -5,8 +5,10 @@ import Colabs from "../components/Colabs/colabs";
 import SpinBtn from "../components/SpinBtn/spinBtn";
 
 const separator = require("../img/separator.png")
-const trabajos1 = require('../img/trabajos-1.png')
-const trabajos2 = require('../img/trabajos-2.png')
+const trabajos1 = require('../img/trabajo_card_avianca.png')
+const trabajos2 = require('../img/trabajo_card_lacima.png')
+const trabajos3 = require('../img/trabajo_card_mastercard.png')
+const trabajos4 = require('../img/trabajo_card_extras.png')
 
 function Trabajo() {
     return (
@@ -62,15 +64,15 @@ function Trabajo() {
             <section className="container mx-auto gap-0 md:gap-24 px-4 md:px-0 pb-12 flex flex-col md:flex-row justify-center items-center overflow-hidden">
                 <div className="w-full md:w-3/6 flex justify-center items-center">
                     <Card
-                        client={'Davivienda'}
-                        imgSrc={trabajos1}
-                        href={"/trabajo/davivienda"}
+                        client={'Mastercard'}
+                        imgSrc={trabajos3}
+                        href={"/trabajo/mastercard"}
                         subtitle={'Entidad Bancaria'} />
                 </div>
                 <div className="w-full md:w-3/6 mt-16 md:mt-48">
                     <Card
                         client={'Extras'}
-                        imgSrc={trabajos2}
+                        imgSrc={trabajos4}
                         href={"/trabajo/extras"}
                         subtitle={'Más colaboraciones'}
                     />

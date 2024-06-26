@@ -12,7 +12,8 @@ module.exports = {
       },
       colors: {
         primary: '#BDFA00',
-        titles: '#E6FFB1'
+        titles: '#E6FFB1',
+        purple: '#9900ff'
       },
       animation: {
         'spin-slow': 'spin 15s linear reverse infinite',

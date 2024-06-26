@@ -121,6 +121,42 @@ h4::selection {
     background-repeat: no-repeat;
 }
 
+#avianca {
+    background-image: url(./img/creaciones_1_static.png);
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
+}
+
+#avianca:hover {
+    background-image: url(./img/creaciones_1.gif);
+}
+
+#la-cima {
+    background-image: url(./img/creaciones_1_static.png);
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
+}
+
+#la-cima:hover {
+    background-image: url(./img/creaciones_2.gif);
+}
+
+#davivienda {
+    background-image: url(./img/creaciones_1_static.png);
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
+}
+
+#davivienda:hover {
+    background-image: url(./img/creaciones_1.gif);
+}
+
 @tailwind utilities;
 
 .massiveImage {
@@ -243,6 +279,6 @@ h4::selection {
         background: #c0a0b9;
     }
 
-    
+
 
 }

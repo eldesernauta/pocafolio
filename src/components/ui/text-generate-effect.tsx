@@ -12,11 +12,13 @@ export const TextGenerateEffect = ({
   paragraph2,
   className,
   align,
+  textColor = "white",
 }: {
   words: string;
   paragraph2: string;
   className?: string;
   align?: string;
+  textColor?: "black" | "white";
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -52,7 +54,9 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className="dark:text-white text-black opacity-0"
+              className={`opacity-0 ${
+                textColor === "black" ? "text-black" : "text-white"
+              }`}
             >
               {word}{" "}
             </motion.span>
@@ -64,7 +68,9 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={p + idx}
-              className="dark:text-white text-black opacity-0"
+              className={`opacity-0 ${
+                textColor === "black" ? "text-black" : "text-white"
+              }`}
             >
               {p}{" "}
             </motion.span>
@@ -81,9 +87,9 @@ export const TextGenerateEffect = ({
         ref={containerRef}
       >
         <div
-          className={`${
-            align === "center" ? "text-center" : "text-left"
-          } dark:text-white text-black font-medium text-2xl md:text-3xl leading-snug tracking-wide`}
+          className={`${align === "center" ? "text-center" : "text-left"} ${
+            textColor === "black" ? "text-black" : "text-white"
+          } font-medium text-2xl md:text-3xl leading-snug tracking-wide`}
         >
           {renderWords()}
         </div>

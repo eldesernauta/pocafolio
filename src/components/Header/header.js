@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
 
 import NavbarButton from '../NavbarButton/navbarButton';
@@ -15,7 +15,7 @@ const Header = (props) => {
 
     let ruta = ""
 
-    if (pathname === "/trabajo/avianca" | pathname === "/trabajo/la-cima" | pathname === "/trabajo/davivienda" | pathname === "/trabajo/extras") {
+    if (pathname === "/trabajo/avianca" | pathname === "/trabajo/la-cima" | pathname === "/trabajo/mastercard" | pathname === "/trabajo/extras") {
         ruta = pathname
     } else {
         ruta = ""
@@ -41,8 +41,8 @@ const Header = (props) => {
     }, []);
 
     return (
-        <div id='header' className='w-full h-screen md:h-auto absolute top-0 left-0 z-50'>
-            <nav className="container mx-auto py-3 flex justify-center md:justify-between gap-3 md:gap-0 items-center text-white px-2 md:px-5 2xl:px-0">
+        <div id='header' className='w-full h-screen md:h-auto absolute top-0 left-0 z-[9999]'>
+            <nav className={`container mx-auto py-3 flex justify-center ${pathname === "/trabajo/avianca" | pathname === "/trabajo/la-cima" | pathname === "/trabajo/mastercard" | pathname === "/trabajo/extras" ? 'md:justify-center' : 'md:justify-between'} gap-3 md:gap-0 items-center text-white px-2 md:px-5 2xl:px-0`}>
 
                 <div className={`${pathname === ruta ? 'hidden' : 'block'} order-1 md:order-1 w-2/12 md:w-3/12 flex justify-center md:justify-start items-center`}>
                     <Link to={'/'}>
@@ -53,7 +53,7 @@ const Header = (props) => {
                     <NavbarButton action={handleToggleMenu} showMenu={showMenu} color={'white'} />
                     <div
                         ref={menuRef}
-                        className="fixed inset-y-0 left-0 box-border flex flex-col bg-[#EBFF46] w-[calc(100%-15px)] md:w-full p-6 text-white z-[99999] justify-between items-end"
+                        className="fixed inset-y-0 left-0 box-border flex flex-col bg-[#EBFF46] w-[calc(100vw-15px)] md:w-full h-screen p-6 text-white z-[99999] justify-between items-end"
                     >
                         <NavbarButton action={handleToggleMenu} showMenu={showMenu} color={'black'} />
                         <ul className="font-ClashDisplay absolute top-[30%] md:top-auto bottom-auto md:bottom-20 left-4 md:left-20">

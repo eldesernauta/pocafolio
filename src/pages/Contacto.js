@@ -75,8 +75,8 @@ function Contacto() {
                                         />
                                         <div
                                             className={`cursor-pointer bg-transparent inline-block border border-solid rounded-full text-center w-60 py-4 px-0 md:px-4 leading-24 ${selected === label
-                                                ? 'border-[#9900ff] bg-[#9900ff] text-white border-1 shadow-inner'
-                                                : 'border-primary border-1 text-primary'
+                                                ? 'border-purple bg-purple text-white border-1 shadow-inner'
+                                                : 'border-primary border-1 text-primary hover:border-purple hover:text-purple'
                                                 }`}
                                         >
                                             {label}
@@ -104,7 +104,7 @@ function Contacto() {
 
                         <button
                             type="submit"
-                            className="bg-primary place-self-center md:place-self-end font-ClashDisplay hover:bg-[#9900ff] hover:text-white hover:scale-110 transition-all duration-100 text-black w-full md:w-96 py-4 rounded-full z-10"
+                            className="bg-primary place-self-center md:place-self-end font-ClashDisplay hover:bg-purple hover:text-white hover:scale-110 transition-all duration-100 text-black w-full md:w-96 py-4 rounded-full z-10"
                         >
                             Enviar mensaje a incrustes
                         </button>

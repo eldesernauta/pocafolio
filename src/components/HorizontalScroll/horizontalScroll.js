@@ -3,9 +3,9 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
 
-const clientes1 = require('../../img/creaciones_1.gif')
+const clientes1 = require('../../img/creaciones_1_static.png')
 const clientes2 = require('../../img/creaciones_2.gif')
-const clientes3 = require('../../img/goo-clientes-3.png')
+const clientes3 = require('../../img/goo-clientes-2.png')
 
 const HorizontalScroll = () => {
 
@@ -56,18 +56,21 @@ const HorizontalScroll = () => {
                     imgSrc={clientes1}
                     href={'/trabajo/avianca'}
                     subtitle={'Aerovías del Continente Americano'}
+                    id={'avianca'}
                 />
                 <HorizontalCard
                     client={'La Cima Ecohotel'}
                     imgSrc={clientes2}
                     href={'/trabajo/la-cima'}
                     subtitle={'Glamping en Buenavista, Quindío'}
+                    id={'la-cima'}
                 />
                 <HorizontalCard
-                    client={'Davivienda'}
+                    client={'Mastercard'}
                     imgSrc={clientes3}
-                    href={'/trabajo/davivienda'}
+                    href={'/trabajo/mastercard'}
                     subtitle={'Entidad Bancaria'}
+                    id={'mastercard'}
                 />
             </div>
 
@@ -78,17 +81,13 @@ const HorizontalScroll = () => {
 export default HorizontalScroll;
 
 
-const HorizontalCard = ({ client, imgSrc, href, subtitle }) => {
+const HorizontalCard = ({ client, id, href, subtitle }) => {
     return (
-        <div className="w-[100vw] md:w-[55vw] h-auto px-0 hidden md:block">
+        <div className="w-[100vw] md:w-[60vw] h-auto px-0 hidden md:block">
             <div className="flex flex-col w-full items-center justify-start rounded-xl mx-auto overflow-hidden">
                 <div className='flex flex-col justify-start items-start'>
-                    <div className='w-[100vw] md:w-auto h-[50vh] md:h-96 overflow-hidden'>
-                        <img
-                            src={imgSrc}
-                            className='object-cover md:object-contain h-full md:h-auto rounded-xl w-full'
-                            alt='imagen avianca'
-                        />
+                    <div id={id} className='w-[100vw] md:w-full h-[50vh] md:h-[500px] overflow-hidden bg-primary'>
+
                     </div>
                     <div className='w-full flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center mt-8'>
                         <div className='w-6/6 md:w-5/12 flex flex-col justify-center items-start gap-1'>

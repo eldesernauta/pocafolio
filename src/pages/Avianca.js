@@ -1,10 +1,22 @@
+import { Link } from "react-router-dom";
+
 import StickyBox from "react-sticky-box";
-import Cards from "../components/Cards/cards";
-import Productos from "../components/Productos/productos";
 import BackBtn from "../components/BackBtn/backBtn";
+import SpinBtn from "../components/SpinBtn/spinBtn";
+
+import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 const mockup = require("../img/avianca-hero.png")
 const avianca = require("../img/avianca.png")
+const nextCaseImg = require("../img/la-cima-hero.png")
+
+const text = require('../img/circle-text.png')
+const separator = require('../img/separator.png')
+
+const words = `Este proyecto me permitió aplicar mis habilidades en diseño UX/UI
+para un público específico y exigente. El trabajo colaborativo
+y la atención al detalle en la estética visual fueron clave para el éxito del proyecto. Aprendí la importancia de la investigación de usuarios y las pruebas de usabilidad para asegurar que el diseño cumpliera con las expectativas del cliente y los usuarios finales.`;
+
 
 const Avianca = () => {
     return (
@@ -110,15 +122,34 @@ const Avianca = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-black w-full">
-                <div className="-translate-y-32">
-                    <Cards layout='no-home' />
+            <section className="bg-white pb-24">
+                <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
+            </section>
+            <section className="bg-[#1E1E1E] w-full py-12 md:py-24 px-4 md:px-0">
+                <div className="container mx-auto flex flex-col justify-start items-start">
+                    <div className="flex flex-col text-center md:text-left mt-4 md:mt-0">
+                        <h4 className="text-primary font-semibold ml-0 md:ml-24">Próximo</h4>
+                        <h1 className="text-7xl md:text-9xl text-white font-medium font-ClashDisplay">Caso</h1>
+                    </div>
+                    <Link to={'/trabajo/la-cima'} className="mx-auto">
+                        <img src={nextCaseImg} alt="avianca hero" />
+                    </Link>
+                    <div className="w-full flex justify-center relative mb-12">
+                        <Link to={'/conectemos'} className="link-hover scale-75 ">
+                            <img src={text} alt="ejecutemos una gran idea" className='w-[200px] animate-spin-slow' />
+                            <img src={separator} alt="icono" className='z-[99] absolute top-[38%] left-[42%]' />
+                        </Link>
+                    </div>
+                    <div className="w-full flex justify-center">
+                        <h4 className="text-white font-semibold text-3xl">Mira la siguiente experiencia con&nbsp;
+                            <Link to={'/trabajo/la-cima'}>
+                                <span className="hover:link-hover text-primary no-underline hover:underline">La Cima Ecohotel</span>
+                            </Link>
+                        </h4>
+                    </div>
                 </div>
             </section>
 
-            <section id="world" className="bg-black px-4 md:px-0 py-24 mt-12 mb-48 w-full flex flex-col items-center justify-start relative">
-                <Productos />
-            </section>
         </>
     );
 }

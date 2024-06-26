@@ -59,9 +59,9 @@ function QuienSoy() {
                 </div>
             </section>
 
-            <sectin className="container mx-auto flex flex-col gap-8 justify-center items-center text-center pt-12 md:pt-32 pb-12 px-4 md:px-0">
+            <section className="container mx-auto flex flex-col gap-8 justify-center items-center text-center pt-12 md:pt-32 pb-12 px-4 md:px-0">
                 <TextGenerateEffect words={words} paragraph2={words2} align="left" />
-            </sectin>
+            </section>
 
             <section className="flex flex-col gap-16 md:gap-32 mt-24 relative px-4 md:px-0">
                 <div className="container mx-auto flex gap-2 md:gap-0 justify-between items-start z-10">
