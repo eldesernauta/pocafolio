@@ -6,7 +6,7 @@ import BackBtn from "../components/BackBtn/backBtn"
 
 const mockup = require("../img/la-cima-hero.png")
 const LaCimaImg = require("../img/la-cima.png")
-const nextCaseImg = require("../img/mastercard-hero.png")
+const nextCaseImg = require("../img/extras-hero.png")
 
 const text = require('../img/circle-text.png')
 const separator = require('../img/separator.png')
@@ -14,6 +14,9 @@ const separator = require('../img/separator.png')
 const words = `Este proyecto me permitió aplicar mis habilidades en diseño UX/UI
 para un público específico y exigente. El trabajo colaborativo
 y la atención al detalle en la estética visual fueron clave para el éxito del proyecto. Aprendí la importancia de la investigación de usuarios y las pruebas de usabilidad para asegurar que el diseño cumpliera con las expectativas del cliente y los usuarios finales.`;
+
+const LaCima1 = require("../img/la-cima-1.png")
+const LaCima2 = require("../img/la-cima-2.png")
 
 const LaCima = () => {
     return (
@@ -40,12 +43,7 @@ const LaCima = () => {
                         <p className="text-sm mb-4">
                             En este proyecto, colaboré con un exclusivo Ecohotel llamado <strong>La Cima</strong>, ubicado en el <strong>corazón del Quindío</strong>, una región conocida por sus paisajes exuberantes y su rica biodiversidad. El ecohotel cuenta con cinco habitaciones, cada una diseñada para ofrecer una <strong>experiencia única</strong>
                             y personalizada a los huéspedes. Cada habitación refleja un tema diferente, desde la naturaleza vibrante del Quindío hasta la sofisticación
-                            y el <strong>lujo contemporáneo</strong>.
-                        </p>
-                        <p className="text-sm">
-                            Mi rol en este proyecto fue liderar el <strong>rediseño de la interfaz y la experiencia del usuario</strong> (UX/UI), asegurando que la nueva página web
-                            no solo fuese atractiva y funcional, sino que también <strong>capturase la esencia del ecohotel y sus ofertas únicas</strong>. Para lograr esto, se necesitó
-                            una combinación de técnicas investigación de usuarios, <strong>diseño centrado</strong> en el usuario y pruebas de usabilidad, con el fin de crear
+                            y el <strong>lujo contemporáneo</strong>. Mi rol en este proyecto fue liderar el <strong>rediseño de la interfaz y la experiencia del usuario</strong> (UX/UI), asegurando que la nueva página web no solo fuese atractiva y funcional, sino que también <strong>capturase la esencia del ecohotel y sus ofertas únicas</strong>. Para lograr esto, se necesitó una combinación de técnicas investigación de usuarios, <strong>diseño centrado</strong> en el usuario y pruebas de usabilidad, con el fin de crear
                             una experiencia en línea que alineara con las expectativas y deseos del público objetivo.
                         </p>
                     </div>
@@ -56,21 +54,18 @@ const LaCima = () => {
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Desafío del proyecto</h2>
                         <p className="text-sm my-4">
-                            El proyecto presentó múltiples desafíos, incluyendo la necesidad de captar la atención de un público de estrato socioeconómico alto con <strong>expectativas elevadas</strong> y poco tiempo para decidir. La página web existente <strong>no reflejaba</strong> adecuadamente <strong>el lujo</strong> y la <strong>exclusividad</strong> del ecohotel, con cinco habitaciones únicas y un <strong>restaurante</strong> de alta cocina con las vistas más impresionantes del Quindío.
-                        </p>
-                        <p className="text-sm mb-4">
-                            Además, nos enfrentábamos a <strong>reseñas negativas</strong> que habían sido descuidadas, afectando la confianza y credibilidad entre los usuarios potenciales, quienes valoran altamente las experiencias compartidas por otros. La navegación del sitio era confusa y poco intuitiva, dificultando la búsqueda de información y el proceso de reserva. Por último, la falta de una versión móvil optimizada resultaba en <strong>altos índices de rebote</strong> y bajas conversiones desde dispositivos móviles.
-                        </p>
-                        <p className="text-sm">
-                            Abordamos estos desafíos con una <strong>investigación exhaustiva</strong> de usuarios, un rediseño visual completo y mejoras técnicas para crear una página <strong>web estéticamente agradable</strong>, funcional y capaz de inspirar confianza, destacando las <strong>experiencias únicas</strong> del ecohotel.
+                            El proyecto presentó múltiples desafíos, incluyendo la necesidad
+                            de captar la atención de un público de estrato socioeconómico alto con expectativas elevadas y poco tiempo para decidir. La página web existente no reflejaba adecuadamente el lujo y la exclusividad del ecohotel, con cinco habitaciones únicas y un restaurante de alta cocina con las vistas más impresionantes del Quindío.
+                            Además, nos enfrentábamos a reseñas negativas que habían sido descuidadas, afectando la confianza y credibilidad entre los usuarios potenciales, quienes valoran altamente las experiencias compartidas por otros. La navegación del sitio era confusa y poco intuitiva, dificultando la búsqueda de información y el proceso de reserva.
+                            Abordamos estos desafíos con una investigación exhaustiva de usuarios, un rediseño visual completo y mejoras técnicas para crear una página web estéticamente agradable, funcional y capaz de inspirar confianza, destacando las experiencias únicas del ecohotel.
                         </p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={LaCima1} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={LaCima2} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -78,19 +73,13 @@ const LaCima = () => {
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Proceso de diseño</h2>
                         <p className="text-sm my-4">
-                            El proceso de diseño comenzó con una <strong>investigación centrada en los usuarios</strong> para entender profundamente las expectativas y necesidades del público objetivo. Realizamos entrevistas en profundidad y encuestas a clientes actuales y potenciales, complementadas con <strong>análisis de comportamiento</strong> usando herramientas como Google Analytics y Hotjar. Con estos datos, creamos personas detalladas y mapas de recorrido del usuario para visualizar sus interacciones ideales con la página web.
+                            El proyecto presentó múltiples desafíos, incluyendo la necesidad de captar la atención de un público de estrato socioeconómico alto con expectativas elevadas y poco tiempo para decidir. La página web existente no reflejaba adecuadamente el lujo y la exclusividad del ecohotel, con cinco habitaciones únicas y un restaurante de alta cocina con las vistas más impresionantes del Quindío.
                         </p>
                         <p className="text-sm mb-4">
-                            Con esta información, <strong>desarrollamos wireframes</strong> iniciales para definir la estructura básica del sitio. Utilizamos herramientas como PSD y Figma para crear <strong>prototipos interactivos</strong>, que fueron iterados y refinados a través de pruebas de usabilidad con usuarios representativos del perfil socioeconómico objetivo.
+                            Además, nos enfrentábamos a reseñas negativas que habían sido descuidadas, afectando la confianza y credibilidad entre los usuarios potenciales. La navegación del sitio era confusa y poco intuitiva, dificultando la búsqueda de información y el proceso de reserva.
                         </p>
                         <p className="text-sm mb-4">
-                            Estos prototipos nos permitieron identificar y solucionar
-                            problemas de usabilidad antes del desarrollo final.
-                            El diseño visual se enfocó en <strong>capturar el lujo y la exclusividad</strong> de
-                            La Cima. Utilizamos imágenes de alta calidad, una paleta de colores elegante y una tipografía sofisticada para reflejar el estilo del lugar.
-                        </p>
-                        <p className="text-sm">
-                            Finalmente, <strong>optimizamos</strong> la página para <strong>dispositivos móviles</strong>, asegurando que la experiencia fuera igualmente fluida y atractiva en todos los dispositivos. Este enfoque integral nos permitió crear una página web que no solo es estéticamente agradable, sino también <strong>funcional</strong> y capaz de <strong>inspirar confianza</strong>, destacando las <strong>experiencias únicas</strong> que ofrece el ecohotel.
+                            Abordamos estos desafíos con una investigación exhaustiva de usuarios, un rediseño visual completo y mejoras técnicas para crear una página web estéticamente agradable, funcional y capaz de inspirar confianza, destacando las experiencias únicas del ecohotel.
                         </p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
@@ -104,7 +93,7 @@ const LaCima = () => {
                 </div >
                 <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[360vh] left-0 right-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
-                        <h2 className="text-4xl font-bold">Resultados</h2>
+                        <h2 className="text-4xl font-bold">Solución</h2>
                         <p className="text-sm my-4">
                             Para abordar los <strong>desafíos planteados</strong>, implementamos un rediseño exhaustivo de la página web de La Cima Ecohotel, enfocándonos en <strong>mejorar</strong> tanto la <strong>estética</strong> visual como la <strong>funcionalidad</strong> del sitio
                         </p>
@@ -156,7 +145,7 @@ const LaCima = () => {
                         <h4 className="text-primary font-semibold ml-0 md:ml-24">Próximo</h4>
                         <h1 className="text-7xl md:text-9xl text-white font-medium font-ClashDisplay">Caso</h1>
                     </div>
-                    <Link to={'/trabajo/mastercard'} className="mx-auto">
+                    <Link to={'/trabajo/extras'} className="mx-auto">
                         <img src={nextCaseImg} alt="avianca hero" />
                     </Link>
                     <div className="w-full flex justify-center relative mb-12">
@@ -167,8 +156,8 @@ const LaCima = () => {
                     </div>
                     <div className="w-full flex justify-center">
                         <h4 className="text-white font-semibold text-3xl">Mira la siguiente experiencia con&nbsp;
-                            <Link to={'/trabajo/mastercard'}>
-                                <span className="hover:link-hover text-primary no-underline hover:underline">Mastercard</span>
+                            <Link to={'/trabajo/extras'}>
+                                <span className="hover:link-hover text-primary no-underline hover:underline">Extras</span>
                             </Link>
                         </h4>
                     </div>

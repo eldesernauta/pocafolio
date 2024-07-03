@@ -10,14 +10,14 @@ const BackBtn = () => {
         case "/trabajo/avianca":
             ruta = "/trabajo";
             break;
-        case "/trabajo/la-cima":
+        case "/trabajo/mastercard":
             ruta = "/trabajo/avianca";
             break;
-        case "/trabajo/mastercard":
-            ruta = "/trabajo/la-cima";
+        case "/trabajo/la-cima":
+            ruta = "/trabajo/mastercard";
             break;
         case "/trabajo/extras":
-            ruta = "/trabajo/mastercard";
+            ruta = "/trabajo/la-cima";
             break;
         default:
             ruta = "";

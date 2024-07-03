@@ -59,18 +59,18 @@ const HorizontalScroll = () => {
                     id={'avianca'}
                 />
                 <HorizontalCard
-                    client={'La Cima Ecohotel'}
-                    imgSrc={clientes2}
-                    href={'/trabajo/la-cima'}
-                    subtitle={'Glamping en Buenavista, Quindío'}
-                    id={'la-cima'}
-                />
-                <HorizontalCard
                     client={'Mastercard'}
                     imgSrc={clientes3}
                     href={'/trabajo/mastercard'}
                     subtitle={'Entidad Bancaria'}
                     id={'mastercard'}
+                />
+                <HorizontalCard
+                    client={'La Cima Ecohotel'}
+                    imgSrc={clientes2}
+                    href={'/trabajo/la-cima'}
+                    subtitle={'Glamping en Buenavista, Quindío'}
+                    id={'la-cima'}
                 />
             </div>
 

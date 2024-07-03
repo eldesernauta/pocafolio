@@ -68,7 +68,7 @@ const Skills = () => {
                             del cliente de manera flexible.</p>
                     </div>
                 </div>
-                <TextGenerateEffect words={paragraph2} paragraph2="" align="center" className="scale-100 md:scale-75 text-center mt-12 mb-12 md:mt-4" />
+                <TextGenerateEffect words={paragraph2} paragraph2="" align="center" className="scale-100 md:scale-75 text-center mt-12 mb-0 md:mt-4" />
                 <Link to="/quien-soy" className="link-hover w-[300px] mx-auto relative inline-flex items-center justify-start py-3 pl-4 border-2 border-primary hover:border-black pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded-full  hover:pl-10 hover:pr-6 bg-black group ">
                     <span className="absolute -bottom-2 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-primary group-hover:h-full group-hover:bottom-0"></span>
                     <span className="absolute right-0 p-2 duration-200 ease-out group-hover:translate-x-12 -translate-x-2 rounded-full border-2 border-primary">

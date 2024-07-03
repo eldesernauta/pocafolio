@@ -8,7 +8,7 @@ import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 const mockup = require("../img/avianca-hero.png")
 const avianca = require("../img/avianca.png")
-const nextCaseImg = require("../img/la-cima-hero.png")
+const nextCaseImg = require("../img/mastercard-hero.png")
 
 const text = require('../img/circle-text.png')
 const separator = require('../img/separator.png')
@@ -131,10 +131,10 @@ const Avianca = () => {
                         <h4 className="text-primary font-semibold ml-0 md:ml-24">Próximo</h4>
                         <h1 className="text-7xl md:text-9xl text-white font-medium font-ClashDisplay">Caso</h1>
                     </div>
-                    <Link to={'/trabajo/la-cima'} className="mx-auto">
+                    <Link to={'/trabajo/mastercard'} className="mx-auto">
                         <img src={nextCaseImg} alt="avianca hero" />
                     </Link>
-                    <div className="w-full flex justify-center relative mb-12">
+                    <div className="w-full flex justify-center relative -mt-24 mb-12">
                         <Link to={'/conectemos'} className="link-hover scale-75 ">
                             <img src={text} alt="ejecutemos una gran idea" className='w-[200px] animate-spin-slow' />
                             <img src={separator} alt="icono" className='z-[99] absolute top-[38%] left-[42%]' />
@@ -142,8 +142,8 @@ const Avianca = () => {
                     </div>
                     <div className="w-full flex justify-center">
                         <h4 className="text-white font-semibold text-3xl">Mira la siguiente experiencia con&nbsp;
-                            <Link to={'/trabajo/la-cima'}>
-                                <span className="hover:link-hover text-primary no-underline hover:underline">La Cima Ecohotel</span>
+                            <Link to={'/trabajo/mastercard'}>
+                                <span className="hover:link-hover text-primary no-underline hover:underline">Mastercard</span>
                             </Link>
                         </h4>
                     </div>
