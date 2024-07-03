@@ -1,5 +1,4 @@
 import { useRef, useEffect } from 'react';
-import { gsap } from 'gsap';
 
 const Cursor = () => {
     const canvasRef = useRef(null);

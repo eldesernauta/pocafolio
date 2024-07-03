@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import StickyBox from "react-sticky-box";
 import BackBtn from "../components/BackBtn/backBtn";
-import SpinBtn from "../components/SpinBtn/spinBtn";
 
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 

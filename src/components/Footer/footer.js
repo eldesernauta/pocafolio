@@ -7,8 +7,6 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
     const { pathname } = useLocation();
 
-    let ruta = ""
-
     if (pathname === "/trabajo/avianca" | pathname === "/trabajo/la-cima" | pathname === "/trabajo/mastercard" | pathname === "/trabajo/extras") {
         return ""
     } else {

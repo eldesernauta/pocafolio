@@ -1,6 +1,5 @@
 
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
-import StickyBox from "react-sticky-box";
 import Cards from "../components/Cards/cards";
 import Productos from "../components/Productos/productos";
 import BackBtn from "../components/BackBtn/backBtn"

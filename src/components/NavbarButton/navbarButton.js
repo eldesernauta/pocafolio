@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { gsap } from 'gsap';
+import { useState } from 'react';
 
 const NavbarButton = (props) => {
 
@@ -7,7 +6,7 @@ const NavbarButton = (props) => {
 
     const genericHamburgerLine = `${props.color === 'black' ? 'bg-black scale-100 md:scale-[2] place-self-end mr-[5vw]' : 'bg-white'} h-2 w-16 my-1 rounded-full  transition ease transform duration-300`;
 
-    const matchClose = props.showMenu
+    //const matchClose = props.showMenu
 
     const showMenu = () => {
         setIsOpen(!isOpen)
