@@ -8,7 +8,7 @@ export const WavyFooter = ({
   className,
   containerClassName,
   colors,
-  waveWidth  = 350,
+  waveWidth = 350,
   backgroundFill,
   blur = 20,
   speed = "fast",
@@ -35,6 +35,8 @@ export const WavyFooter = ({
     ctx: any,
     canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const animationIdRef = useRef<number | null>(null); // Usar useRef para animationId
+
   const getSpeed = () => {
     switch (speed) {
       case "slow":
@@ -83,21 +85,22 @@ export const WavyFooter = ({
     }
   };
 
-  let animationId: number;
   const render = () => {
     ctx.fillStyle = backgroundFill || "black";
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
-    animationId = requestAnimationFrame(render);
+    animationIdRef.current = requestAnimationFrame(render); // Usar el ref para almacenar animationId
   };
 
   useEffect(() => {
     init();
     return () => {
-      cancelAnimationFrame(animationId);
+      if (animationIdRef.current !== null) {
+        cancelAnimationFrame(animationIdRef.current);
+      }
     };
-  }, []);
+  }, [init]);
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
