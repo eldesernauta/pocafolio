@@ -35,8 +35,6 @@ export const WavyBackground = ({
     ctx: any,
     canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationIdRef = useRef<number | null>(null);
-
   const getSpeed = () => {
     switch (speed) {
       case "slow":
@@ -85,23 +83,22 @@ export const WavyBackground = ({
     }
   };
 
+  let animationId: number;
   const render = () => {
     ctx.fillStyle = backgroundFill || "black";
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
-    animationIdRef.current = requestAnimationFrame(render);
+    animationId = requestAnimationFrame(render);
   };
 
   useEffect(() => {
     init();
     return () => {
-      if (animationIdRef.current !== null) {
-        cancelAnimationFrame(animationIdRef.current);
-      }
+      cancelAnimationFrame(animationId);
     };
-  }, [init]);
-
+  });
+  
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
     // I'm sorry but i have got to support it on safari.

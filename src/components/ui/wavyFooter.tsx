@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "../../utils/cn";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
 
 export const WavyFooter = ({
@@ -35,8 +35,6 @@ export const WavyFooter = ({
     ctx: any,
     canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationIdRef = useRef<number | null>(null); // Usar useRef para animationId
-
   const getSpeed = () => {
     switch (speed) {
       case "slow":
@@ -85,22 +83,21 @@ export const WavyFooter = ({
     }
   };
 
+  let animationId: number;
   const render = () => {
     ctx.fillStyle = backgroundFill || "black";
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
-    animationIdRef.current = requestAnimationFrame(render); // Usar el ref para almacenar animationId
+    animationId = requestAnimationFrame(render);
   };
 
   useEffect(() => {
     init();
     return () => {
-      if (animationIdRef.current !== null) {
-        cancelAnimationFrame(animationIdRef.current);
-      }
+      cancelAnimationFrame(animationId);
     };
-  }, [init]);
+  });
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
