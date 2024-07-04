@@ -17,17 +17,17 @@ const Mastercard = () => {
     return (
         <>
             <BackBtn />
-            <section className="h-screen w-full bg-gradient-to-r from-[#FF8B00] to-[#C90C14] py-[100px] overflow-hidden">
+            <section className="h-screen w-full bg-gradient-to-r from-[#FF8B00] to-[#C90C14] py-[100px]">
                 <div className="container mx-auto h-full px-4 md:px-0 flex flex-col md:flex-row justify-center items-stretch">
                     <div className="w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center md:justify-between items-center md:items-start">
-                        <img src={MastercardImg} alt="la cima hero" className="brightness-150" />
+                        <img src={MastercardImg} alt="avianca hero" className="brightness-150" />
                         <div className="flex flex-col text-center md:text-left mt-4 md:mt-0">
                             <h4 className="text-white ml-0 md:ml-16">Colaboración</h4>
-                            <h1 className="text-7xl md:text-9xl text-white font-ClashDisplay font-semibold">Mastercard</h1>
+                            <h1 className="text-7xl md:text-9xl text-white font-medium font-ClashDisplay">Mastercard</h1>
                         </div>
                     </div>
                     <div className="relative w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center items-center">
-                        <img src={mockup} alt="avianca hero" className="object-fill h-screen" />
+                        <img src={mockup} alt="avianca hero" className="" />
                         <h6 className="text-white absolute bottom-0 right-0">Dentsu Creative</h6>
                     </div>
                 </div>
@@ -104,26 +104,26 @@ const Mastercard = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-white pb-24">
+            <section className="bg-white pt-24 md:pt-0 pb-24 mt-0 md:-mt-24">
                 <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
             </section>
-            <section className="bg-[#1E1E1E] w-full py-12 md:py-24 px-4 md:px-0">
+            <section className="bg-[#1E1E1E] w-full  h-screen md:h-auto flex md:block justify-center items-center py-12 md:py-24 px-4 md:px-0">
                 <div className="container mx-auto flex flex-col justify-start items-start">
-                    <div className="flex flex-col text-center md:text-left mt-4 md:mt-0">
+                    <div className="w-full flex flex-col text-center md:text-left mt-4 md:mt-0">
                         <h4 className="text-primary font-semibold ml-0 md:ml-24">Próximo</h4>
                         <h1 className="text-7xl md:text-9xl text-white font-medium font-ClashDisplay">Caso</h1>
                     </div>
-                    <Link to={'/trabajo/la-cima'} className="mx-auto">
+                    <Link to={'/trabajo/la-cima'} className="mx-auto pt-8 md:pt-0">
                         <img src={nextCaseImg} alt="avianca hero" />
                     </Link>
-                    <div className="w-full flex justify-center relative mb-12">
+                    <div className="w-full flex justify-center relative md-4 md:mb-12">
                         <Link to={'/conectemos'} className="link-hover scale-75 ">
                             <img src={text} alt="ejecutemos una gran idea" className='w-[200px] animate-spin-slow' />
                             <img src={separator} alt="icono" className='z-[99] absolute top-[38%] left-[42%]' />
                         </Link>
                     </div>
-                    <div className="w-full flex justify-center">
-                        <h4 className="text-white font-semibold text-3xl">Mira la siguiente experiencia con&nbsp;
+                    <div className="w-full flex justify-center text-center">
+                        <h4 className="text-white font-semibold text-xl md:text-3xl">Mira la siguiente experiencia con&nbsp;
                             <Link to={'/trabajo/la-cima'}>
                                 <span className="hover:link-hover text-primary no-underline hover:underline">La Cima Ecohotel</span>
                             </Link>

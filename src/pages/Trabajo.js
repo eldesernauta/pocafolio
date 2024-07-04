@@ -62,7 +62,7 @@ function Trabajo() {
                 </div>
 
             </section>
-            <section className="container mx-auto gap-0 md:gap-24 px-4 md:px-0 pb-12 flex flex-col md:flex-row justify-center items-center overflow-hidden">
+            <section className="container mx-auto gap-0 md:gap-24 px-4 md:px-0 pb-12 mt-24 md:mt-0 flex flex-col md:flex-row justify-center items-center overflow-hidden">
                 <div className="w-full md:w-3/6 flex justify-center items-center">
                     <Card
                         client={'La Cima Ecohotel'}

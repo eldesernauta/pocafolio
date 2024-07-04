@@ -37,9 +37,9 @@ const Davivienda = () => {
                     <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
                 </div>
             </section>
-            <section className="w-full bg-white px-4 md:px-0 flex flex-col gap-24 pb-72">
+            <section className="w-full bg-white px-4 md:px-0 flex flex-col gap-12 md:gap-24 pb-72">
 
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-8">
+                <div className="container mx-auto flex flex-col-reverse md:flex-row justify-center items-center gap-8">
                     <div className="w-full md:w-2/6 flex flex-col">
                         <h4 className="text-purple text-sm font-semibold">Buenavista (Quindío)</h4>
                         <h2 className="text-2xl text-neutral-500 font-bold mb-4">La 75 Heladeria</h2>
@@ -65,7 +65,7 @@ const Davivienda = () => {
                         <p>El enfoque que escogimos no solo nos facilitó la interacción del cliente con la plataforma, sino que también mejoró la eficiencia y la satisfacción del usuario en todo el proceso.</p>
                     </div>
                 </div>
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-8">
+                <div className="container mx-auto flex flex-col-reverse md:flex-row justify-center items-center gap-8">
                     <div className="w-full md:w-2/6 flex flex-col">
                         <h4 className="text-purple text-sm font-semibold">Dentsu Creative</h4>
                         <h2 className="text-2xl text-neutral-500 font-bold mb-4">Fábrica de licores<br />y alcoholes de Antioquia</h2>
@@ -89,7 +89,7 @@ const Davivienda = () => {
                         <p>Participé en la migración del sofware de Sketch a Figma, actualizando las guías del sistema. Mejorando la eficiencia del flujo de trabajo y facilitando la colaboración entre equipos. Implementamos mejoras basadas en feedback puntual del cliente para mejorar la experiencia de usuario en Trainigym.</p>
                     </div>
                 </div>
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-8">
+                <div className="container mx-auto flex flex-col-reverse md:flex-row justify-center items-center gap-8">
                     <div className="w-full md:w-2/6 flex flex-col">
                         <h4 className="text-purple text-sm font-semibold">Bastrop (Texas)</h4>
                         <h2 className="text-2xl text-neutral-500 font-bold mb-4">Monarch Cleaning Group</h2>
@@ -103,7 +103,7 @@ const Davivienda = () => {
                 </div>
 
             </section>
-            <section className="bg-black w-full">
+            <section className="bg-black w-full px-4 md:px-0">
                 <div className="-translate-y-32">
                     <Cards layout='no-home' />
                 </div>

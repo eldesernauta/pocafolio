@@ -53,7 +53,7 @@ const Header = (props) => {
                     <NavbarButton action={handleToggleMenu} showMenu={showMenu} color={'white'} />
                     <div
                         ref={menuRef}
-                        className="fixed inset-y-0 left-0 box-border flex flex-col bg-[#EBFF46] w-[calc(100vw-15px)] md:w-full h-screen p-6 text-white z-[99999] justify-between items-end"
+                        className="fixed inset-y-0 left-0 box-border flex flex-col bg-[#EBFF46] w-full h-screen p-6 text-white z-[99999] justify-between items-end"
                     >
                         <NavbarButton action={handleToggleMenu} showMenu={showMenu} color={'black'} />
                         <ul className="font-ClashDisplay absolute top-[30%] md:top-auto bottom-auto md:bottom-20 left-4 md:left-20">

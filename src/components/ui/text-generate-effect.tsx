@@ -83,7 +83,11 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div
-        className={`${align === "center" ? "w-9/12 mx-auto" : "w-full"}`}
+        className={`${
+          align === "center"
+            ? "w-full md:w-9/12 px-4 md:px-0 mx-auto"
+            : "w-full"
+        }`}
         ref={containerRef}
       >
         <div

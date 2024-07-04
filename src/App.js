@@ -13,12 +13,10 @@ import Avianca from "./pages/Avianca";
 import LaCima from "./pages/LaCima";
 import Mastercard from "./pages/Mastercard";
 import Extras from "./pages/Extras";
-import MetaTags from "./components/MetaTags/metaTags";
 
 function App() {
   return (
     <>
-      <MetaTags />
       <CustomCursor
         targets={['.link-hover']}
         customClass='custom-cursor'

@@ -4,7 +4,7 @@ const Cards = ({ layout }) => {
     const getCardClasses = (additionalClasses = "") => `${baseClasses} ${additionalClasses}`;
 
     return (
-        <div className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-0 md:gap-32">
+        <div className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-8 md:gap-32">
             <div id="card1" className={getCardClasses()}>
                 <h3 className="text-white text-3xl font-bold">Sitios web</h3>
                 <p className="text-white w-full md:w-4/6">Sitios responsivos y paneles de control para su negocio.</p>

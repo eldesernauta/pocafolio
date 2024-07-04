@@ -17,7 +17,7 @@ const HorizontalScroll = () => {
         gsap.set(massiveImage, {
             backgroundColor: 'transparent', // Example background color
             height: 'auto',
-            width: '200vw',
+            width: '260vw',
         });
 
         gsap.to(massiveImage, {
@@ -26,7 +26,7 @@ const HorizontalScroll = () => {
             ease: 'none',
             scrollTrigger: {
                 trigger: massiveImage,
-                start: 'middle 100vh',
+                start: 'top 100vh',
                 end: () => window.innerWidth * 3,
                 scrub: true,
                 pin: true,
@@ -55,22 +55,33 @@ const HorizontalScroll = () => {
                     client={'Avianca'}
                     imgSrc={clientes1}
                     href={'/trabajo/avianca'}
-                    subtitle={'Aerovías del Continente Americano'}
+                    subtitle={'Dentsu Creative'}
                     id={'avianca'}
+                    resume={'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de...'}
                 />
                 <HorizontalCard
                     client={'Mastercard'}
                     imgSrc={clientes3}
                     href={'/trabajo/mastercard'}
-                    subtitle={'Entidad Bancaria'}
+                    subtitle={'Dentsu Creative'}
                     id={'mastercard'}
+                    resume={'En mi rol como diseñador de interfaces UI, trabajé en múltiples proyectos para Mastercard, colaborando estrechamente con...'}
                 />
                 <HorizontalCard
                     client={'La Cima Ecohotel'}
                     imgSrc={clientes2}
                     href={'/trabajo/la-cima'}
-                    subtitle={'Glamping en Buenavista, Quindío'}
+                    subtitle={'Freelancer'}
                     id={'la-cima'}
+                    resume={'En este proyecto, colaboré con un exclusivo Ecohotel llamado La Cima, ubicado en el corazón del Quindío, una región conocida por...'}
+                />
+                <HorizontalCard
+                    client={'Extras'}
+                    imgSrc={clientes3}
+                    href={'/trabajo/extras'}
+                    subtitle={'Freelancer'}
+                    id={'extras'}
+                    resume={'Como diseñador freelancer, he tenido la oportunidad de crear interfaces gráficas de diferentes marcas. El desafío ha sido capturar y representar...'}
                 />
             </div>
 
@@ -81,11 +92,11 @@ const HorizontalScroll = () => {
 export default HorizontalScroll;
 
 
-const HorizontalCard = ({ client, id, href, subtitle }) => {
+const HorizontalCard = ({ client, id, href, subtitle, resume }) => {
     return (
         <div className="w-[100vw] md:w-[60vw] h-auto px-0 hidden md:block">
             <div className="flex flex-col w-full items-center justify-start rounded-xl mx-auto overflow-hidden">
-                <div className='flex flex-col justify-start items-start'>
+                <div className='w-full flex flex-col justify-start items-start'>
                     <div id={id} className='w-[100vw] md:w-full h-[50vh] md:h-[500px] overflow-hidden bg-primary'>
 
                     </div>
@@ -97,7 +108,7 @@ const HorizontalCard = ({ client, id, href, subtitle }) => {
                         </div>
                         <div className='w-full md:w-7/12 flex flex-col'>
                             <p className='text-white text-sm'>
-                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
+                                {resume}
                             </p>
                         </div>
                     </div>

@@ -11,10 +11,10 @@ const Footer = () => {
         return ""
     } else {
         return (
-            <div className={`relative w-full bg-black pt-32 md:pt-48 pb-8 flex flex-col justify-between overflow-hidden`}>
+            <div className={`relative w-full bg-black px-4 md:px-0 pt-32 md:pt-48 pb-8 flex flex-col justify-between overflow-hidden`}>
                 <WavyFooter className={`w-full h-screen flex flex-col justify-end items-center`}></WavyFooter>
                 <div className="container mx-auto flex flex-col-reverse md:flex-row justify-center md:justify-between items-center z-10">
-                    <ul className="w-4/6 flex flex-col text-center md:text-left justify-center gap-0">
+                    <ul className="w-full md:w-4/6 flex flex-col text-center md:text-left justify-center gap-0">
                         <li className="text-black font-semibold mb-2 md:mb-4 underline md:no-underline">
                             <Link to='/' className="link-hover">
                                 Inicio
@@ -36,7 +36,7 @@ const Footer = () => {
                             </Link>
                         </li>
                     </ul>
-                    <div className="w-2/6 flex flex-col gap-4 text-black mb-6 md:mb-0">
+                    <div className="w-full md:w-2/6 flex flex-col gap-4 text-black mb-6 md:mb-0">
                         <h4 className="font-black text-lg">¿Tienes un proyecto en mente?</h4>
                         <p className="text-lg">Deja tu correo electrónico<br /> y te contactaré pronto</p>
                         <div class="relative h-11 w-full min-w-[200px]">
