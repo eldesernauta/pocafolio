@@ -26,9 +26,6 @@ const MetaTags = () => {
             <meta name="author" content="eldesernauta" />
             <link rel="canonical" href="https://incrustesdesign.com" />
 
-            {/* Favicon */}
-            <link rel="icon" href='../../img/loader.gif' />
-
             {/* Apple Touch Icon */}
             <link rel="apple-touch-icon" sizes="180x180" href="../../img/separator.png" />
 
