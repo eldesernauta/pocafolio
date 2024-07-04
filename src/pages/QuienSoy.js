@@ -96,7 +96,7 @@ function QuienSoy() {
                     </div>
                     <div className="w-6/12 md:w-4/12 flex flex-col">
                         <h3 className="text-white text-xl md:text-3xl font-bold">Graphic web designer</h3>
-                        <p className="text-white text-sm">2021 - 2024</p>
+                        <p className="text-white text-sm">2020 - 2021</p>
 
                     </div>
                     <div className="hidden md:block w-6/12 md:w-4/12 flex flex-col">
@@ -152,7 +152,7 @@ function QuienSoy() {
                     <span className="relative w-full text-center transition-colors duration-200 ease-in-out group-hover:text-black">Descargar curriculum</span>
                 </Link>
                 <div className="rounded-full w-[700px] h-[500px] bg-[#4A1A99] opacity-75 blur-3xl absolute top-[20%] -right-[350px] z-0 scale-125"></div>
-                <img src={springImg} className="hidden md:block w-[360px] absolute top-[30%] right-32" alt="spring" />
+                <img src={springImg} className="hidden md:block w-[360px] absolute top-[30%] right-32 animate-bounce" alt="spring" />
             </section>
 
             <section className="bg-black mt-12 pb-48 px-4 md:px-0">

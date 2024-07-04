@@ -1,5 +1,5 @@
 const Cards = ({ layout }) => {
-    const baseClasses = "w-full md:w-4/12 flex flex-col items-start justify-start gap-2 bg-[#131313] pt-12 px-8 pb-96 border border-solid border-neutral-700 rounded-xl relative transition-all duration-200 shadow-none hover:shadow-2xl hover:shadow-primary";
+    const baseClasses = "w-full md:w-4/12 flex flex-col items-start justify-start gap-2 bg-[#131313] pt-12 px-8 pb-96 border border-solid border-neutral-700 overflow-hidden rounded-xl relative transition-all duration-200 shadow-none hover:shadow-2xl hover:shadow-primary";
 
     const getCardClasses = (additionalClasses = "") => `${baseClasses} ${additionalClasses}`;
 

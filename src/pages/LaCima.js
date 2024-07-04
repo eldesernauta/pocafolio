@@ -33,7 +33,7 @@ const LaCima = () => {
                     </div>
                     <div className="relative w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center items-center">
                         <img src={mockup} alt="avianca hero" className="object-contain" />
-                        <h6 className="text-white absolute bottom-0 right-0">2024</h6>
+                        <h6 className="text-white absolute bottom-0 right-0">Freelancer</h6>
                     </div>
                 </div>
             </section>
