@@ -17,7 +17,7 @@ function Layout() {
         // Simulate an API call
         setTimeout(() => {
             setIsLoading(false);
-        }, 2000);
+        }, 2500);
     }, []);
 
     if (isLoading) {

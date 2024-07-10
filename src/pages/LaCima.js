@@ -6,7 +6,7 @@ import BackBtn from "../components/BackBtn/backBtn"
 
 const mockup = require("../img/la-cima-hero.png")
 const LaCimaImg = require("../img/la-cima.png")
-const nextCaseImg = require("../img/extras-hero.png")
+const nextCaseImg = require("../img/extras-footer.png")
 
 const text = require('../img/circle-text.png')
 const separator = require('../img/separator.png')

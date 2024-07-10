@@ -58,7 +58,7 @@ const HorizontalScroll = () => {
                     href={'/trabajo/avianca'}
                     subtitle={'Dentsu Creative'}
                     id={'avianca'}
-                    resume={'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de...'}
+                    resume={'Gracias a la agencia en la que trabajaba, tuve la oportunidad de unirme al equipo de la aerolínea Avianca, una de las compañías aéreas más...'}
                 />
                 <HorizontalCard
                     client={'Mastercard'}
