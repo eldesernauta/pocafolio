@@ -13,6 +13,15 @@ const separator = require('../img/separator.png')
 
 const words = `Este proyecto me permitió desarrollar y aplicar habilidades en diseño UI bajo una demanda constante y alta presión. La creación de sistemas de diseño estandarizados fue clave para manejar eficientemente las solicitudes frecuentes y asegurar la calidad del trabajo. Además, la experiencia reforzó la importancia de la colaboración y la comunicación efectiva en un entorno dinámico y exigente.`;
 
+const Mastercard1 = require("../img/mastercard_1.png")
+const Mastercard2 = require("../img/mastercard_2.png")
+const Mastercard3 = require("../img/mastercard_3.png")
+const Mastercard4 = require("../img/mastercard_4.png")
+const Mastercard5 = require("../img/mastercard_5.png")
+const Mastercard6 = require("../img/mastercard_6.png")
+const Mastercard7 = require("../img/mastercard_7.png")
+const Mastercard8 = require("../img/mastercard_8.png")
+
 const Mastercard = () => {
     return (
         <>
@@ -47,11 +56,11 @@ const Mastercard = () => {
 
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Mastercard1} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Mastercard2} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -63,11 +72,11 @@ const Mastercard = () => {
 
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Mastercard3} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Mastercard4} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -80,11 +89,11 @@ const Mastercard = () => {
 
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Mastercard5} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Mastercard6} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -95,11 +104,11 @@ const Mastercard = () => {
 
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Mastercard7} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Mastercard8} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>

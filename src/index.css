@@ -122,7 +122,7 @@ h4::selection {
 }
 
 #avianca {
-    background-image: url(./img/creaciones_1_static.png);
+    background-image: url(./img/avianca-home.png);
     background-position: center center;
     background-size: cover;
     transition: all 0.2s ease-in-out;
@@ -130,11 +130,11 @@ h4::selection {
 }
 
 #avianca:hover {
-    background-image: url(./img/creaciones_1.gif);
+    background-image: url(./img/avianca-home.gif);
 }
 
 #la-cima {
-    background-image: url(./img/creaciones_1_static.png);
+    background-image: url(./img/la-cima-home.png);
     background-position: center center;
     background-size: cover;
     transition: all 0.2s ease-in-out;
@@ -142,19 +142,31 @@ h4::selection {
 }
 
 #la-cima:hover {
-    background-image: url(./img/creaciones_2.gif);
+    background-image: url(./img/la-cima-home.gif);
 }
 
-#davivienda {
-    background-image: url(./img/creaciones_1_static.png);
+#mastercard {
+    background-image: url(./img/mastercard-home.png);
     background-position: center center;
     background-size: cover;
     transition: all 0.2s ease-in-out;
     background-repeat: no-repeat;
 }
 
-#davivienda:hover {
-    background-image: url(./img/creaciones_1.gif);
+#mastercard:hover {
+    background-image: url(./img/mastercard-home.gif);
+}
+
+#extras {
+    background-image: url(./img/extras-home.png);
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
+}
+
+#extras:hover {
+    background-image: url(./img/extras-home.gif);
 }
 
 @tailwind utilities;

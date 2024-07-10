@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 const clientes1 = require('../../img/creaciones_1_static.png')
 const clientes2 = require('../../img/creaciones_2.gif')
-const clientes3 = require('../../img/goo-clientes-2.png')
+const clientes3 = require('../../img/la-cima-home.gif')
+const clientes4 = require('../../img/extras-home.gif')
 
 const HorizontalScroll = () => {
 
@@ -77,7 +78,7 @@ const HorizontalScroll = () => {
                 />
                 <HorizontalCard
                     client={'Extras'}
-                    imgSrc={clientes3}
+                    imgSrc={clientes4}
                     href={'/trabajo/extras'}
                     subtitle={'Freelancer'}
                     id={'extras'}
@@ -97,7 +98,7 @@ const HorizontalCard = ({ client, id, href, subtitle, resume }) => {
         <div className="w-[100vw] md:w-[60vw] h-auto px-0 hidden md:block">
             <div className="flex flex-col w-full items-center justify-start rounded-xl mx-auto overflow-hidden">
                 <div className='w-full flex flex-col justify-start items-start'>
-                    <div id={id} className='w-[100vw] md:w-full h-[50vh] md:h-[500px] overflow-hidden bg-primary'>
+                    <div id={id} className='w-[100vw] md:w-full h-[50vh] md:h-[500px] overflow-hidden bg-black'>
 
                     </div>
                     <div className='w-full flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center mt-8'>

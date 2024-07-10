@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
-const clientes1 = require('../../img/creaciones_1.gif')
-const clientes2 = require('../../img/creaciones_2.gif')
-const clientes3 = require('../../img/goo-clientes-2.png')
+const clientes1 = require('../../img/avianca-home-movil.gif')
+const clientes2 = require('../../img/la-cima-home-movil.gif')
+const clientes3 = require('../../img/mastercard-home-movil.gif')
+const clientes4 = require('../../img/extras-home-movil.gif')
 
 const ClientesMobile = () => {
     return (
@@ -79,7 +80,7 @@ const ClientesMobile = () => {
                         <div className='flex flex-col justify-start items-start'>
                             <div className='w-full md:w-auto h-[50vh] md:h-96 overflow-hidden'>
                                 <img
-                                    src={clientes3}
+                                    src={clientes4}
                                     className='object-cover md:object-contain h-full md:h-auto rounded-xl w-full'
                                     alt='imagen avianca'
                                 />
