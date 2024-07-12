@@ -27,7 +27,7 @@ const HorizontalScroll = () => {
             ease: 'none',
             scrollTrigger: {
                 trigger: massiveImage,
-                start: 'top 100vh',
+                start: '70px 100vh',
                 end: () => window.innerWidth * 3,
                 scrub: true,
                 pin: true,
