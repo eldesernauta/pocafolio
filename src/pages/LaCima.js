@@ -17,6 +17,12 @@ y la atención al detalle en la estética visual fueron clave para el éxito del
 
 const LaCima1 = require("../img/la-cima-1.png")
 const LaCima2 = require("../img/la-cima-2.png")
+const LaCima3 = require("../img/la-cima-3.png")
+const LaCima4 = require("../img/la-cima-4.png")
+const LaCima5 = require("../img/la-cima-5.png")
+const LaCima6 = require("../img/la-cima-9.png")
+const LaCima7 = require("../img/la-cima-7.png")
+const LaCima8 = require("../img/la-cima-8.png")
 
 const LaCima = () => {
     return (
@@ -41,15 +47,15 @@ const LaCima = () => {
                 <div className="container mx-auto flex">
                     <div className="w-full md:w-4/6 h-full flex flex-col justify-center items-start">
                         <p className="text-sm mb-4">
-                            En este proyecto, colaboré con un exclusivo Ecohotel llamado <strong>La Cima</strong>, ubicado en el <strong>corazón del Quindío</strong>, una región conocida por sus paisajes exuberantes y su rica biodiversidad. El ecohotel cuenta con cinco habitaciones, cada una diseñada para ofrecer una <strong>experiencia única</strong>
+                            En este proyecto, colaboré con un exclusivo Ecohotel llamado La Cima, ubicado en el corazón del Quindío, una región conocida por sus paisajes exuberantes y su rica biodiversidad. El ecohotel cuenta con cinco habitaciones, cada una diseñada para ofrecer una experiencia única
                             y personalizada a los huéspedes. Cada habitación refleja un tema diferente, desde la naturaleza vibrante del Quindío hasta la sofisticación
-                            y el <strong>lujo contemporáneo</strong>. Mi rol en este proyecto fue liderar el <strong>rediseño de la interfaz y la experiencia del usuario</strong> (UX/UI), asegurando que la nueva página web no solo fuese atractiva y funcional, sino que también <strong>capturase la esencia del ecohotel y sus ofertas únicas</strong>. Para lograr esto, se necesitó una combinación de técnicas investigación de usuarios, <strong>diseño centrado</strong> en el usuario y pruebas de usabilidad, con el fin de crear
+                            y el lujo contemporáneo. Mi rol en este proyecto fue liderar el rediseño de la interfaz y la experiencia del usuario (UX/UI), asegurando que la nueva página web no solo fuese atractiva y funcional, sino que también capturase la esencia del ecohotel y sus ofertas únicas. Para lograr esto, se necesitó una combinación de técnicas investigación de usuarios, diseño centrado en el usuario y pruebas de usabilidad, con el fin de crear
                             una experiencia en línea que alineara con las expectativas y deseos del público objetivo.
                         </p>
                     </div>
                 </div>
             </section>
-            <section className="w-full bg-white px-4 md:px-0 flex flex-col gap-8 h-auto md:h-[450vh] -mt-1">
+            <section className="w-full bg-white px-4 md:px-0 flex flex-col gap-8 h-auto md:h-[460vh] -mt-1">
                 <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[140vh] left-0 right-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Desafío del proyecto</h2>
@@ -83,11 +89,11 @@ const LaCima = () => {
                         </p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={LaCima3} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={LaCima4} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div >
@@ -95,26 +101,26 @@ const LaCima = () => {
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Solución</h2>
                         <p className="text-sm my-4">
-                            Para abordar los <strong>desafíos planteados</strong>, implementamos un rediseño exhaustivo de la página web de La Cima Ecohotel, enfocándonos en <strong>mejorar</strong> tanto la <strong>estética</strong> visual como la <strong>funcionalidad</strong> del sitio
+                            Para abordar los desafíos planteados, implementamos un rediseño exhaustivo de la página web de La Cima Ecohotel, enfocándonos en mejorar tanto la estética visual como la funcionalidad del sitio
                         </p>
                         <p className="text-sm mb-4">
-                            Desarrollamos un <strong>diseño elegante</strong> y moderno que capturó la esencia de <strong>lujo y exclusividad</strong> del Ecohotel, utilizando fotografías de alta calidad que destacaban sus <strong>impresionantes vistas</strong> y ambientes únicos.
+                            Desarrollamos un diseño elegante y moderno que capturó la esencia de lujo y exclusividad del Ecohotel, utilizando fotografías de alta calidad que destacaban sus impresionantes vistas y ambientes únicos.
                         </p>
                         <p className="text-sm">
-                            En conjunto, estas <strong>mejoras</strong> no solo cumplieron con los parámetros
-                            y expectativas del cliente, sino que también <strong>superaron</strong> las metas establecidas en la <strong>fase inicial del proyecto</strong>. La nueva página web
+                            En conjunto, estas mejoras no solo cumplieron con los parámetros
+                            y expectativas del cliente, sino que también superaron las metas establecidas en la fase inicial del proyecto. La nueva página web
                             no solo captó la atención de manera efectiva del público objetivo
                             de estrato socioeconómico alto, sino que también facilitó
                             una experiencia de usuario superior que resultó en una mayor
-                            iteración y <strong>conversiones de ventas</strong> para La Cima.
+                            iteración y conversiones de ventas para La Cima.
                         </p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={LaCima5} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={LaCima6} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -126,11 +132,11 @@ const LaCima = () => {
                         </p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={LaCima7} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={LaCima8} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
