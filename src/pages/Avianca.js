@@ -12,9 +12,7 @@ const nextCaseImg = require("../img/mastercard-hero.png")
 const text = require('../img/circle-text.png')
 const separator = require('../img/separator.png')
 
-const words = `Este proyecto me permitió aplicar mis habilidades en diseño UX/UI
-para un público específico y exigente. El trabajo colaborativo
-y la atención al detalle en la estética visual fueron clave para el éxito del proyecto. Aprendí la importancia de la investigación de usuarios y las pruebas de usabilidad para asegurar que el diseño cumpliera con las expectativas del cliente y los usuarios finales.`;
+const words = `La colaboración con equipos multidisciplinarios fortaleció mis habilidades en comunicación y trabajo en equipo, mientras que trabajar en un ciclo iterativo de diseño me hizo ágil y adaptable, asegurando alta calidad en los entregables. Este proyecto me ayudó a comprender mejor la importancia de la coherencia visual y la usabilidad en el diseño de interfaces y experiencias.`;
 
 
 const Avianca = () => {
@@ -46,7 +44,7 @@ const Avianca = () => {
             <section className="w-full bg-white px-4 md:px-0 flex flex-col gap-8 h-auto md:h-[460vh] -mt-1">
                 <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[130vh] left-0 right-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
-                        <h2 className="text-4xl font-bold">Problema</h2>
+                        <h2 className="text-4xl font-bold">Desafío del proyecto</h2>
                         <p className="text-sm my-5">El principal desafío fue administrar UI kit para Avianca, asegurando que fuera fácil de utilizar y proporcionara suficiente iteración en cada componente. Con un flujo constante de trabajo
                             y alta demanda de visuales, era crucial ejecutar todas las solicitudes bajo parámetros muy estructurados, basados en la investigación
                             de usuarios. La comunicación efectiva entre equipos era primordial para avanzar en los visuales, que eran testeados continuamente, reduciendo el margen de error. La solución implicó adherirse estrictamente a un sistema de diseño y crear componentes solo cuando era absolutamente necesario, garantizando la coherencia
@@ -68,8 +66,8 @@ const Avianca = () => {
                 </div>
                 <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[240vh] left-0 right-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
-                        <h2 className="text-4xl font-bold">Proceso</h2>
-                        <p className="text-sm my-5">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en</p>
+                        <h2 className="text-4xl font-bold">Proceso de diseño</h2>
+                        <p className="text-sm my-5">El proceso de diseño para Avianca consistió en seguir y ejecutar el UI kit optimizado bajo las directrices del líder del grupo. Mi función principal era asegurar la precisión y coherencia en todas las solicitudes. Esto incluía crear e integrar imágenes para diversas plataformas, derivando al menos nueve variaciones de cada banner por imagen. La subida de estas imágenes, cada una con una nomenclatura diferente para SEO, resultaba tediosa y requería una alta habilidad de concentración, siendo una tarea casi diaria. Trabajé estrechamente con otros equipos en un ciclo iterativo de diseño, donde los visuales eran testeados y ajustados continuamente. La comunicación constante y efectiva entre equipos permitió mantener una alta calidad y coherencia en todos los entregables.</p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
                         <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
@@ -82,8 +80,8 @@ const Avianca = () => {
                 </div>
                 <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[350vh] left-0 right-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
-                        <h2 className="text-4xl font-bold">Ideación</h2>
-                        <p className="text-sm my-5">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en</p>
+                        <h2 className="text-4xl font-bold">Solución</h2>
+                        <p className="text-sm my-5">Para Avianca, seguimos estrictamente el UI kit optimizado y ejecutamos todas las solicitudes según las directrices del líder del grupo. Creamos variaciones de banners, asegurando precisión en la nomenclatura para SEO. Implementamos un ciclo iterativo de diseño, trabajando estrechamente con otros equipos para testear y ajustar visuales continuamente. La comunicación constante y efectiva garantizó la alta calidad y coherencia en todos los entregables, mejorando así la eficiencia y la experiencia del usuario.</p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
                         <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
@@ -97,7 +95,7 @@ const Avianca = () => {
                 <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[460vh] left-0 right-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Resultado</h2>
-                        <p className="text-sm my-5">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en</p>
+                        <p className="text-sm my-5">El proyecto para Avianca resultó en una mayor eficiencia y coherencia en la creación de visuales, mejorando significativamente la experiencia del usuario y facilitando la navegación en las plataformas. La implementación precisa del UI kit y la colaboración efectiva entre equipos redujeron errores y aumentaron la calidad de los entregables. Además, la atención al detalle en la nomenclatura SEO optimizó la visibilidad online. Estas mejoras cumplieron con los objetivos del cliente y permitieron manejar un flujo constante de trabajo con altos estándares de calidad, asegurando la satisfacción tanto del equipo interno como de los usuarios finales. 4o</p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
                         <div className="w-full h-[50vh] bg-slate-300 rounded-lg">

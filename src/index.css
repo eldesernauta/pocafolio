@@ -89,13 +89,6 @@ h4::selection {
     background-repeat: no-repeat
 }
 
-#footer {
-    background-image: url('./img/footer-bg.png');
-    background-position: center top;
-    background-size: contain;
-    background-repeat: no-repeat
-}
-
 #footer h2 {
     line-height: 0 !important;
 }

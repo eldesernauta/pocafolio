@@ -57,22 +57,22 @@ const Header = (props) => {
                     >
                         <NavbarButton action={handleToggleMenu} showMenu={showMenu} color={'black'} />
                         <ul className="font-ClashDisplay absolute top-[30%] md:top-auto bottom-auto md:bottom-20 left-4 md:left-20">
-                            <li className="mb-2 translate-x-0 hover:translate-x-20 no-underline hover:underline transition-all duration-200 ease-in-out">
+                            <li className="mb-2 pl-0 hover:pl-20 no-underline hover:underline transition-all duration-200 ease-in-out">
                                 <Link to="/" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onClick={handleToggleMenu}>
                                     Inicio
                                 </Link>
                             </li>
-                            <li className="mb-2 translate-x-0 hover:translate-x-20 no-underline hover:underline transition-all duration-200 ease-in-out">
+                            <li className="mb-2 pl-0 hover:pl-20 no-underline hover:underline transition-all duration-200 ease-in-out">
                                 <Link to="/trabajo" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onClick={handleToggleMenu} >
                                     Trabajo
                                 </Link>
                             </li>
-                            <li className="mb-2 translate-x-0 hover:translate-x-20 no-underline hover:underline transition-all duration-200 ease-in-out">
+                            <li className="mb-2 pl-0 hover:pl-20 no-underline hover:underline transition-all duration-200 ease-in-out">
                                 <Link to="/quien-soy" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onClick={handleToggleMenu} >
                                     ¿Quién soy?
                                 </Link>
                             </li>
-                            <li className="mb-2 translate-x-0 hover:translate-x-20 no-underline hover:underline transition-all duration-200 ease-in-out">
+                            <li className="mb-2 pl-0 hover:pl-20 no-underline hover:underline transition-all duration-200 ease-in-out">
                                 <Link to="/conectemos" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onClick={handleToggleMenu} >
                                     Conectemos
                                 </Link>
