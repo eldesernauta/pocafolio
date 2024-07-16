@@ -10,6 +10,7 @@ const ContactForm = () => {
         interest: '',
         message: ''
     });
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -30,8 +31,10 @@ const ContactForm = () => {
             'EHlTAsANWpShbDjGf'
         ).then((response) => {
             console.log('SUCCESS!', response.status, response.text);
+            setErrorMessage('Tu mensaje se envió correctamente'); // Clear error message on success
         }).catch((err) => {
             console.log('FAILED...', err);
+            setErrorMessage('Error al enviar el formulario. Intente nuevamente.'); // Set error message on failure
         });
     };
 
@@ -123,6 +126,11 @@ const ContactForm = () => {
                 >
                     Enviar mensaje a incrustes
                 </button>
+                {errorMessage && (
+                    <div className="w-full text-right text-primary">
+                        {errorMessage}
+                    </div>
+                )}
             </form>
         </div>
     );

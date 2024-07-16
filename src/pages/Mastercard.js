@@ -21,6 +21,7 @@ const Mastercard5 = require("../img/mastercard_5.png")
 const Mastercard6 = require("../img/mastercard_6.png")
 const Mastercard7 = require("../img/mastercard_7.png")
 const Mastercard8 = require("../img/mastercard_8.png")
+const Mastercard9 = require("../img/mastercard_9.png")
 
 const Mastercard = () => {
     return (
@@ -114,6 +115,9 @@ const Mastercard = () => {
                 </div>
             </section>
             <section className="bg-white pt-24 md:pt-0 pb-24 mt-0 md:-mt-24">
+                <div className="w-full md:w-4/6 mx-auto">
+                    <img src={Mastercard9} alt="old carousel La cima" className="w-full rounded-lg mb-12" />
+                </div>
                 <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
             </section>
             <section className="bg-[#1E1E1E] w-full  h-screen md:h-auto flex md:block justify-center items-center py-12 md:py-24 px-4 md:px-0">
