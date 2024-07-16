@@ -66,7 +66,7 @@ function QuienSoy() {
             <section className="flex flex-col gap-16 md:gap-32 mt-24 relative px-4 md:px-0">
                 <div className="container mx-auto flex gap-2 md:gap-0 justify-between items-start z-10">
                     <div className="w-6/12 md:w-4/12 flex flex-col">
-                        <h3 className="text-white text-xl md:text-3xl font-bold underline">Dentsu Creative</h3>
+                        <h3 className="text-white hover:text-primary text-xl md:text-3xl font-bold underline">Dentsu Creative</h3>
                         <p className="text-white text-sm">Medellín - Híbrido</p>
                     </div>
                     <div className="w-6/12 md:w-4/12 flex flex-col">
@@ -91,7 +91,7 @@ function QuienSoy() {
 
                 <div className="container mx-auto flex gap-2 md:gap-0 justify-between items-start z-10">
                     <div className="w-6/12 md:w-4/12 flex flex-col">
-                        <h3 className="text-white text-xl md:text-3xl font-bold underline">Solved Puzzle</h3>
+                        <h3 className="text-white hover:text-primary text-xl md:text-3xl font-bold underline">Solved Puzzle</h3>
                         <p className="text-white text-sm">Miami - Remoto</p>
                     </div>
                     <div className="w-6/12 md:w-4/12 flex flex-col">
@@ -105,7 +105,7 @@ function QuienSoy() {
 
                 <div className="container mx-auto flex gap-2 md:gap-0 justify-between items-start z-10">
                     <div className="w-6/12 md:w-4/12 flex flex-col">
-                        <h3 className="text-white text-xl md:text-3xl font-bold underline">Trainingym</h3>
+                        <h3 className="text-white hover:text-primary text-xl md:text-3xl font-bold underline">Trainingym</h3>
                         <p className="text-white text-sm">España - Remoto</p>
                     </div>
                     <div className="w-6/12 md:w-4/12 flex flex-col">
@@ -130,7 +130,7 @@ function QuienSoy() {
 
                 <div className="container mx-auto flex gap-2 md:gap-0 justify-between items-start z-10">
                     <div className="w-6/12 md:w-4/12 flex flex-col">
-                        <h3 className="text-white text-xl md:text-3xl font-bold underline">Sammy Quiceno</h3>
+                        <h3 className="text-white hover:text-primary text-xl md:text-3xl font-bold underline">Sammy Quiceno</h3>
                         <p className="text-white text-sm">Quindío - Presencial</p>
                     </div>
                     <div className="w-6/12 md:w-4/12 flex flex-col">

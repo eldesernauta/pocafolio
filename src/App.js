@@ -13,6 +13,7 @@ import Avianca from "./pages/Avianca";
 import LaCima from "./pages/LaCima";
 import Mastercard from "./pages/Mastercard";
 import Extras from "./pages/Extras";
+import Custom404 from "./pages/404";
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
           <Route path="/trabajo/la-cima" element={<LaCima />} />
           <Route path="/trabajo/mastercard" element={<Mastercard />} />
           <Route path="/trabajo/extras" element={<Extras />} />
+          <Route
+            path="*"
+            element={<Custom404 />}
+          />
         </Route>
       </Routes>
     </>

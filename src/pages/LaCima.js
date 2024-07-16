@@ -20,9 +20,10 @@ const LaCima2 = require("../img/la-cima-2.png")
 const LaCima3 = require("../img/la-cima-3.png")
 const LaCima4 = require("../img/la-cima-4.png")
 const LaCima5 = require("../img/la-cima-5.png")
-const LaCima6 = require("../img/la-cima-9.png")
+const LaCima6 = require("../img/la-cima-6.png")
 const LaCima7 = require("../img/la-cima-7.png")
 const LaCima8 = require("../img/la-cima-8.png")
+const LaCima9 = require("../img/la-cima-9.png")
 
 const LaCima = () => {
     return (
@@ -143,6 +144,9 @@ const LaCima = () => {
             </section >
 
             <section className="bg-white pt-24 md:pt-0 pb-24 mt-0 md:-mt-24">
+                <div className="w-full md:w-4/6 mx-auto">
+                    <img src={LaCima9} alt="old carousel La cima" className="w-full rounded-lg mb-12" />
+                </div>
                 <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
             </section>
             <section className="bg-[#1E1E1E] w-full  h-screen md:h-auto flex md:block justify-center items-center py-12 md:py-24 px-4 md:px-0">

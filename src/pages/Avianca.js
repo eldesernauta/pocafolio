@@ -14,6 +14,15 @@ const separator = require('../img/separator.png')
 
 const words = `La colaboración con equipos multidisciplinarios fortaleció mis habilidades en comunicación y trabajo en equipo, mientras que trabajar en un ciclo iterativo de diseño me hizo ágil y adaptable, asegurando alta calidad en los entregables. Este proyecto me ayudó a comprender mejor la importancia de la coherencia visual y la usabilidad en el diseño de interfaces y experiencias.`;
 
+const Avianca1 = require("../img/avianca-1.png")
+const Avianca2 = require("../img/avianca-2.png")
+const Avianca3 = require("../img/avianca-3.png")
+// const Avianca4 = require("../img/avianca-4.png")
+// const Avianca5 = require("../img/avianca-5.png")
+// const Avianca6 = require("../img/avianca-6.png")
+// const Avianca7 = require("../img/avianca-7.png")
+// const Avianca8 = require("../img/avianca-8.png")
+const Avianca9 = require("../img/avianca-9.png")
 
 const Avianca = () => {
     return (
@@ -56,11 +65,11 @@ const Avianca = () => {
                         </div> */}
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Avianca1} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Avianca2} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -70,11 +79,11 @@ const Avianca = () => {
                         <p className="text-sm my-5">El proceso de diseño para Avianca consistió en seguir y ejecutar el UI kit optimizado bajo las directrices del líder del grupo. Mi función principal era asegurar la precisión y coherencia en todas las solicitudes. Esto incluía crear e integrar imágenes para diversas plataformas, derivando al menos nueve variaciones de cada banner por imagen. La subida de estas imágenes, cada una con una nomenclatura diferente para SEO, resultaba tediosa y requería una alta habilidad de concentración, siendo una tarea casi diaria. Trabajé estrechamente con otros equipos en un ciclo iterativo de diseño, donde los visuales eran testeados y ajustados continuamente. La comunicación constante y efectiva entre equipos permitió mantener una alta calidad y coherencia en todos los entregables.</p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Avianca3} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Avianca2} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -84,11 +93,11 @@ const Avianca = () => {
                         <p className="text-sm my-5">Para Avianca, seguimos estrictamente el UI kit optimizado y ejecutamos todas las solicitudes según las directrices del líder del grupo. Creamos variaciones de banners, asegurando precisión en la nomenclatura para SEO. Implementamos un ciclo iterativo de diseño, trabajando estrechamente con otros equipos para testear y ajustar visuales continuamente. La comunicación constante y efectiva garantizó la alta calidad y coherencia en todos los entregables, mejorando así la eficiencia y la experiencia del usuario.</p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Avianca1} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Avianca2} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -98,16 +107,19 @@ const Avianca = () => {
                         <p className="text-sm my-5">El proyecto para Avianca resultó en una mayor eficiencia y coherencia en la creación de visuales, mejorando significativamente la experiencia del usuario y facilitando la navegación en las plataformas. La implementación precisa del UI kit y la colaboración efectiva entre equipos redujeron errores y aumentaron la calidad de los entregables. Además, la atención al detalle en la nomenclatura SEO optimizó la visibilidad online. Estas mejoras cumplieron con los objetivos del cliente y permitieron manejar un flujo constante de trabajo con altos estándares de calidad, asegurando la satisfacción tanto del equipo interno como de los usuarios finales. 4o</p>
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Avianca1} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg">
-
+                        <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
+                            <img src={Avianca2} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
             </section>
             <section className="bg-white pt-24 md:pt-0 pb-24 mt-0 md:-mt-24">
+                <div className="w-full md:w-4/6 mx-auto">
+                    <img src={Avianca9} alt="old carousel La cima" className="w-full rounded-lg mb-12" />
+                </div>
                 <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
             </section>
             <section className="bg-[#1E1E1E] w-full py-12 md:py-24 px-4 md:px-0">
