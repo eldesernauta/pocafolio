@@ -58,7 +58,7 @@ function Trabajo() {
                         client={'Mastercard'}
                         imgSrc={trabajos3}
                         href={"/trabajo/mastercard"}
-                        subtitle={'Entidad Bancaria'} />
+                        subtitle={'Empresa tecnológica global en la industria de pagos'} />
                 </div>
 
             </section>
