@@ -5,7 +5,7 @@ const ContactForm = () => {
     const [selected, setSelected] = useState('A');
     const [formData, setFormData] = useState({
         first_and_lastname: '',
-        npm: '',
+        company: '',
         email: '',
         interest: '',
         message: ''
