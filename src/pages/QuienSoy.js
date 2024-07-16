@@ -11,8 +11,8 @@ const foto2 = require('../img/foto2.png')
 const foto3 = require('../img/foto3.png')
 const springImg = require("../img/cv-bg.png")
 
-const words = `Diseñador de producto centrado en las experiencias digitales del usuario mediante el diseño de interfaces interactivas, servicios innovadores, funcionales y atractivos.`
-const words2 = `Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó que logró hacer un libro de textos especimen.`
+const words = `Soy diseñador de producto, apasionado por el buen estilo gráfico y la comunicación visual efectiva. Mi objetivo es crear experiencias únicas y servicios innovadores, funcionales y atractivos. Disfruto cada etapa del proceso creativo, desde la conceptualización hasta la ejecución, asegurando que cada proyecto refleje calidad y originalidad.`
+const words2 = `En mis momentos libres, me gusta practicar running, una actividad que me permite mantenerme activo y enfocado. Soy de Armenia, en el departamento del Quindío, la tierra de la palma de cera, un lugar que inspira mi creatividad y amor por el diseño.`
 
 
 function QuienSoy() {
