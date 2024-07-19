@@ -9,8 +9,8 @@ const Hero = () => {
 
     return (
         <>
-            <WavyBackground className="w-full h-screen flex flex-col justify-end items-center">
-                <img src={foto} alt="foto de andrés sanchez" className="w-100 md:w-[33vw] scale-125 md:scale-100 z-10 drag-none select-none" />
+            <WavyBackground className="w-full h-screen flex flex-col justify-end items-center overflow-hidden">
+                <img src={foto} alt="foto de andrés sanchez" className="w-full md:w-[33vw] -translate-y-12 z-10 drag-none select-none" />
                 <div className="absolute top-[30%] md:top-[25%] left-0">
                     <CustomMarquee baseVelocity={-1}>
                         incrustes
