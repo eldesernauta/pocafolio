@@ -1,9 +1,10 @@
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
-import { Link } from "react-router-dom";
 
 import CustomMarquee from "../components/Marquee/marquee";
 import SpinBtn from "../components/SpinBtn/spinBtn";
 import Cards from "../components/Cards/cards";
+
+const cv = require('../assets/CV_Andres_Sanchez.pdf')
 
 const words = `Soy diseñador de producto, apasionado por el buen estilo gráfico y la comunicación visual efectiva. Mi objetivo es crear experiencias únicas y servicios innovadores, funcionales y atractivos. Disfruto cada etapa del proceso creativo, desde la conceptualización hasta la ejecución, asegurando que cada proyecto refleje calidad y originalidad.`
 const words2 = `En mis momentos libres, me gusta practicar running, una actividad que me permite mantenerme activo y enfocado. Soy de Armenia, en el departamento del Quindío, la tierra de la palma de cera, un lugar que inspira mi creatividad y amor por el diseño.`
@@ -140,7 +141,7 @@ function QuienSoy() {
                     <div className="hidden md:block w-6/12 md:w-4/12 flex flex-col">
                     </div>
                 </div>
-                <Link to="/conectemos" className="link-hover my-12 w-[300px] mx-auto relative inline-flex items-center justify-start py-3 pl-0 md:pl-4 border-2 border-primary hover:border-black pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded-full  hover:pl-10 hover:pr-6 bg-black group ">
+                <a href={cv} download className="a-hover my-12 w-[300px] mx-auto relative inline-flex items-center justify-start py-3 pl-0 md:pl-4 border-2 border-primary hover:border-black pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded-full  hover:pl-10 hover:pr-6 bg-black group ">
                     <span className="absolute -bottom-2 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-primary group-hover:h-full group-hover:bottom-0"></span>
                     <span className="absolute right-0 p-2 duration-200 ease-out group-hover:translate-x-12 -translate-x-2 rounded-full border-2 border-primary">
                         <svg className="w-5 h-5 text-primary " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -149,7 +150,7 @@ function QuienSoy() {
                         <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </span>
                     <span className="relative w-full text-center transition-colors duration-200 ease-in-out group-hover:text-black">Descargar curriculum</span>
-                </Link>
+                </a>
                 <div className="rounded-full w-[700px] h-[500px] bg-[#4A1A99] opacity-75 blur-3xl absolute top-[20%] -right-[350px] z-0 scale-125"></div>
                 <img src={springImg} className="hidden md:block w-[360px] absolute top-[30%] right-32 animate-bounce" alt="spring" />
             </section>
