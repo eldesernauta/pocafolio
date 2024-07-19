@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const wireframe = require("https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403063/wireframe_oh4bvp.png")
-const dashboard = require("https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403068/dashboard_elm9w5.png")
 
 function SwitchBtn() {
+    const wireframe = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403063/wireframe_oh4bvp.png"
+    const dashboard = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403068/dashboard_elm9w5.png"
+
     const [isOn, setIsOn] = useState(false);
 
     const toggleSwitch = () => setIsOn(!isOn);
