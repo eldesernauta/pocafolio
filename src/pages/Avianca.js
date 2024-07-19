@@ -5,26 +5,24 @@ import BackBtn from "../components/BackBtn/backBtn";
 
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
-const mockup = require("../img/avianca-hero.png")
-const avianca = require("../img/avianca.png")
-const nextCaseImg = require("../img/mastercard-hero.png")
-
-const text = require('../img/circle-text.png')
-const separator = require('../img/separator.png')
-
 const words = `La colaboración con equipos multidisciplinarios fortaleció mis habilidades en comunicación y trabajo en equipo, mientras que trabajar en un ciclo iterativo de diseño me hizo ágil y adaptable, asegurando alta calidad en los entregables. Este proyecto me ayudó a comprender mejor la importancia de la coherencia visual y la usabilidad en el diseño de interfaces y experiencias.`;
 
-const Avianca1 = require("../img/avianca-1.png")
-const Avianca2 = require("../img/avianca-2.png")
-const Avianca3 = require("../img/avianca-3.png")
-// const Avianca4 = require("../img/avianca-4.png")
-// const Avianca5 = require("../img/avianca-5.png")
-// const Avianca6 = require("../img/avianca-6.png")
-// const Avianca7 = require("../img/avianca-7.png")
-// const Avianca8 = require("../img/avianca-8.png")
-const Avianca9 = require("../img/avianca-9.png")
-
 const Avianca = () => {
+    const mockup = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403066/avianca-hero_chjvbp.png"
+    const avianca = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403064/avianca_y59uh7.png"
+    const nextCaseImg = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/mastercard-hero_oyrz0w.png"
+    const text = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403067/circle-text_wdzwpv.png'
+    const separator = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/separator_fvmo9q.png'
+    const Avianca1 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403065/avianca-1_un7icl.png"
+    const Avianca2 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403065/avianca-2_mfvos0.png"
+    const Avianca3 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403065/avianca-3_xfo8nm.png"
+    const Avianca4 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403065/avianca-4_jhi4vq.png"
+    const Avianca5 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403065/avianca-5_zdqmxl.png"
+    const Avianca6 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403065/avianca-6_rwuzqh.png"
+    const Avianca7 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403066/avianca-7_m8rsvz.png"
+    const Avianca8 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403066/avianca-8_bb8co0.png"
+    const Avianca9 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403066/avianca-9_n5vudx.png"
+
     return (
         <>
             <BackBtn />
@@ -83,7 +81,7 @@ const Avianca = () => {
                             <img src={Avianca3} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
                         <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
-                            <img src={Avianca2} alt="old carousel La cima" className="w-full rounded-lg" />
+                            <img src={Avianca4} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -94,10 +92,10 @@ const Avianca = () => {
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
                         <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
-                            <img src={Avianca1} alt="old home La cima" className="w-full rounded-lg" />
+                            <img src={Avianca5} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
                         <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
-                            <img src={Avianca2} alt="old carousel La cima" className="w-full rounded-lg" />
+                            <img src={Avianca6} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -108,10 +106,10 @@ const Avianca = () => {
                     </StickyBox>
                     <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
                         <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
-                            <img src={Avianca1} alt="old home La cima" className="w-full rounded-lg" />
+                            <img src={Avianca7} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
                         <div className="w-full h-[50vh] bg-slate-300 rounded-lg shadow-lg">
-                            <img src={Avianca2} alt="old carousel La cima" className="w-full rounded-lg" />
+                            <img src={Avianca8} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>

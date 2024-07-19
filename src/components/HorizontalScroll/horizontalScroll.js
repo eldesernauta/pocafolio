@@ -3,10 +3,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
 
-const clientes1 = require('../../img/creaciones_1_static.png')
-const clientes2 = require('../../img/creaciones_2.gif')
-const clientes3 = require('../../img/la-cima-home.gif')
-const clientes4 = require('../../img/extras-home.gif')
 
 const HorizontalScroll = () => {
 
@@ -54,7 +50,6 @@ const HorizontalScroll = () => {
                 </div>
                 <HorizontalCard
                     client={'Avianca'}
-                    imgSrc={clientes1}
                     href={'/trabajo/avianca'}
                     subtitle={'Dentsu Creative'}
                     id={'avianca'}
@@ -62,7 +57,6 @@ const HorizontalScroll = () => {
                 />
                 <HorizontalCard
                     client={'Mastercard'}
-                    imgSrc={clientes3}
                     href={'/trabajo/mastercard'}
                     subtitle={'Dentsu Creative'}
                     id={'mastercard'}
@@ -70,7 +64,6 @@ const HorizontalScroll = () => {
                 />
                 <HorizontalCard
                     client={'La Cima Ecohotel'}
-                    imgSrc={clientes2}
                     href={'/trabajo/la-cima'}
                     subtitle={'Freelancer'}
                     id={'la-cima'}
@@ -78,7 +71,6 @@ const HorizontalScroll = () => {
                 />
                 <HorizontalCard
                     client={'Extras'}
-                    imgSrc={clientes4}
                     href={'/trabajo/extras'}
                     subtitle={'Freelancer'}
                     id={'extras'}

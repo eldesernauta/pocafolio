@@ -5,7 +5,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Colabs from "../components/Colabs/colabs";
 import ContactForm from "../components/ContactForm/contactForm";
 
-
 function Contacto() {
     return (
         <>

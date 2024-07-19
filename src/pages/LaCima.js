@@ -4,28 +4,26 @@ import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 import BackBtn from "../components/BackBtn/backBtn"
 
-const mockup = require("../img/la-cima-hero.png")
-const LaCimaImg = require("../img/la-cima.png")
-const nextCaseImg = require("../img/extras-footer.png")
-
-const text = require('../img/circle-text.png')
-const separator = require('../img/separator.png')
-
 const words = `Este proyecto me permitió aplicar mis habilidades en diseño UX/UI
 para un público específico y exigente. El trabajo colaborativo
 y la atención al detalle en la estética visual fueron clave para el éxito del proyecto. Aprendí la importancia de la investigación de usuarios y las pruebas de usabilidad para asegurar que el diseño cumpliera con las expectativas del cliente y los usuarios finales.`;
 
-const LaCima1 = require("../img/la-cima-1.png")
-const LaCima2 = require("../img/la-cima-2.png")
-const LaCima3 = require("../img/la-cima-3.png")
-const LaCima4 = require("../img/la-cima-4.png")
-const LaCima5 = require("../img/la-cima-5.png")
-const LaCima6 = require("../img/la-cima-6.png")
-const LaCima7 = require("../img/la-cima-7.png")
-const LaCima8 = require("../img/la-cima-8.png")
-const LaCima9 = require("../img/la-cima-9.png")
-
 const LaCima = () => {
+    const mockup = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403074/la-cima-hero_edpdq6.png"
+    const LaCimaImg = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403072/la-cima_wphmlc.png"
+    const nextCaseImg = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403069/extras-footer_t7oz3c.png"
+    const text = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403067/circle-text_wdzwpv.png'
+    const separator = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/separator_fvmo9q.png'
+    const LaCima1 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403072/la-cima-1_dtcbmp.png"
+    const LaCima2 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403072/la-cima-2_kvgwrx.png"
+    const LaCima3 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403073/la-cima-3_oumn8q.png"
+    const LaCima4 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403073/la-cima-4_gjbcez.png"
+    const LaCima5 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403073/la-cima-5_kqiagq.png"
+    const LaCima6 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403074/la-cima-6_ccjueg.png"
+    const LaCima7 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403073/la-cima-7_mpjvg7.png"
+    const LaCima8 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403073/la-cima-8_syqghg.png"
+    const LaCima9 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403074/la-cima-9_d3uzla.png"
+
     return (
         <>
             <BackBtn />

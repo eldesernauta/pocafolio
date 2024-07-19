@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
-const clientes1 = require('../../img/avianca-home-movil.gif')
-const clientes2 = require('../../img/la-cima-home-movil.gif')
 const clientes3 = require('../../img/mastercard-home-movil.gif')
-const clientes4 = require('../../img/extras-home-movil.gif')
 
 const ClientesMobile = () => {
+    const clientes1 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403919/avianca-home-movil_kutujt.gif'
+    const clientes2 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403926/la-cima-home-movil_ahitxs.gif'
+    const clientes4 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403924/extras-home-movil_uv8atj.gif'
+
     return (
         <>
             <div className="container mx-auto flex flex-col relative gap-12">

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 
-const iteracion = require("../../img/iteracion.png")
-const boton = require("../../img/boton.png")
-const svg = require("../../img/svg.png")
-const cms = require("../../img/cms.png")
-
 const Productos = () => {
+    const iteracion = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403071/iteracion_rdcear.png"
+    const boton = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403066/boton_yxxpcx.png"
+    const svg = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403062/svg_ts3jdc.png"
+    const cms = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403067/cms_jkcyol.png"
+
     return (
         <>
             <div className="container pt-8 pb-24 px-2 mx-auto relative flex flex-col justify-center items-center relative rounded-xl">

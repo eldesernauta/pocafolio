@@ -1,15 +1,15 @@
 import Marquee from "react-fast-marquee";
 
-const bancolombia = require("../../img/bancolombia.png")
-const mastercard = require("../../img/mastercard.png")
-const davivienda = require("../../img/davivienda.png")
-const solved = require("../../img/solved.png")
-const avianca = require("../../img/avianca.png")
-const dentsu = require("../../img/dentsu.png")
-const lulo = require("../../img/lulo.png")
-const trainingym = require("../../img/trainingym.png")
-
 const Colabs = () => {
+    const bancolombia = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403066/bancolombia_lotd2e.png"
+    const mastercard = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403074/mastercard_mj2eom.png"
+    const davivienda = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403068/davivienda_vpwll8.png"
+    const solved = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403062/solved_esm86d.png"
+    const avianca = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403066/bancolombia_lotd2e.png"
+    const dentsu = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403068/dentsu_ajeryx.png"
+    const lulo = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403074/lulo_ihxyjf.png"
+    const trainingym = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403063/trainingym_yev4gy.png"
+
     return (
         <>
             <div className="w-[120vw] md:w-[105vw] h-21 md:h-24 bg-white pb-4 flex justify-between items-center rotate-[20deg] md:rotate-6 absolute top-[200px]">

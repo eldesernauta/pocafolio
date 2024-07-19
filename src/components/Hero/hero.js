@@ -2,10 +2,11 @@ import { WavyBackground } from "../ui/wavyBackground";
 import CustomMarquee from "../Marquee/marquee";
 import SpinBtn from "../SpinBtn/spinBtn";
 
-const separator = require("../../img/separator.png")
-const foto = require("../../img/hero-foto.png")
 
 const Hero = () => {
+    const foto = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403071/hero-foto_bwwfon.png"
+    const separator = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/separator_fvmo9q.png"
+
     return (
         <>
             <WavyBackground className="w-full h-screen flex flex-col justify-end items-center">

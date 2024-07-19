@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
-const img404 = require("../img/404.png")
 
 const Custom404 = () => {
+    const img404 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403064/404_zdvjhi.png"
     const navigate = useNavigate();
 
     return (

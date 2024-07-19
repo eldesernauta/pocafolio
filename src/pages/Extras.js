@@ -4,17 +4,17 @@ import Cards from "../components/Cards/cards";
 import Productos from "../components/Productos/productos";
 import BackBtn from "../components/BackBtn/backBtn"
 
-const mockup = require("../img/extras-hero.png")
-const extras1 = require("../img/extras-heladeria.png")
-const extras2 = require("../img/extras-toro.png")
-const extras3 = require("../img/extras-ron.png")
-const extras4 = require("../img/extras-trainingym.png")
-const extras5 = require("../img/extras-monarch.png")
-
 const words = `Explora cómo creo productos de alta calidad que superan
 expectativas y transforman ideas en realidad.`;
 
 const Davivienda = () => {
+    const mockup = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403069/extras-hero_mrtodc.png"
+    const extras1 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403069/extras-heladeria_tvwsca.png"
+    const extras2 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403070/extras-toro_en9r8g.png"
+    const extras3 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403070/extras-ron_tg4npp.png"
+    const extras4 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403071/extras-trainingym_rpiexu.png"
+    const extras5 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403070/extras-monarch_spozpr.png"
+
     return (
         <>
             <BackBtn />

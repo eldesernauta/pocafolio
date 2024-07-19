@@ -1,18 +1,18 @@
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { Link } from "react-router-dom";
 
-const skills1 = require("../../img/skills1.png")
-const skills2 = require("../../img/skills2.png")
-const skills3 = require("../../img/skills3.png")
-const skills4 = require("../../img/skills4.png")
-const skills5 = require("../../img/skills5.png")
-const skills6 = require("../../img/skills6.png")
-const skills7 = require("../../img/skills7.png")
-const skills8 = require("../../img/skills8.png")
-
 const paragraph2 = `Estas habilidades son sólo el inicio. Mi experiencia abarca mucho más y juntos podemos explorar, potenciar nuevas capacidades para superar cualquier desafío y así alcanzar el éxito.`;
 
 const Skills = () => {
+    const skills1 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403060/skills1_nc85gj.png"
+    const skills2 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403060/skills2_uocewz.png"
+    const skills3 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403060/skills3_q4dfy2.png"
+    const skills4 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403060/skills4_ygz1ur.png"
+    const skills5 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403061/skills5_enuupz.png"
+    const skills6 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403061/skills6_z48ax5.png"
+    const skills7 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403061/skills7_tx4ite.png"
+    const skills8 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403061/skills8_gjyjro.png"
+
     return (
         <div className="bg-gradient-to-b from-transparent via-[#00000080] to-black">
             <div className="container mx-auto flex flex-col relative ">

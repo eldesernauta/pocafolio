@@ -8,9 +8,8 @@ import { Link } from 'react-router-dom';
 import NavbarButton from '../NavbarButton/navbarButton';
 const linkStyles = "text-black text-4xl md:text-7xl font-Josefin uppercase font-semibold tracking-widest link-hover"
 
-const fotoNavbar = require('../../img/foto-navbar.jpg')
-
 const Header = (props) => {
+    const fotoNavbar = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721404738/foto-navbar_wztxoe.jpg'
     const { pathname } = useLocation();
 
     let ruta = ""

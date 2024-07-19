@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
 
-const text = require('../../img/circle-text.png')
-const separator = require('../../img/separator.png')
-
 const SpinBtn = () => {
+    const text = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403067/circle-text_wdzwpv.png'
+    const separator = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/separator_fvmo9q.png'
 
     return (
         <>

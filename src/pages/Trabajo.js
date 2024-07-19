@@ -4,13 +4,13 @@ import CustomMarquee from "../components/Marquee/marquee";
 import Colabs from "../components/Colabs/colabs";
 import SpinBtn from "../components/SpinBtn/spinBtn";
 
-const separator = require("../img/separator.png")
-const trabajos1 = require('../img/trabajo_card_avianca.png')
-const trabajos2 = require('../img/trabajo_card_lacima.png')
-const trabajos3 = require('../img/trabajo_card_mastercard.png')
-const trabajos4 = require('../img/trabajo_card_extras.png')
-
 function Trabajo() {
+    const separator = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/separator_fvmo9q.png'
+    const trabajos1 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403062/trabajo_card_avianca_uoaqi2.png'
+    const trabajos2 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403063/trabajo_card_lacima_fyqgz8.png'
+    const trabajos3 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403063/trabajo_card_mastercard_qzgtd4.png'
+    const trabajos4 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403063/trabajo_card_extras_ilddlr.png'
+
     return (
         <>
             <div className="w-full h-screen flex flex-col justify-end items-center">

@@ -69,21 +69,21 @@ h4::selection {
 @tailwind components;
 
 #skills {
-    background-image: url('./img/skills-bg.png');
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403061/skills-bg_uncigy.png');
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat
 }
 
 #world {
-    background-image: url('./img/world.png');
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403063/world_igcgu6.png');
     background-position: center 50px;
     background-size: contain;
     background-repeat: no-repeat
 }
 
 #world>.container {
-    background-image: url('./img/world-container.png');
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403064/world-container_rtu11g.png');
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat
@@ -94,28 +94,28 @@ h4::selection {
 }
 
 #card1 {
-    background-image: url('./img/card1-bg.png');
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403067/card1-bg_rsuvu7.png');
     background-position: 40px 200px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #card2 {
-    background-image: url('./img/card2-bg.png');
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403067/card2-bg_r8obos.png');
     background-position: 40px 200px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #card3 {
-    background-image: url('./img/card3-bg.png');
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403067/card3-bg_ksqbbg.png');
     background-position: 40px 200px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #avianca {
-    background-image: url(./img/avianca-home.png);
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403066/avianca-home_x27wxd.png');
     background-position: center center;
     background-size: cover;
     transition: all 0.2s ease-in-out;
@@ -123,11 +123,11 @@ h4::selection {
 }
 
 #avianca:hover {
-    background-image: url(./img/avianca-home.gif);
+    background-image: url('./img/avianca-home.gif');
 }
 
 #la-cima {
-    background-image: url(./img/la-cima-home.png);
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403074/la-cima-home_wmkyls.png');
     background-position: center center;
     background-size: cover;
     transition: all 0.2s ease-in-out;
@@ -135,11 +135,11 @@ h4::selection {
 }
 
 #la-cima:hover {
-    background-image: url(./img/la-cima-home.gif);
+    background-image: url('./img/la-cima-home.gif');
 }
 
 #mastercard {
-    background-image: url(./img/mastercard-home.png);
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403037/mastercard-home_g4qgul.png');
     background-position: center center;
     background-size: cover;
     transition: all 0.2s ease-in-out;
@@ -147,11 +147,11 @@ h4::selection {
 }
 
 #mastercard:hover {
-    background-image: url(./img/mastercard-home.gif);
+    background-image: url('./img/mastercard-home.gif');
 }
 
 #extras {
-    background-image: url(./img/extras-home.png);
+    background-image: url('https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403070/extras-home_tvu6gx.png');
     background-position: center center;
     background-size: cover;
     transition: all 0.2s ease-in-out;
@@ -159,7 +159,7 @@ h4::selection {
 }
 
 #extras:hover {
-    background-image: url(./img/extras-home.gif);
+    background-image: url('./img/extras-home.gif');
 }
 
 .loader {

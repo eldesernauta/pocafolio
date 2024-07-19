@@ -5,17 +5,16 @@ import CustomMarquee from "../components/Marquee/marquee";
 import SpinBtn from "../components/SpinBtn/spinBtn";
 import Cards from "../components/Cards/cards";
 
-const separator = require("../img/separator.png")
-const foto1 = require('../img/foto1.png')
-const foto2 = require('../img/foto2.png')
-const foto3 = require('../img/foto3.png')
-const springImg = require("../img/cv-bg.png")
-
 const words = `Soy diseñador de producto, apasionado por el buen estilo gráfico y la comunicación visual efectiva. Mi objetivo es crear experiencias únicas y servicios innovadores, funcionales y atractivos. Disfruto cada etapa del proceso creativo, desde la conceptualización hasta la ejecución, asegurando que cada proyecto refleje calidad y originalidad.`
 const words2 = `En mis momentos libres, me gusta practicar running, una actividad que me permite mantenerme activo y enfocado. Soy de Armenia, en el departamento del Quindío, la tierra de la palma de cera, un lugar que inspira mi creatividad y amor por el diseño.`
 
-
 function QuienSoy() {
+    const separator = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/separator_fvmo9q.png'
+    const foto1 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403070/foto1_ji3fl7.png'
+    const foto2 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403070/foto2_qx82mm.png'
+    const foto3 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403071/foto3_quqbog.png'
+    const springImg = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403068/cv-bg_wiwrbc.png"
+
     return (
         <>
             <div className="w-full h-screen flex flex-col justify-end items-center">

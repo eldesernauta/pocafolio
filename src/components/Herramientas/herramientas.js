@@ -1,16 +1,16 @@
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import Marquee from "react-fast-marquee";
 
-const framer = require("../../img/framer.png")
-const atlassian = require("../../img/atlassian.png")
-const shopify = require("../../img/shopify.png")
-const github = require("../../img/github-logo.png")
-const launchdarkly = require("../../img/launchdarkly.png")
-const tailscale = require("../../img/tailscale.png")
-
 const words = `Diseñador de producto centrado en las experiencias digitales del usuario mediante el diseño de interfaces interactivas, servicios innovadores, funcionales y atractivos.`;
 
 const Herramientas = () => {
+    const framer = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403071/framer_wu4zxn.png"
+    const atlassian = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403064/atlassian_c53qxt.png"
+    const shopify = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403035/shopify_b8jhy2.png"
+    const github = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403071/github-logo_tnd2mq.png"
+    const launchdarkly = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403074/launchdarkly_dznc7o.png"
+    const tailscale = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403062/tailscale_upnh82.png"
+
     return (
         <>
             <div className="container mx-auto flex flex-col justify-start items-center relative pt-20 md:pt-0">

@@ -4,26 +4,24 @@ import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 import BackBtn from "../components/BackBtn/backBtn"
 
-const mockup = require("../img/mastercard-hero.png")
-const MastercardImg = require("../img/mastercard.png")
-const nextCaseImg = require("../img/la-cima-hero.png")
-
-const text = require('../img/circle-text.png')
-const separator = require('../img/separator.png')
-
 const words = `Este proyecto me permitió desarrollar y aplicar habilidades en diseño UI bajo una demanda constante y alta presión. La creación de sistemas de diseño estandarizados fue clave para manejar eficientemente las solicitudes frecuentes y asegurar la calidad del trabajo. Además, la experiencia reforzó la importancia de la colaboración y la comunicación efectiva en un entorno dinámico y exigente.`;
 
-const Mastercard1 = require("../img/mastercard_1.png")
-const Mastercard2 = require("../img/mastercard_2.png")
-const Mastercard3 = require("../img/mastercard_3.png")
-const Mastercard4 = require("../img/mastercard_4.png")
-const Mastercard5 = require("../img/mastercard_5.png")
-const Mastercard6 = require("../img/mastercard_6.png")
-const Mastercard7 = require("../img/mastercard_7.png")
-const Mastercard8 = require("../img/mastercard_8.png")
-const Mastercard9 = require("../img/mastercard_9.png")
-
 const Mastercard = () => {
+    const mockup = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/mastercard-hero_oyrz0w.png"
+    const MastercardImg = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403074/mastercard_mj2eom.png"
+    const nextCaseImg = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403074/la-cima-hero_edpdq6.png"
+    const text = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403067/circle-text_wdzwpv.png'
+    const separator = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/separator_fvmo9q.png'
+    const Mastercard1 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403075/mastercard_1_f9ngzn.png"
+    const Mastercard2 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403075/mastercard_2_mmjmy9.png"
+    const Mastercard3 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403075/mastercard_3_f5d9tg.png"
+    const Mastercard4 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403075/mastercard_4_zxrneq.png"
+    const Mastercard5 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403075/mastercard_5_e1o9z6.png"
+    const Mastercard6 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403075/mastercard_6_khth7o.png"
+    const Mastercard7 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/mastercard_7_zgnr5v.png"
+    const Mastercard8 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403036/mastercard_8_ogi3hg.png"
+    const Mastercard9 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403035/mastercard_9_wri0jy.png"
+
     return (
         <>
             <BackBtn />

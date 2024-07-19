@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const wireframe = require("../../img/wireframe.png")
-const dashboard = require("../../img/dashboard.png")
+const wireframe = require("https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403063/wireframe_oh4bvp.png")
+const dashboard = require("https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403068/dashboard_elm9w5.png")
 
 function SwitchBtn() {
     const [isOn, setIsOn] = useState(false);
