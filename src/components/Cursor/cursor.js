@@ -12,7 +12,7 @@ const Cursor = () => {
         canvas.height = window.innerHeight;
 
         const params = {
-            pointsNumber: 40,
+            pointsNumber: 5,
             widthFactor: 0.3,
             mouseThreshold: 0.6,
             spring: 0.4,
