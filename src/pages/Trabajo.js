@@ -106,11 +106,13 @@ const Card = ({ client, imgSrc, href, subtitle }) => {
             <div className="flex flex-col w-full items-center justify-start rounded-xl mx-auto overflow-hidden">
                 <div className='flex flex-col justify-start items-start'>
                     <div className='overflow-hidden'>
-                        <img
-                            src={imgSrc}
-                            className='object-cover h-full md:h-auto rounded-sm w-full'
-                            alt='imagen avianca'
-                        />
+                        <Link to={href} >
+                            <img
+                                src={imgSrc}
+                                className='object-cover h-full md:h-auto rounded-sm w-full'
+                                alt='imagen avianca'
+                            />
+                        </Link>
                     </div>
                     <div className='w-full flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center mt-8'>
                         <div className='w-full md:w-8/12 flex flex-col justify-center items-start gap-2'>

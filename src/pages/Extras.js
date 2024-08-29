@@ -58,7 +58,7 @@ const Davivienda = () => {
                     </div>
                     <div className="w-full md:w-2/6 flex flex-col">
                         <h4 className="text-purple text-sm font-semibold">Bastrop (Texas)</h4>
-                        <h2 className="text-2xl text-neutral-500 font-bold mb-4">Trainingym</h2>
+                        <h2 className="text-2xl text-neutral-500 font-bold mb-4">Toro Handyman Services</h2>
                         <p className="mb-4">Toro Company es una constructora donde enfrentamos el desafío de mejorar la experiencia y la navegación del sitio web, sin comprometer la estética y la funcionalidad.</p>
                         <p className="mb-4">Optimizamos el flujo de reservas de servicios y cotizaciones mediante la implementación de una calculadora virtual que proporcionaba estimaciones precisas a los usuarios. Además, nos aseguramos de que la navegación del sitio fuera intuitiva y atractiva, permitiendo a los usuarios encontrar fácilmente la información que necesitaban y realizar sus solicitudes de manera rápida y sin complicaciones.</p>
                         <h3 className="text-xl text-black font-medium mb-4">Lo mejor de allá</h3>

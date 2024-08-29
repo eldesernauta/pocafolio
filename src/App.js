@@ -23,6 +23,7 @@ function App() {
         customClass='custom-cursor'
         dimensions={30}
         fill='#BDFA00'
+        strokeWidth={1}
         smoothness={{
           movement: 0.2,
           scale: 0.1,

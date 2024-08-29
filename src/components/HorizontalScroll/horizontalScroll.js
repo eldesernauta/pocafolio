@@ -90,9 +90,9 @@ const HorizontalCard = ({ client, id, href, subtitle, resume }) => {
         <div className="w-[100vw] md:w-[60vw] h-auto px-0 hidden md:block">
             <div className="flex flex-col w-full items-center justify-start rounded-xl mx-auto overflow-hidden">
                 <div className='w-full flex flex-col justify-start items-start'>
-                    <div id={id} className='w-[100vw] md:w-full h-[50vh] md:h-[500px] overflow-hidden bg-black'>
+                    <Link id={id} to={href} className='w-[100vw] md:w-full h-[50vh] md:h-[500px] overflow-hidden bg-black'>
 
-                    </div>
+                    </Link>
                     <div className='w-full flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center mt-8'>
                         <div className='w-6/6 md:w-5/12 flex flex-col justify-center items-start gap-1'>
                             <h2 className='text-white text-4xl font-bold'>{client}</h2>
