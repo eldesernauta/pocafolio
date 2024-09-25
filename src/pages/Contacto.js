@@ -8,7 +8,7 @@ import ContactForm from "../components/ContactForm/contactForm";
 function Contacto() {
     return (
         <>
-            <section className="pt-48 px-4 md:px-0">
+            <section className="pt-48 px-4 2xl:px-0">
                 <div className="container mx-auto flex flex-col justify-start items-start">
                     <Link to={'mailto:conectemos@incrustes.com'} className="link-hero text-white text-2xl font-neutral font-ClashDisplay flex gap-2 md:gap-4 items-center z-10"><FontAwesomeIcon icon={faEnvelope} style={{ fontSize: 15 }} className="text-primary" /> conectemos@incrustes.com</Link>
                     <h2 className="font-ClashDisplay text-5xl md:text-9xl text-white font-medium z-10">hey incrustes,</h2>

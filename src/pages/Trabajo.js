@@ -45,7 +45,7 @@ function Trabajo() {
                 <SpinBtn />
                 <div className="rounded-full w-[700px] h-[500px] bg-[#4A1A99] opacity-75 blur-3xl absolute -top-[250px] -right-[350px] z-0 scale-125"></div>
             </div>
-            <section className="container mx-auto gap-0 md:gap-24 px-4 md:px-0 pt-12 flex flex-col md:flex-row justify-center items-center overflow-hidden">
+            <section className="container mx-auto gap-0 md:gap-24 px-4 2xl:px-0 pt-12 flex flex-col md:flex-row justify-center items-center overflow-hidden">
                 <div className="w-full md:w-3/6 flex justify-center items-center">
                     <Card
                         client={'Avianca'}
@@ -62,7 +62,7 @@ function Trabajo() {
                 </div>
 
             </section>
-            <section className="container mx-auto gap-0 md:gap-24 px-4 md:px-0 pb-12 mt-24 md:mt-0 flex flex-col md:flex-row justify-center items-center overflow-hidden">
+            <section className="container mx-auto gap-0 md:gap-24 px-4 2xl:px-0 pb-12 mt-24 md:mt-0 flex flex-col md:flex-row justify-center items-center overflow-hidden">
                 <div className="w-full md:w-3/6 flex justify-center items-center">
                     <Card
                         client={'La Cima Ecohotel'}

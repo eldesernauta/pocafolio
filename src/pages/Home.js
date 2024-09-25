@@ -17,29 +17,29 @@ function Home() {
                 <Herramientas />
             </section>
 
-            <section className="pt-0 pb-24 px-4 md:px-0">
+            <section className="pt-0 pb-24 px-4 2xl:px-0">
                 <Cards layout='home' />
             </section>
 
-            <section className="hidden md:block bg-black pt-12 md:pt-24 relative">
+            <section className="hidden lg:block bg-black px-4 2xl:px-0 pt-12 lg:pt-24 relative">
                 <div className="container mx-auto flex flex-col relative">
                     <HorizontalScroll />
                 </div>
             </section>
 
-            <section className="block md:hidden bg-black px-4 md:px-0 pt-12 md:pt-24 relative">
-                <div className='flex flex-col justify-center items-center mb-8'>
-                    <h4 className="text-lg text-primary font-bold text-center md:text-left translate-x-0 md:translate-x-24"> Todas mis </h4>
-                    <h2 className="text-5xl md:text-9xl font-ClashDisplay font-medium text-white">Creaciones</h2>
+            <section className="block lg:hidden bg-black px-4 2xl:px-0 pt-12 lg:pt-24 relative">
+                <div className='flex flex-col justify-center items-center mb-8 '>
+                    <h4 className="text-lg text-primary font-bold text-center lg:text-left translate-x-0 lg:translate-x-24"> Todas mis </h4>
+                    <h2 className="text-5xl lg:text-9xl font-ClashDisplay font-medium text-white">Creaciones</h2>
                 </div>
                 <ClientesMobile />
             </section>
 
-            <section id="skills" className="bg-gradient-to-b from-transparent via-[#00000080] to-black pt-32 md:pt-0 pb-0 mb-12 relative">
+            <section id="skills" className="bg-gradient-to-b from-transparent via-[#00000080] to-black pt-32 lg:pt-0 px-4 2xl:px-0 pb-0 mb-12 relative">
                 <Skills />
             </section>
 
-            <section className="bg-black px-4 md:px-2 pt-24">
+            <section className="bg-black px-4 2xl:px-0 pt-24">
                 <div className="container mx-auto flex flex-col justify-center items-center gap-0">
                     <SwitchBtn />
                 </div>
@@ -51,7 +51,7 @@ function Home() {
                 <Colabs />
             </section>
 
-            <section id="world" className="bg-black px-4 md:px-0 py-24 w-full flex flex-col items-center justify-start relative">
+            <section id="world" className="bg-black px-4 2xl:px-0 py-24 w-full flex flex-col items-center justify-start relative">
                 <Productos />
             </section>
         </>

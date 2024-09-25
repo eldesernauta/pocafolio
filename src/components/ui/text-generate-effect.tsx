@@ -85,7 +85,7 @@ export const TextGenerateEffect = ({
       <div
         className={`${
           align === "center"
-            ? "w-full md:w-9/12 px-4 md:px-0 mx-auto"
+            ? "w-full md:w-9/12 px-4 2xl:px-0 mx-auto"
             : "w-full"
         }`}
         ref={containerRef}

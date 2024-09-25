@@ -27,7 +27,7 @@ const Avianca = () => {
         <>
             <BackBtn />
             <section className="h-screen w-full bg-gradient-to-r from-[#EA0024] to-[#C0006C] py-[100px]">
-                <div className="container mx-auto h-full px-4 md:px-0 flex flex-col md:flex-row justify-center items-stretch">
+                <div className="container mx-auto h-full px-4 2xl:px-0 flex flex-col md:flex-row justify-center items-stretch">
                     <div className="w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center md:justify-between items-center md:items-start">
                         <img src={avianca} alt="avianca hero" className="brightness-150" />
                         <div className="flex flex-col text-center md:text-left mt-4 md:mt-0">
@@ -41,14 +41,14 @@ const Avianca = () => {
                     </div>
                 </div>
             </section>
-            <section className="w-full bg-white py-12 md:py-24 px-4 md:px-0">
+            <section className="w-full bg-white py-12 md:py-24 px-4 2xl:px-0">
                 <div className="container mx-auto flex">
                     <div className="w-full md:w-4/6 h-full flex justify-center items-start">
                         <p className="text-sm">Gracias a la agencia en la que trabajaba, tuve la oportunidad de unirme al equipo de la aerolínea Avianca, una de las compañías aéreas más importantes de América Latina. Mi rol como diseñador de interfaces fue integral en la creación de diversas soluciones digitales, incluyendo landing pages, banners para múltiples plataformas y journey maps para campañas de correo electrónico. Este proyecto fue especialmente desafiante debido a la alta demanda de producción y la necesidad de mantener una calidad y consistencia excepcionales en todos los entregables. Además, Avianca requiere que cada componente de su diseño refleje su marca y proporcione una experiencia de usuario superior, lo cual demandaba una atención al detalle y una comprensión profunda de sus usuarios.</p>
                     </div>
                 </div>
             </section>
-            <section className="w-full bg-white px-4 md:px-0 flex flex-col gap-8 h-auto md:h-[460vh] -mt-1">
+            <section className="w-full bg-white px-4 2xl:px-0 flex flex-col gap-8 h-auto md:h-[460vh] -mt-1">
                 <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[130vh] left-0 right-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Desafío del proyecto</h2>
@@ -120,7 +120,7 @@ const Avianca = () => {
                 </div>
                 <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
             </section>
-            <section className="bg-[#1E1E1E] w-full py-12 md:py-24 px-4 md:px-0">
+            <section className="bg-[#1E1E1E] w-full py-12 md:py-24 px-4 2xl:px-0">
                 <div className="container mx-auto flex flex-col justify-start items-start">
                     <div className="w-full flex flex-col text-center md:text-left mt-4 md:mt-0">
                         <h4 className="text-primary font-semibold ml-0 md:ml-24">Próximo</h4>

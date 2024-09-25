@@ -43,10 +43,10 @@ const HorizontalScroll = () => {
 
     return (
         <div>
-            <div className="massiveImage flex justify-start items-start gap-8 px-2 md:px-0 pt-16 md:pt-32  pb-32">
-                <div className='static md:absolute -top-16 left-0 flex md:block flex-col justify-center items-center'>
-                    <h4 className="text-lg text-primary font-bold text-center md:text-left translate-x-0 md:translate-x-24"> Todas mis </h4>
-                    <h2 className="text-5xl md:text-9xl font-ClashDisplay font-medium text-white">Creaciones</h2>
+            <div className="massiveImage flex justify-start items-start gap-8 px-2 2xl:px-0 pt-16 lg:pt-32  pb-32">
+                <div className='static lg:absolute -top-16 left-0 flex lg:block flex-col justify-center items-center'>
+                    <h4 className="text-lg text-primary font-bold text-center lg:text-left translate-x-0 lg:translate-x-24"> Todas mis </h4>
+                    <h2 className="text-5xl lg:text-9xl font-ClashDisplay font-medium text-white">Creaciones</h2>
                 </div>
                 <HorizontalCard
                     client={'Avianca'}
@@ -87,13 +87,13 @@ export default HorizontalScroll;
 
 const HorizontalCard = ({ client, id, href, subtitle, resume }) => {
     return (
-        <div className="w-[100vw] md:w-[60vw] h-auto px-0 hidden md:block">
+        <div className="w-[100vw] lg:w-[60vw] h-auto px-0 hidden lg:block">
             <div className="flex flex-col w-full items-center justify-start rounded-xl mx-auto overflow-hidden">
                 <div className='w-full flex flex-col justify-start items-start'>
-                    <Link id={id} to={href} className='w-[100vw] md:w-full h-[50vh] md:h-[500px] overflow-hidden bg-black'>
+                    <Link id={id} to={href} className='w-[100vw] lg:w-full h-[50vh] lg:h-[500px] overflow-hidden bg-black'>
 
                     </Link>
-                    <div className='w-full flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center mt-8'>
+                    <div className='w-full flex flex-col lg:flex-row items-start gap-8 lg:gap-0 lg:items-center mt-8'>
                         <div className='w-6/6 md:w-5/12 flex flex-col justify-center items-start gap-1'>
                             <h2 className='text-white text-4xl font-bold'>{client}</h2>
                             <p className='text-white'>{subtitle}</p>

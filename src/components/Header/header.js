@@ -41,21 +41,21 @@ const Header = (props) => {
 
     return (
         <div id='header' className='w-full h-screen md:h-auto absolute top-0 left-0 z-[9999]'>
-            <nav className={`container mx-auto py-3 flex justify-center ${pathname === "/trabajo/avianca" | pathname === "/trabajo/la-cima" | pathname === "/trabajo/mastercard" | pathname === "/trabajo/extras" ? 'md:justify-center' : 'md:justify-between'} gap-3 md:gap-0 items-center text-white px-2 md:px-5 2xl:px-0`}>
+            <nav className={`container mx-auto py-3 flex justify-center ${pathname === "/trabajo/avianca" | pathname === "/trabajo/la-cima" | pathname === "/trabajo/mastercard" | pathname === "/trabajo/extras" ? 'lg:justify-center' : 'lg:justify-between'} gap-3 lg:gap-0 items-center text-white px-2 lg:px-5 2xl:px-0`}>
 
-                <div className={`${pathname === ruta ? 'hidden' : 'block'} order-1 md:order-1 w-2/12 md:w-3/12 flex justify-center md:justify-start items-center`}>
+                <div className={`${pathname === ruta ? 'hidden' : 'block'} order-1 lg:order-1 w-2/12 lg:w-3/12 flex justify-center lg:justify-start items-center`}>
                     <Link to={'/'}>
                         <img src={fotoNavbar} alt="foto del header" width={`50`} height={`50`} className={`link-hover rounded-full rotate-0 hover:rotate-[360deg] transition-all duration-300`} />
                     </Link>
                 </div>
-                <div className='order-3 md:order-2 w-2/12 md:w-6/12 flex justify-center items-center' >
+                <div className='order-3 lg:order-2 w-2/12 lg:w-6/12 flex justify-center items-center' >
                     <NavbarButton action={handleToggleMenu} showMenu={showMenu} color={'white'} />
                     <div
                         ref={menuRef}
                         className="fixed inset-y-0 left-0 box-border flex flex-col bg-[#EBFF46] w-full h-screen p-6 text-white z-[99999] justify-between items-end"
                     >
                         <NavbarButton action={handleToggleMenu} showMenu={showMenu} color={'black'} />
-                        <ul className="font-ClashDisplay absolute top-[30%] md:top-auto bottom-auto md:bottom-20 left-4 md:left-20">
+                        <ul className="font-ClashDisplay absolute top-[30%] lg:top-auto bottom-auto lg:bottom-20 left-4 lg:left-20">
                             <li className="mb-2 pl-0 hover:pl-20 no-underline hover:underline transition-all duration-200 ease-in-out">
                                 <Link to="/" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onClick={handleToggleMenu}>
                                     Inicio
@@ -77,7 +77,7 @@ const Header = (props) => {
                                 </Link>
                             </li>
                         </ul>
-                        <div className='flex flex-col gap-5 block md:absolute bottom-20 right-20 place-self-center'>
+                        <div className='flex flex-col gap-5 block lg:absolute bottom-20 right-20 place-self-center'>
                             <img src={fotoNavbar} alt="Foto del header" width={`100`} height={`100`} className='link-hover rounded-full rotate-0 hover:rotate-[360deg] transition-all duration-300' />
                             <ul className='w-full flex justify-center items-center gap-3'>
 
@@ -96,12 +96,12 @@ const Header = (props) => {
 
                     </div>
                 </div>
-                <div className={`${pathname === ruta ? 'hidden' : 'block'} order-2 md:order-3 w-8/12 md:w-3/12 flex justify-center md:justify-end items-center`}>
+                <div className={`${pathname === ruta ? 'hidden' : 'block'} order-2 lg:order-3 w-8/12 lg:w-3/12 flex justify-center lg:justify-end items-center`}>
                     <Link to="https://wa.link/k52s0r" target='_blank' spy={true} smooth={true} className={`link-hover bg-slate-800 no-underline group relative shadow-xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block`}>
                         <span className="absolute inset-0 overflow-hidden rounded-full">
                             <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                         </span>
-                        <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950  ring-1 ring-white/10 pl-4 md:pl-8 pr-4 py-1.5">
+                        <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 ring-1 ring-white/10 pl-4 lg:pl-8 pr-4 py-1.5">
                             <span>
                                 ¡Hablemos por Whatsapp!
                             </span>

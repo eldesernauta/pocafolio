@@ -11,9 +11,9 @@ const Footer = () => {
         return ""
     } else {
         return (
-            <div className={`relative w-full bg-black px-4 md:px-0 pt-32 md:pt-48 pb-8 flex flex-col justify-between overflow-hidden`}>
+            <div className={`relative w-full bg-black px-0 pt-32 2xl:pt-48 pb-8 flex flex-col justify-between overflow-hidden`}>
                 <WavyFooter className={`w-full h-screen flex flex-col justify-end items-center`}></WavyFooter>
-                <div className="container mx-auto flex flex-col-reverse md:flex-row justify-center md:justify-between items-center z-10">
+                <div className="container mx-auto flex flex-col-reverse md:flex-row justify-center md:justify-between items-center z-10 px-4  2xl:px-0">
                     <ul className="w-full md:w-4/6 flex flex-col text-center md:text-left justify-center gap-0">
                         <li className="text-black font-semibold mb-2 md:mb-4 underline md:no-underline">
                             <Link to='/' className="link-hover">

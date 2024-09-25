@@ -10,8 +10,8 @@ const Hero = () => {
     return (
         <>
             <WavyBackground className="w-full h-screen flex flex-col justify-end items-center overflow-hidden">
-                <img src={foto} alt="foto de andrés sanchez" className="w-full md:w-[33vw] -translate-y-12 z-10 drag-none select-none" />
-                <div className="absolute top-[30%] md:top-[25%] left-0">
+                <img src={foto} alt="foto de andrés sanchez" className="w-full md:w-[80vw] lg:w-[45vw] xl:w-[33vw] -translate-y-12 z-10 drag-none select-none" />
+                <div className="absolute top-[30%] lg:top-[25%] left-0">
                     <CustomMarquee baseVelocity={-1}>
                         incrustes
                         <img
@@ -40,7 +40,7 @@ const Hero = () => {
                     </CustomMarquee>
                 </div>
                 <SpinBtn />
-                <div className="absolute -bottom-20 md:bottom-0 bg-gradient-to-b from-transparent via-[#00000080] to-black w-full h-[500px] z-20"></div>
+                <div className="absolute -bottom-20 lg:bottom-0 bg-gradient-to-b from-transparent via-[#00000080] to-black w-full h-[500px] z-20"></div>
             </WavyBackground>
         </>);
 }

@@ -8,7 +8,7 @@ const Custom404 = () => {
 
     return (
         <>
-            <section className="w-full h-screen px-4 md:px-0 flex justify-center items-center">
+            <section className="w-full h-screen px-4 2xl:px-0 flex justify-center items-center">
                 <div id="skills" className="container mx-auto flex flex-col justify-center items-center gap-4 md:gap-8">
                     <h2 className="text-primary font-ClashDisplay text-8xl md:text-9xl font-medium">Oops!</h2>
                     <p className="text-white text-xl md:text-3xl font-medium">La página que buscas no existe</p>

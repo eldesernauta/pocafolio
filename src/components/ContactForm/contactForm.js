@@ -40,7 +40,7 @@ const ContactForm = () => {
 
     return (
         <div className="container mx-auto my-12 md:my-24">
-            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8 md:gap-12 bg-[#131313] border border-solid px-8 py-12 md:px-12 border-[#5F5F5F] rounded-xl">
+            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8 md:gap-12 bg-[#131313] border border-solid px-8 py-12 2xl:px-12 border-[#5F5F5F] rounded-xl">
                 <div className="w-full flex flex-col md:flex-row items-start md:items-end justify-between gap-4 md:gap-8">
                     <p className="w-48 font-bold text-white text-xl">Mi nombre es</p>
                     <div className="w-full flex flex-col md:flex-row items-start md:items-end justify-between gap-4">
@@ -95,7 +95,7 @@ const ContactForm = () => {
                                     className="hidden"
                                 />
                                 <div
-                                    className={`cursor-pointer bg-transparent inline-block border border-solid rounded-full text-center w-60 py-4 px-0 md:px-4 leading-24 ${selected === label
+                                    className={`cursor-pointer bg-transparent inline-block border border-solid rounded-full text-center w-60 py-4 px-0 2xl:px-4 leading-24 ${selected === label
                                         ? 'border-purple bg-[#9900FF] text-white border-1 shadow-inner'
                                         : 'border-primary border-1 text-primary hover:border-purple hover:text-purple'
                                         }`}

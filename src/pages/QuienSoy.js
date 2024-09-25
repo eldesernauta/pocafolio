@@ -51,7 +51,7 @@ function QuienSoy() {
                 <div className="rounded-full w-[700px] h-[500px] bg-[#4A1A99] opacity-75 blur-3xl absolute -top-[250px] -right-[350px] z-0 scale-125"></div>
             </div>
 
-            <section className="px-4 md:px-0">
+            <section className="px-4 2xl:px-0">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-2 justify-center items-center pt-12 md:pt-32">
                     <img src={foto1} alt="foto 1 de andres sanchez" className="hidden md:block" />
                     <img src={foto2} alt="foto 2 de andres sanchez" className="hidden md:block place-self-center  translate-y-0 md:-translate-y-32 " />
@@ -59,11 +59,25 @@ function QuienSoy() {
                 </div>
             </section>
 
-            <section className="container mx-auto flex flex-col gap-8 justify-center items-center text-center pt-12 md:pt-32 pb-12 px-4 md:px-0">
+            <section className="container mx-auto flex flex-col gap-8 justify-center items-center text-center pt-12 md:pt-32 pb-12 px-4 2xl:px-0">
                 <TextGenerateEffect words={words} paragraph2={words2} align="left" />
             </section>
 
-            <section className="flex flex-col gap-16 md:gap-32 mt-24 relative px-4 md:px-0">
+            <section className="flex flex-col gap-16 md:gap-32 mt-24 relative px-4 2xl:px-0">
+                <div className="container mx-auto flex gap-2 md:gap-0 justify-between items-start z-10">
+                    <div className="w-6/12 md:w-4/12 flex flex-col">
+                        <h3 className="text-white hover:text-primary text-xl md:text-3xl font-bold underline">Goo Hub Digital</h3>
+                        <p className="text-white text-sm">Quindío - Remoto</p>
+                    </div>
+                    <div className="w-6/12 md:w-4/12 flex flex-col">
+                        <h3 className="text-white text-xl md:text-3xl font-bold">Diseñador UX/UI</h3>
+                        <p className="text-white text-sm">2024 - Act.</p>
+
+                    </div>
+                    <div className="hidden md:block w-6/12 md:w-4/12 flex flex-col">
+                    </div>
+                </div>
+
                 <div className="container mx-auto flex gap-2 md:gap-0 justify-between items-start z-10">
                     <div className="w-6/12 md:w-4/12 flex flex-col">
                         <h3 className="text-white hover:text-primary text-xl md:text-3xl font-bold underline">Dentsu Creative</h3>
@@ -128,19 +142,7 @@ function QuienSoy() {
                     </div>
                 </div>
 
-                <div className="container mx-auto flex gap-2 md:gap-0 justify-between items-start z-10">
-                    <div className="w-6/12 md:w-4/12 flex flex-col">
-                        <h3 className="text-white hover:text-primary text-xl md:text-3xl font-bold underline">Sammy Quiceno</h3>
-                        <p className="text-white text-sm">Quindío - Presencial</p>
-                    </div>
-                    <div className="w-6/12 md:w-4/12 flex flex-col">
-                        <h3 className="text-white text-xl md:text-3xl font-bold">Diseñador visual</h3>
-                        <p className="text-white text-sm">2018 - 2019</p>
 
-                    </div>
-                    <div className="hidden md:block w-6/12 md:w-4/12 flex flex-col">
-                    </div>
-                </div>
                 <a href={cv} download className="a-hover my-12 w-[300px] mx-auto relative inline-flex items-center justify-start py-3 pl-0 md:pl-4 border-2 border-primary hover:border-black pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded-full  hover:pl-10 hover:pr-6 bg-black group ">
                     <span className="absolute -bottom-2 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-primary group-hover:h-full group-hover:bottom-0"></span>
                     <span className="absolute right-0 p-2 duration-200 ease-out group-hover:translate-x-12 -translate-x-2 rounded-full border-2 border-primary">
@@ -155,7 +157,7 @@ function QuienSoy() {
                 <img src={springImg} className="hidden md:block w-[360px] absolute top-[30%] right-32 animate-bounce" alt="spring" />
             </section>
 
-            <section className="bg-black mt-12 pb-48 px-4 md:px-0">
+            <section className="bg-black mt-12 pb-48 px-4 2xl:px-0">
                 <Cards layout={'home'} />
             </section>
         </>

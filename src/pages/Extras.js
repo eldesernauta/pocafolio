@@ -20,7 +20,7 @@ const Davivienda = () => {
             <BackBtn />
             <section className="h-screen w-full bg-gradient-to-r from-[#9900FF] to-[#8401DC] py-[100px] overflow-hidden">
                 <img src={mockup} alt="avianca hero" className="object-fill absolute bottom-0 right-0" />
-                <div className="container mx-auto h-full px-4 md:px-0 flex flex-col md:flex-row justify-center items-stretch">
+                <div className="container mx-auto h-full px-4 2xl:px-0 flex flex-col md:flex-row justify-center items-stretch">
                     <div className="w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center md:justify-end items-center md:items-start">
                         <div className="flex flex-col text-center md:text-left mt-4 md:mt-0">
                             <h4 className="text-white ml-0 md:ml-16">Colaboraciones</h4>
@@ -32,12 +32,12 @@ const Davivienda = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-white px-4 md:px-0 pt-24 pb-12 w-full">
+            <section className="bg-white px-4 2xl:px-0 pt-24 pb-12 w-full">
                 <div className="w-full md:w-4/6 mx-auto">
                     <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
                 </div>
             </section>
-            <section className="w-full bg-white px-4 md:px-0 flex flex-col gap-12 md:gap-24 pb-72">
+            <section className="w-full bg-white px-4 2xl:px-0 flex flex-col gap-12 md:gap-24 pb-72">
 
                 <div className="container mx-auto flex flex-col-reverse md:flex-row justify-center items-center gap-8">
                     <div className="w-full md:w-2/6 flex flex-col">
@@ -103,13 +103,13 @@ const Davivienda = () => {
                 </div>
 
             </section>
-            <section className="bg-black w-full px-4 md:px-0">
+            <section className="bg-black w-full px-4 2xl:px-0">
                 <div className="-translate-y-32">
                     <Cards layout='no-home' />
                 </div>
             </section>
 
-            <section id="world" className="bg-black px-4 md:px-0 py-24 mt-12 mb-48 w-full flex flex-col items-center justify-start relative">
+            <section id="world" className="bg-black px-4 2xl:px-0 py-24 mt-12 mb-48 w-full flex flex-col items-center justify-start relative">
                 <Productos />
             </section>
         </>
