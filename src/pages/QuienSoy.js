@@ -11,9 +11,6 @@ const words2 = `Fuera del diseño, me interesa entender cómo pensamos y actuamo
 
 function QuienSoy() {
     const separator = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/separator_fvmo9q.png'
-    const foto1 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403070/foto1_ji3fl7.png'
-    const foto2 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403070/foto2_qx82mm.png'
-    const foto3 = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403071/foto3_quqbog.png'
     const springImg = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403068/cv-bg_wiwrbc.png"
 
     return (
@@ -51,13 +48,6 @@ function QuienSoy() {
                 <div className="rounded-full w-[700px] h-[500px] bg-[#4A1A99] opacity-75 blur-3xl absolute -top-[250px] -right-[350px] z-0 scale-125"></div>
             </div>
 
-            {/* <section className="px-4 2xl:px-0">
-                <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-2 justify-center items-center pt-12 md:pt-32">
-                    <img src={foto1} alt="foto 1 de andres sanchez" className="hidden md:block" />
-                    <img src={foto2} alt="foto 2 de andres sanchez" className="hidden md:block place-self-center  translate-y-0 md:-translate-y-32 " />
-                    <img src={foto3} alt="foto 3 de andres sanchez" />
-                </div>
-            </section> */}
 
             <section className="container mx-auto flex flex-col gap-8 justify-center items-center text-center pt-12 md:pt-32 pb-12 px-4 2xl:px-0">
                 <TextGenerateEffect words={words} paragraph2={words2} align="center" />
