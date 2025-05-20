@@ -13,25 +13,25 @@ const Hero = () => {
                 <img src={foto} alt="foto de andrés sanchez" className="w-full md:w-[80vw] lg:w-[45vw] xl:w-[33vw] -translate-y-12 z-10 drag-none select-none" />
                 <div className="absolute top-[30%] lg:top-[25%] left-0">
                     <CustomMarquee baseVelocity={-1}>
-                        incrustes
+                        Andrés
                         <img
                             src={separator}
                             className="self-center mx-2 w-12 h-12"
                             alt='separador de textos'
                         />
-                        incrustes
+                        Andrés
                         <img
                             src={separator}
                             className="self-center mx-2 w-12 h-12"
                             alt='separador de textos'
                         />
-                        incrustes
+                        Andrés
                         <img
                             src={separator}
                             className="self-center mx-2 w-12 h-12"
                             alt='separador de textos'
                         />
-                        incrustes
+                        Andrés
                         <img
                             src={separator}
                             className="self-center mx-2 w-12 h-12"

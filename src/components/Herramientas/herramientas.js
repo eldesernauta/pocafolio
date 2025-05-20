@@ -1,7 +1,7 @@
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import Marquee from "react-fast-marquee";
 
-const words = `Diseñador de producto centrado en las experiencias digitales del usuario mediante el diseño de interfaces interactivas, servicios innovadores, funcionales y atractivos.`;
+const words = `Diseñador UI especializado en microinteracciones y alto detalle visual. Me enfoco en crear experiencias digitales pulidas, funcionales y coherentes, con una fuerte orientación al trabajo colaborativo con equipos multidisciplinarios.`;
 
 const Herramientas = () => {
     const framer = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403071/framer_wu4zxn.png"

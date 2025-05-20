@@ -52,7 +52,7 @@ const Footer = () => {
                 <h2 className="w-full text-[20vw] text-white font-bold text-center m-0 mt-40 md:mt-[300px] -mb-28 md:mb-0 pb-48 mix-blend-exclusion leading-[0px]">incrustes</h2>
                 <hr className="container h-[1px] bg-gray-400 mx-auto z-50" />
                 <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-2 text-white pt-8 z-50 text-sm">
-                    <p>Copyright © 2024</p>
+                    <p>Copyright © {new Date().getFullYear()}</p>
                     <p><FontAwesomeIcon icon={faGlobe} style={{ fontSize: 15 }} /> Quindío, Colombia</p>
                     <div className="flex gap-4 md:gap-8">
                         <Link to={'https://www.instagram.com/incrustes/'} target="_blank" className="link-hover no-underline hover:text-primary">Instagram</Link>

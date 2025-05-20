@@ -6,8 +6,8 @@ import Cards from "../components/Cards/cards";
 
 const cv = require('../assets/CV_Andres_Sanchez.pdf')
 
-const words = `Soy diseñador de producto, apasionado por el buen estilo gráfico y la comunicación visual efectiva. Mi objetivo es crear experiencias únicas y servicios innovadores, funcionales y atractivos. Disfruto cada etapa del proceso creativo, desde la conceptualización hasta la ejecución, asegurando que cada proyecto refleje calidad y originalidad.`
-const words2 = `En mis momentos libres, me gusta practicar running, una actividad que me permite mantenerme activo y enfocado. Soy de Armenia, en el departamento del Quindío, la tierra de la palma de cera, un lugar que inspira mi creatividad y amor por el diseño.`
+const words = `Soy diseñador UI, especialista en microinteracciones y en elevar el estilo gráfico de productos digitales. Me apasiona crear experiencias visuales claras, funcionales y con intención, cuidando cada detalle desde el concepto hasta el arte final. Trabajo colaborativamente, escucho activamente y siempre busco formas de mejorar.`
+const words2 = `Fuera del diseño, me interesa entender cómo pensamos y actuamos como seres humanos. Disfruto leer sobre psicología, escuchar podcasts y dibujar como forma de expresión. También practico running, una disciplina que me ayuda a mantener el enfoque y la energía. Nací en Armenia, Quindío, un lugar que alimenta mi creatividad con su naturaleza y cultura.`
 
 function QuienSoy() {
     const separator = 'https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403034/separator_fvmo9q.png'
@@ -51,27 +51,27 @@ function QuienSoy() {
                 <div className="rounded-full w-[700px] h-[500px] bg-[#4A1A99] opacity-75 blur-3xl absolute -top-[250px] -right-[350px] z-0 scale-125"></div>
             </div>
 
-            <section className="px-4 2xl:px-0">
+            {/* <section className="px-4 2xl:px-0">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-2 justify-center items-center pt-12 md:pt-32">
                     <img src={foto1} alt="foto 1 de andres sanchez" className="hidden md:block" />
                     <img src={foto2} alt="foto 2 de andres sanchez" className="hidden md:block place-self-center  translate-y-0 md:-translate-y-32 " />
                     <img src={foto3} alt="foto 3 de andres sanchez" />
                 </div>
-            </section>
+            </section> */}
 
             <section className="container mx-auto flex flex-col gap-8 justify-center items-center text-center pt-12 md:pt-32 pb-12 px-4 2xl:px-0">
-                <TextGenerateEffect words={words} paragraph2={words2} align="left" />
+                <TextGenerateEffect words={words} paragraph2={words2} align="center" />
             </section>
 
             <section className="flex flex-col gap-16 md:gap-32 mt-24 relative px-4 2xl:px-0">
                 <div className="container mx-auto flex gap-2 md:gap-0 justify-between items-start z-10">
                     <div className="w-6/12 md:w-4/12 flex flex-col">
-                        <h3 className="text-white hover:text-primary text-xl md:text-3xl font-bold underline">Goo Hub Digital</h3>
-                        <p className="text-white text-sm">Quindío - Remoto</p>
+                        <h3 className="text-white hover:text-primary text-xl md:text-3xl font-bold underline">Mimusa</h3>
+                        <p className="text-white text-sm">España - Remoto</p>
                     </div>
                     <div className="w-6/12 md:w-4/12 flex flex-col">
-                        <h3 className="text-white text-xl md:text-3xl font-bold">Diseñador UX/UI</h3>
-                        <p className="text-white text-sm">2024 - Act.</p>
+                        <h3 className="text-white text-xl md:text-3xl font-bold">Diseñador UI</h3>
+                        <p className="text-white text-sm">2025</p>
 
                     </div>
                     <div className="hidden md:block w-6/12 md:w-4/12 flex flex-col">
@@ -88,15 +88,15 @@ function QuienSoy() {
                         <p className="text-white text-sm">2021 - 2024</p>
                         <div className="flex flex-col pl-0 md:pl-4 mt-8">
                             <h3 className="text-white text-md md:text-2xl font-bold flex items-center gap-4">
-                                <span><img src={separator} width={'15px'} alt="" /></span>MasterCard Latam
-                            </h3>
-                            <p className="text-white text-sm">Oct 2021 - Dic 2022</p>
-                        </div>
-                        <div className="flex flex-col pl-0 md:pl-4 mt-8">
-                            <h3 className="text-white text-md md:text-2xl font-bold flex items-center gap-4">
                                 <span><img src={separator} width={'15px'} alt="" /></span>Avianca
                             </h3>
                             <p className="text-white text-sm">Dic 2022 - Ene 2024</p>
+                        </div>
+                        <div className="flex flex-col pl-0 md:pl-4 mt-8">
+                            <h3 className="text-white text-md md:text-2xl font-bold flex items-center gap-4">
+                                <span><img src={separator} width={'15px'} alt="" /></span>MasterCard Latam
+                            </h3>
+                            <p className="text-white text-sm">Oct 2021 - Dic 2022</p>
                         </div>
                     </div>
                     <div className="hidden md:block w-6/12 md:w-4/12 flex flex-col">

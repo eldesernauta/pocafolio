@@ -1,7 +1,7 @@
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { Link } from "react-router-dom";
 
-const paragraph2 = `Estas habilidades son sólo el inicio. Mi experiencia abarca mucho más y juntos podemos explorar, potenciar nuevas capacidades para superar cualquier desafío y así alcanzar el éxito.`;
+const paragraph2 = `Estas habilidades son solo una muestra. Junto a la experiencia técnica adquirida en cada proyecto, destaco por mi curiosidad, atención al detalle y capacidad de adaptación para crear soluciones efectivas en equipo.`;
 
 const Skills = () => {
     const skills1 = "https://res.cloudinary.com/dsnsr7pdp/image/upload/v1721403060/skills1_nc85gj.png"
@@ -27,45 +27,38 @@ const Skills = () => {
                     </div>
                     <div className=" border border-1 border-[#FFFFFF50] text-white px-3 2xl:px-12 py-4 border-t-0 border-b-0 border-r-1 md:border-r-0">
                         <img src={skills2} alt="icono 1 habilidades" className="w-8" />
-                        <h4 className="text-titles mt-4 mb-2">Investigación y diseño</h4>
-                        <p className="text-white">Tomar decisiones basadas
-                            en estrategias de productos. </p>
+                        <h4 className="text-titles mt-4 mb-2">Atención al detalle</h4>
+                        <p className="text-white">Precisión visual y pulido que elevan la calidad final. </p>
                     </div>
                     <div className=" border border-1 border-[#FFFFFF50] text-white px-3 2xl:px-12 py-4 border-t-0 border-b-0 border-r-0">
                         <img src={skills3} alt="icono 1 habilidades" className="w-8" />
-                        <h4 className="text-titles mt-4 mb-2">Accesibilidad</h4>
-                        <p className="text-white">Todos usuarios utilicen los
-                            productos de manera efectiva.</p>
+                        <h4 className="text-titles mt-4 mb-2">Pensamiento crítico</h4>
+                        <p className="text-white">Toma de decisiones con criterio para resolver problemas.</p>
                     </div>
                     <div className="border border-1 border-[#FFFFFF50] text-white px-3 2xl:px-12 py-4 border-t-0 border-b-0 border-r-1">
                         <img src={skills4} alt="icono 1 habilidades" className="w-8" />
-                        <h4 className="text-titles mt-4 mb-2">Confidencialidad</h4>
-                        <p className="text-white">Optimizar la experiencia
-                            del usuario con el tiempo.</p>
+                        <h4 className="text-titles mt-4 mb-2">Colaboración efectiva</h4>
+                        <p className="text-white">Trabajo fluido entre equipos para lograr objetivos claros.</p>
                     </div>
                     <div className="border border-1 border-[#FFFFFF50] text-white px-3 2xl:px-12 py-4 border-t-0 border-b-0 border-r-0 relative border-animated-bottom">
                         <img src={skills5} alt="icono 1 habilidades" className="w-8" />
-                        <h4 className="text-titles mt-4 mb-2">Gestión de proyectos</h4>
-                        <p className="text-white">Cumpliendo con los plazos
-                            y presupuestos establecidos.</p>
+                        <h4 className="text-titles mt-4 mb-2">Proactividad diaria</h4>
+                        <p className="text-white"> Actúo sin esperar, siempre con enfoque en soluciones.</p>
                     </div>
                     <div className="border border-1 border-[#FFFFFF50] text-white px-3 2xl:px-12 py-4 border-t-0 border-b-0 border-r-1 md:border-r-0  relative border-animated-bottom">
                         <img src={skills6} alt="icono 1 habilidades" className="w-8" />
-                        <h4 className="text-titles mt-4 mb-2">Pruebas de usuario</h4>
-                        <p className="text-white">Problemas y oportunidades
-                            de mejora para el usuario.</p>
+                        <h4 className="text-titles mt-4 mb-2"> Adaptabilidad ágil</h4>
+                        <p className="text-white"> Me ajusto al cambio sin perder calidad ni enfoque.</p>
                     </div>
                     <div className="border border-1 border-[#FFFFFF50] text-white px-3 2xl:px-12 py-4 border-t-0 border-b-0 border-r-0  relative border-animated-bottom">
                         <img src={skills7} alt="icono 1 habilidades" className="w-8" />
-                        <h4 className="text-titles mt-4 mb-2">Instant capture</h4>
-                        <p className="text-white">Save snippets from your
-                            browser and Kindle.</p>
+                        <h4 className="text-titles mt-4 mb-2">Apertura al feedback</h4>
+                        <p className="text-white">Valoro otras miradas para mejorar cada entrega.</p>
                     </div>
                     <div className="border border-1 border-[#FFFFFF50] text-white px-3 2xl:px-12 py-4 border-t-0 border-b-0 border-r-1  relative border-animated-bottom">
                         <img src={skills8} alt="icono 1 habilidades" className="w-8" />
-                        <h4 className="text-titles mt-4 mb-2">Design thinking</h4>
-                        <p className="text-white">Satisfacer las necesidades
-                            del cliente de manera flexible.</p>
+                        <h4 className="text-titles mt-4 mb-2">Visión centrada en UX</h4>
+                        <p className="text-white">Diseño con empatía, priorizando experiencia humana</p>
                     </div>
                 </div>
                 <TextGenerateEffect words={paragraph2} paragraph2="" align="center" className="scale-100 md:scale-75 text-center mt-12 mb-0 md:mt-4" />
