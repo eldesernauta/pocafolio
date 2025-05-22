@@ -4,7 +4,7 @@ import CustomMarquee from "../components/Marquee/marquee";
 import SpinBtn from "../components/SpinBtn/spinBtn";
 import Cards from "../components/Cards/cards";
 
-const cv = require('../assets/CV_Andres_Sanchez.pdf')
+const cv = require('../assets/Especialista_en_Diseno_Visual.pdf')
 
 const words = `Soy diseñador UI, especialista en microinteracciones y en elevar el estilo gráfico de productos digitales. Me apasiona crear experiencias visuales claras, funcionales y con intención, cuidando cada detalle desde el concepto hasta el arte final. Trabajo colaborativamente, escucho activamente y siempre busco formas de mejorar.`
 const words2 = `Fuera del diseño, me interesa entender cómo pensamos y actuamos como seres humanos. Disfruto leer sobre psicología, escuchar podcasts y dibujar como forma de expresión. También practico running, una disciplina que me ayuda a mantener el enfoque y la energía. Nací en Armenia, Quindío, un lugar que alimenta mi creatividad con su naturaleza y cultura.`

@@ -47,8 +47,8 @@ const Mastercard = () => {
                     </div>
                 </div>
             </section>
-            <section className="w-full bg-white px-4 2xl:px-0 flex flex-col gap-8 h-auto md:h-[460vh] -mt-1">
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[140vh] left-0 right-0 px-0 lg:px-4 2xl:px-0">
+            <section className="w-full bg-white flex flex-col gap-8 h-auto md:h-[460vh] xl:h-[500vh] -mt-1">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[140vh] xl:top-[130vh] left-0 right-0 px-4 2xl:px-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Desafío del proyecto</h2>
                         <p className="text-sm my-5">Atender múltiples campañas semanales para Mastercard y bancos aliados exigía alta velocidad de entrega sin sacrificar calidad ni coherencia visual.</p>
@@ -59,18 +59,17 @@ const Mastercard = () => {
                             <li>Mantener una coherencia visual entre múltiples campañas simultáneas.</li>
                             <li>Optimizar el flujo de diseño para sostener la productividad del equipo.</li>
                         </ul>
-
                     </StickyBox>
-                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] rounded-lg">
+                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 xl:gap-16 2xl:gap-8 justify-center items-start">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg">
                             <img src={Mastercard1} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] rounded-lg">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg">
                             <img src={Mastercard2} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[250vh] left-0 right-0 px-0 lg:px-4 2xl:px-0">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[250vh] xl:top-[250vh] left-0 right-0 px-4 2xl:px-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Proceso de diseño</h2>
                         <p className="text-sm my-5">El proceso inició con investigación UX, seguido por diseño iterativo de piezas visuales centradas en el usuario y alineadas a los objetivos de marca.</p>
@@ -82,18 +81,17 @@ const Mastercard = () => {
                             <li>Incorporación de microinteracciones en piezas clave para mayor engagement.</li>
                             <li>Ajustes continuos con base en feedback de stakeholders y equipo UX.</li>
                         </ul>
-
                     </StickyBox>
-                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] rounded-lg">
+                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 xl:gap-16 2xl:gap-8 justify-center items-start">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg">
                             <img src={Mastercard3} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] rounded-lg">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg">
                             <img src={Mastercard4} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[360vh] left-0 right-0 px-0 lg:px-4 2xl:px-0">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[360vh] xl:top-[370vh] left-0 right-0 px-4 2xl:px-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Solución</h2>
                         <p className="text-sm my-5">Se estructuró una solución técnica y visualmente coherente para responder a los requerimientos de múltiples marcas y campañas simultáneas.</p>
@@ -105,16 +103,16 @@ const Mastercard = () => {
                             <li>Iteraciones constantes basadas en feedback de clientes y pruebas internas.</li>
                         </ul>
                     </StickyBox>
-                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] rounded-lg">
+                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 xl:gap-16 2xl:gap-8 justify-center items-start">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg">
                             <img src={Mastercard5} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] rounded-lg">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg">
                             <img src={Mastercard6} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[470vh] left-0 right-0 px-0 lg:px-4 2xl:px-0">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[470vh] xl:top-[490vh] left-0 right-0 px-4 2xl:px-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Resultado</h2>
                         <p className="text-sm my-5">Los sistemas implementados y la estandarización visual permitieron resultados sobresalientes en eficiencia y calidad.</p>
@@ -125,18 +123,18 @@ const Mastercard = () => {
                             <li>Las landing pages y correos mostraron mejoras notables en conversión y engagement.</li>
                             <li>El feedback reforzó la confianza del cliente en el equipo de diseño y fortaleció la relación a largo plazo.</li>
                         </ul>
-
                     </StickyBox>
-                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] rounded-lg">
+                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 xl:gap-16 2xl:gap-8 justify-center items-start">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg">
                             <img src={Mastercard7} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] rounded-lg">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg">
                             <img src={Mastercard8} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
             </section>
+
             <section className="bg-white pt-24 md:pt-0 pb-24 mt-0 md:-mt-24">
                 <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
                 <div className="w-full md:w-4/6 mx-auto">

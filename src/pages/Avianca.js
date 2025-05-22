@@ -36,7 +36,7 @@ const Avianca = () => {
                         </div>
                     </div>
                     <div className="relative w-full md:w-3/6 h-full py-8 md:py-0 flex flex-col justify-center items-center">
-                        <img src={mockup} alt="avianca hero" className="" />
+                        <img src={mockup} alt="avianca hero" className="w-full lg:w-[300px] 2xl:w-[550px]" />
                         <h6 className="text-white absolute bottom-0 right-0">Dentsu Creative</h6>
                     </div>
                 </div>
@@ -48,8 +48,8 @@ const Avianca = () => {
                     </div>
                 </div>
             </section>
-            <section className="w-full bg-white px-4 2xl:px-0 flex flex-col gap-8 h-auto md:h-[460vh] -mt-1">
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[130vh] left-0 right-0  px-4 2xl:px-0">
+            <section className="w-full bg-white flex flex-col gap-8 h-auto md:h-[460vh] xl:h-[500vh] -mt-1">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[130vh] 2xl:top-[120vh] left-0 right-0  px-4 2xl:px-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Desafío del proyecto</h2>
                         <p className="text-sm my-5">Optimizar los recursos gráficos sin sacrificar la calidad visual ni afectar el rendimiento de carga del sitio.</p>
@@ -74,16 +74,16 @@ const Avianca = () => {
                             <span className="rounded-full border-[1px] px-4 py-1 text-sm border-purple text-purple">User Experience</span>
                         </div> */}
                     </StickyBox>
-                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] rounded-lg ">
+                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 xl:gap-16 2xl:gap-8 justify-center items-start">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg ">
                             <img src={Avianca1} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] rounded-lg ">
+                        <div className="w-full h-auto lg:h-[50vh] rounded-lg ">
                             <img src={Avianca2} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[240vh] left-0 right-0  px-4 2xl:px-0">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[240vh] xl:top-[250vh] left-0 right-0  px-4 2xl:px-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Proceso de diseño</h2>
 
@@ -98,16 +98,16 @@ const Avianca = () => {
                         </ul>
 
                     </StickyBox>
-                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] rounded-lg ">
+                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 xl:gap-16 2xl:gap-8 justify-center items-start">
+                        <div className="w-full h-auto lg:h-[50vh] 2xl:h-auto rounded-lg ">
                             <img src={Avianca3} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] rounded-lg ">
+                        <div className="w-full h-auto lg:h-[50vh] 2xl:h-auto rounded-lg ">
                             <img src={Avianca4} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[350vh] left-0 right-0  px-4 2xl:px-0">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[350vh] xl:top-[370vh] left-0 right-0  px-4 2xl:px-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Solución</h2>
                         <p className="text-sm my-5">Optimizamos procesos y recursos para mantener calidad visual sin comprometer el rendimiento de la plataforma.</p>
@@ -121,16 +121,16 @@ const Avianca = () => {
                         </ul>
 
                     </StickyBox>
-                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] rounded-lg ">
+                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 xl:gap-16 2xl:gap-8 justify-center items-start">
+                        <div className="w-full h-auto lg:h-[50vh] 2xl:h-auto rounded-lg ">
                             <img src={Avianca5} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] rounded-lg ">
+                        <div className="w-full h-auto lg:h-[50vh] 2xl:h-auto rounded-lg ">
                             <img src={Avianca6} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[460vh] left-0 right-0  px-4 2xl:px-0">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center items-start gap-8 static md:absolute top-[460vh] xl:top-[490vh] left-0 right-0  px-4 2xl:px-0">
                     <StickyBox offsetTop={20} offsetBottom={20} className="w-full md:w-4/12 h-full flex flex-col justify-center items-start">
                         <h2 className="text-4xl font-bold">Resultado</h2>
                         <p className="text-sm my-5">Mejoramos el rendimiento de carga y la experiencia del usuario en cada punto del journey.</p>
@@ -143,17 +143,17 @@ const Avianca = () => {
                         </ul>
 
                     </StickyBox>
-                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 justify-center items-start">
-                        <div className="w-full h-[50vh] rounded-lg ">
+                    <div className="w-full md:w-8/12 h-full flex flex-col gap-8 xl:gap-16 2xl:gap-8 justify-center items-start">
+                        <div className="w-full h-auto lg:h-[50vh] 2xl:h-auto rounded-lg ">
                             <img src={Avianca7} alt="old home La cima" className="w-full rounded-lg" />
                         </div>
-                        <div className="w-full h-[50vh] rounded-lg ">
+                        <div className="w-full h-auto lg:h-[50vh] 2xl:h-auto rounded-lg ">
                             <img src={Avianca8} alt="old carousel La cima" className="w-full rounded-lg" />
                         </div>
                     </div>
                 </div>
             </section >
-            <section className="bg-white pt-24 md:pt-0 pb-24 mt-0 md:-mt-24">
+            <section className="bg-white pt-24 md:pt-0 pb-24 mt-0 md:-mt-24 px-4 2xl:px-0">
                 <TextGenerateEffect words={words} paragraph2="" textColor="black" align="center" />
                 <div className="w-full md:w-4/6 mx-auto">
                     <img src={Avianca9} alt="old carousel La cima" className="w-full rounded-lg mb-12" />
