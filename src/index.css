@@ -10,11 +10,14 @@ html {
 
 * {
     cursor: none !important;
+    caret-color: transparent;
 }
 
 *:hover {
     cursor: none !important;
 }
+
+
 
 
 body {
