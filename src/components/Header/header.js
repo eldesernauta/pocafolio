@@ -97,7 +97,7 @@ const Header = (props) => {
                     </div>
                 </div>
                 <div className={`${pathname === ruta ? 'hidden' : 'block'} order-2 lg:order-3 w-8/12 lg:w-3/12 flex justify-center lg:justify-end items-center`}>
-                    <Link to="https://wa.link/k52s0r" target='_blank' spy={true} smooth={true} className={`link-hover bg-slate-800 no-underline group relative shadow-xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block`}>
+                    <Link to="https://wa.link/g5gsxf" target='_blank' spy={true} smooth={true} className={`link-hover bg-slate-800 no-underline group relative shadow-xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block`}>
                         <span className="absolute inset-0 overflow-hidden rounded-full">
                             <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                         </span>
